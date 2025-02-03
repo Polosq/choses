@@ -1,0 +1,194 @@
+img.buttonplay{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+}
+
+img.buttonpause{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.rgbdefault{
+    cursor: url('curseurs/curseurs-de-souris-cu-rgb/glow-arrow.cur'), default;
+}
+.rgbhelp{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-help.cur'), help;
+}
+.rgbpointer{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-link.cur'), pointer;
+}
+.rgbprogress{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-loading-arrow.cur'), progress;
+}
+.rgbwait{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-busy.cur'), wait;
+}
+.rgbcrosshair{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-cross.cur'), crosshair;
+}
+.rgbtext{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-text.cur'), text;
+}
+.rgbmove{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-move.cur'), move;
+}
+.rgbNA{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-unavailable.cur'), no-drop;
+}
+.rgbV{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-vertical.cur'), n-resize;
+}
+.rgbH{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-horizontal.cur'), e-resize;
+}
+.rgbnwse{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-diag1.cur'), nwse-resize;
+}
+.rgbnesw{
+    cursor: url('curseurs/curseurs-de-souris-glowing-rgb/glow-diag2.cur'), nesw-resize;
+}
+
+.bluedefault{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenPointer.cur'), default;
+}
+.bluehelp{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenHelpSelect.cur'), help;
+}
+.bluepointer{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenLinkSelect.cur'), pointer;
+}
+.blueprogress{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenWorkingInBackground.cur'), progress;
+}
+.bluewait{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenBusy.cur'), wait;
+}
+.bluecrosshair{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenPrecisionSelect.cur'), crosshair;
+}
+.bluetext{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenTextSelect.cur'), text;
+}
+.bluemove{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenMove.cur'), move;
+}
+.blueNA{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/No.cur'), no-drop;
+}
+.bluenwse{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenDiagonalResize1.cur'), nwse-resize;
+}
+.blueH{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenHorizontalResize.cur'), e-resize;
+}
+.blueV{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenVerticalResize.cur'), n-resize;
+}
+.bluenesw{
+    cursor: url('curseurs/curseurs-de-souris-degrades-bleu/BlueToGreenDiagonalResize2.cur'), nesw-resize;
+}
+
+.presentationdefault {
+    cursor: default;
+}
+.presentationhelp {
+    cursor: help;
+}
+.presentationpointer {
+    cursor: pointer;
+}
+.presentationprogress {
+    cursor: progress;
+}
+.presentationwait {
+    cursor: wait;
+}
+.presentationcrosshair {
+    cursor: crosshair;
+}
+.presentationtext {
+    cursor: text;
+}
+.presentationmove {
+    cursor: move;
+}
+.presentationNA {
+    cursor: not-allowed;
+}
+.presentationnwse {
+    cursor: nwse-resize;
+}
+.presentationH {
+    cursor: e-resize;
+}
+.presentationV {
+    cursor: n-resize;
+}
+.presentationnesw {
+    cursor: nesw-resize;
+}
+
+div.zonecurseur {
+    display: flex;
+    text-align: center;
+}
+
+body{
+    color:white;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    font-size: 14pt;
+}
+
+div.presentation{
+    background: radial-gradient(circle, rgba(132,147,255,1) 26%, rgba(128,249,247,1) 100%);
+    padding: 5px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:black;
+    width: 170px;
+}
+
+div.presentation:hover{
+    background: radial-gradient(circle, rgba(132,147,255,1) 47%, rgba(128,249,247,1) 100%);
+    width: 190px;
+    border-radius: 9px;
+}
+
+.bckg{
+    background-color: #252525;
+}
+
+a.clique{
+    background-color: #ffffff;
+    padding:5px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+a.cliquer{
+    background-color: #000;
+    padding:5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0px;
+    border-style: solid;
+}
+a.clique:hover{
+    cursor: not-allowed;
+    color: #909090;
+}
+a.cliquer:hover{
+    cursor: help;
+    background-color: rgba(250,50,50,70);
+}
+
+.invisible{
+    display:none;
+}
