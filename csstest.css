@@ -194,7 +194,7 @@ a.cliquer:hover{
 }
 
 a.div{
-    background-color: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(233,233,233,1) 65%);
+    background: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(233,233,233,1) 65%);
     padding:5px;
     color: white;
     text-decoration: none;
@@ -206,7 +206,7 @@ a.div{
 a.div:hover{
     background: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(233,233,233,1) 83%);
     padding: 7px;
-    color: #ff4242
+    color: #000;
 }
 
 div.sommaire{
