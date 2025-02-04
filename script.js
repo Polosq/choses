@@ -23,7 +23,10 @@ let divnesw=document.getElementById("divnesw");
 
 img.src="Images/play.png";
 
+let compteur=0;
+
 function button_toogle(e){
+    compteur++;
     if (img.className=="buttonplay") {
         img.classList.add("buttonpause");
         img.classList.remove("buttonplay");
@@ -40,6 +43,10 @@ function button_toogle(e){
         img.classList.add("buttonplay");
         img.src="Images/play.png";
         pika.muted=true;
+        if(compteur==3){
+            pika.pause();
+            compteur=0;
+        }
     }
 }
 
