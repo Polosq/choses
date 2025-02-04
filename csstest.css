@@ -196,7 +196,7 @@ a.cliquer:hover{
 a.div{
     background-color: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(233,233,233,1) 65%);
     padding:5px;
-    color: #000;
+    color: white;
     text-decoration: none;
     border-radius: 10px;
     border: black 1px solid;
