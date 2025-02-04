@@ -192,3 +192,32 @@ a.cliquer:hover{
 .invisible{
     display:none;
 }
+
+a.div{
+    background-color: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(233,233,233,1) 65%);
+    padding:5px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    border: black 1px solid;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+a.div:hover{
+    background-color: radial-gradient(circle, rgba(0,255,251,1) 0%, rgba(233,233,233,1) 83%);
+    padding: 7px;
+    color: #ff4242
+}
+
+div.sommaire{
+    background-color: #252525;
+    padding: 5px;
+    border-radius: 10px;
+    border: black 1px solid;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+div.body{
+    text-align: justify;
+}
