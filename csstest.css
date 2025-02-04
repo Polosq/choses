@@ -229,5 +229,6 @@ div.body{
     padding: 5px; 
     border: 1px black solid; 
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 45%, rgba(240,255,255,1) 55%, rgba(0,255,251,1) 100%); 
-    transition: all 0.5 ease; color: rgba(100,100,100,0.7);
+    transition: all 0.5 ease; 
+    color: rgba(100,100,100,0.7);
 }
