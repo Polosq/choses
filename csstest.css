@@ -217,6 +217,7 @@ div.sommaire{
     color: white;
     text-align: center;
     margin: 5px;
+    position: fixed;
 }
 div.body{
     text-align: justify;
