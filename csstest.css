@@ -210,7 +210,7 @@ a.div:hover{
 }
 
 div.sommaire{
-    background-color: #252525;
+    background-color: #000000;
     padding: 5px;
     border-radius: 10px;
     border: black 1px solid;
@@ -220,6 +220,7 @@ div.sommaire{
 }
 div.body{
     text-align: justify;
+    margin: 100px;
 }
 
 .searchbar{
