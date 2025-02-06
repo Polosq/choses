@@ -21,7 +21,7 @@ let divH=document.getElementById("divH");
 let divnwse=document.getElementById("divnwse");
 let divnesw=document.getElementById("divnesw");
 
-img.src="Images/play.png";
+img.src="Images/pause.png";
 
 let compteur=0;
 
