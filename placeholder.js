@@ -20,6 +20,8 @@ function newtext(e) {
     console.log(result);
     bartxt.value = "";
     barurl.value = "";
+
+    console.info(txt, url)
     
     var ul = document.createElement("ul");
     var li = document.createElement("li");
