@@ -24,12 +24,13 @@ function newtext(e) {
     var ul = document.createElement("ul");
     var li = document.createElement("li");
     var a = document.createElement("a");
+    div_reponse.appendChild(ul);
     ul.appendChild(li);
 
     a.href = url;
     a.value = txt;
     
-    div_reponse.appendChild(a);
+    li.appendChild(a);
     e.preventDefault();
 }
 
