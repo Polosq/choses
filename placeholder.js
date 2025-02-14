@@ -7,8 +7,8 @@ let tableau = [];
 
 function newtext(e) {
     console.log("click");
-    let txt = bartxt.value();
-    let url = barurl.value();
+    let txt = bartxt.value;
+    let url = barurl.value;
     tableau.push({
         text: txt,
         url: url
