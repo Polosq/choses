@@ -31,7 +31,6 @@ function button_toogle(e){
         img.classList.add("buttonpause");
         img.classList.remove("buttonplay");
         img.src="Images/pause.png";
-        audio.src="audio/sonpika.mp3"
         pika.muted=false;
         pika.play();
     } else if (img.className=="buttonpause") {
