@@ -28,11 +28,11 @@ function newtext(e) {
     }else if (txt=""){
 
     }else {
-        div_reponse.appendChild(ul);
-        ul.appendChild(li);
+        div_reponse.appendChild(li);
 
         a.href = url;
         a.value = txt;
+        a.class = "lien";
     
         li.appendChild(a);
         a.appendChild(txt);
