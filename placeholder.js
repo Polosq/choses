@@ -6,8 +6,8 @@ let btn = document.getElementById("searchbutton");
 let tableau = [];
 
 function newtext(e) {
-    let txt = bartxt.value;
-    let url = barurl.value;
+    let txt = bartxt.value();
+    let url = barurl.value();
     tableau.push({
         text: txt,
         url: url
@@ -18,4 +18,4 @@ function newtext(e) {
     e.preventDefault();
 }
 
-btn.addEventListener("click", )
+btn.addEventListener("click", newtext);
