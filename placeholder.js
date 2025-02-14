@@ -5,6 +5,9 @@ let btn = document.getElementById("searchbutton");
 
 let tableau = [];
 
+bartxt.value = "";
+barurl.value = "";
+
 function newtext(e) {
     console.log("click");
     let txt = bartxt.value;
