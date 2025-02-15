@@ -21,6 +21,8 @@ let divH=document.getElementById("divH");
 let divnwse=document.getElementById("divnwse");
 let divnesw=document.getElementById("divnesw");
 
+let body=document.getElementById("body");
+
 img.src="Images/pause.png";
 
 let compteur=0;
@@ -75,6 +77,9 @@ function changercurseurdiv(e){
     $(divH).removeClass("rgbH blueH presentationH");
     $(divnwse).removeClass("rgbnwse bluenwse presentationnwse");
     $(divnesw).removeClass("rgbnesw bluenesw presentationnesw");
+    
+    $(body).removeClass("rgbdefault bluedefault presentationdefault");
+
     if(e=="curseur1"){
         $(divdefault).addClass("presentationdefault");
         $(divhelp).addClass("presentationhelp");
@@ -89,6 +94,8 @@ function changercurseurdiv(e){
         $(divH).addClass("presentationH");
         $(divnwse).addClass("presentationnwse");
         $(divnesw).addClass("presentationnesw");
+
+        $(body).addClass("presentationdefault");
     } else if(e=="curseur2"){
         divdefault.classList.add("rgbdefault");
         divhelp.classList.add("rgbhelp");
@@ -103,6 +110,8 @@ function changercurseurdiv(e){
         divH.classList.add("rgbH");
         divnwse.classList.add("rgbnwse");
         divnesw.classList.add("rgbnesw");
+
+        $(body).addClass("rgbdefault");
     }
     else if(e=="curseur3"){
         divdefault.classList.add("bluedefault");
@@ -118,6 +127,8 @@ function changercurseurdiv(e){
         divH.classList.add("blueH");
         divnwse.classList.add("bluenwse");
         divnesw.classList.add("bluenesw");
+
+        $(body).addClass("bluedefault");
     }
 }
 
