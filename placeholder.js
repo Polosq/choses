@@ -30,8 +30,10 @@ function newtext(e) {
             a.value = txt;
             a.classList.add("lien");
             
+            var texte = document.createTextNode(txt)
+
             li.appendChild(a);
-            a.createTextNode(txt);
+            a.appendChild(texte);
         }
     }
     
