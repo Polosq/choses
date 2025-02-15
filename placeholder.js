@@ -21,6 +21,7 @@ function newtext(e) {
     var ul = document.createElement("ul");
     var li = document.createElement("li");
     var a = document.createElement("a");
+    var br = document.createElement("br");
 
     if(url!=""){
         if (txt!=""){
@@ -34,6 +35,7 @@ function newtext(e) {
 
             li.appendChild(a);
             a.appendChild(texte);
+            a.appendChild(br);
         }
     }
     
