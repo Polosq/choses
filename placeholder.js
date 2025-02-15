@@ -32,7 +32,7 @@ function newtext(e) {
 
         a.href = url;
         a.value = txt;
-        a.class = "lien";
+        a.classList.add("lien");
     
         li.appendChild(a);
         a.appendChild(txt);
