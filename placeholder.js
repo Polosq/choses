@@ -21,8 +21,7 @@ function newtext(e) {
     var ul = document.createElement("ul");
     var li = document.createElement("li");
     var a = document.createElement("a");
-    var p = document.createElement("p");
-    
+
     if(url!=""){
         if (txt!=""){
             div_reponse.appendChild(li);
@@ -30,11 +29,9 @@ function newtext(e) {
             a.href = url;
             a.value = txt;
             a.classList.add("lien");
-        
+            
             li.appendChild(a);
-            a.appendChild(p);
-            p.value = txt;
-            p.appendChild(txt);
+            a.createTextNode(txt);
         }
     }
     
