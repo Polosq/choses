@@ -25,7 +25,7 @@ function newtext(e) {
     if(url!=""){
         if (txt!=""){
             if (compteur > 15){
-                alert("Vous ne pouvez pas mettre plus de 15 liens !")                
+                alert("Vous ne pouvez pas mettre plus de 15 liens !");                
             }else {
                 div_reponse.appendChild(li);
 
@@ -37,7 +37,7 @@ function newtext(e) {
 
                 li.appendChild(a);
                 a.appendChild(texte);
-                compteur++
+                compteur++;
             }
         }
     }
