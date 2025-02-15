@@ -24,21 +24,19 @@ function newtext(e) {
     var a = document.createElement("a");
     var p = document.createElement("p");
     
-    if(url==""){
+    if(url!=""){
+        if (txt!=""){
+            div_reponse.appendChild(li);
 
-    }else if (txt=""){
-
-    }else {
-        div_reponse.appendChild(li);
-
-        a.href = url;
-        a.value = txt;
-        a.classList.add("lien");
-    
-        li.appendChild(a);
-        a.appendChild(p);
-        p.value = txt;
-        p.appendChild(txt);
+            a.href = url;
+            a.value = txt;
+            a.classList.add("lien");
+        
+            li.appendChild(a);
+            a.appendChild(p);
+            p.value = txt;
+            p.appendChild(txt);
+        }
     }
 
     
