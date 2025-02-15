@@ -13,7 +13,6 @@ barurl.value = "";
 div_reponse.innerHTML = "";
 
 function newtext(e) {
-    console.log("click");
     let txt = bartxt.value;
     let url = barurl.value;
     bartxt.value = "";
