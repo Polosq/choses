@@ -38,7 +38,6 @@ function newtext(e) {
             p.appendChild(txt);
         }
     }
-
     
     e.preventDefault();
 }
