@@ -221,7 +221,7 @@ div.sommaire{
 }
 div.body{
     text-align: justify;
-    margin: 125px;
+    margin-left: 125px;
 }
 
 .searchbar{
