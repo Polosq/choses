@@ -22,6 +22,7 @@ function newtext(e) {
     var ul = document.createElement("ul");
     var li = document.createElement("li");
     var a = document.createElement("a");
+    var p = document.createElement("p");
     
     if(url==""){
 
@@ -35,7 +36,9 @@ function newtext(e) {
         a.classList.add("lien");
     
         li.appendChild(a);
-        a.appendChild(txt);
+        a.appendChild(p);
+        p.value = txt;
+        p.appendChild(txt);
     }
 
     
