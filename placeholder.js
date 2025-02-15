@@ -5,7 +5,7 @@ let btn = document.getElementById("searchbutton");
 
 let div_reponse = document.getElementById("zonedereponse");
 
-let result="";
+let compteur = 0;
 
 bartxt.value = "";
 barurl.value = "";
@@ -25,17 +25,22 @@ function newtext(e) {
 
     if(url!=""){
         if (txt!=""){
-            div_reponse.appendChild(li);
+            if (compteur > 15){
+                alert("Vous ne pouvez pas mettre plus de 15 liens !")                
+            }else {
+                div_reponse.appendChild(li);
 
-            a.href = url;
-            a.value = txt;
-            a.classList.add("lien");
-            
-            var texte = document.createTextNode(txt)
+                a.href = url;
+                a.value = txt;
+                a.classList.add("lien");
+                
+                var texte = document.createTextNode(txt)
 
-            li.appendChild(a);
-            a.appendChild(texte);
-            a.appendChild(br);
+                li.appendChild(a);
+                a.appendChild(texte);
+                a.appendChild(br);
+                compteur++
+            }
         }
     }
     
