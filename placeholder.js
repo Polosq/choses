@@ -45,6 +45,7 @@ function newtext(e) {
 
                 img.src="Images/dlete.png";
                 img.classList.add("imgdelete");
+                img.id="imgdelete";
                 
                 var texte = document.createTextNode(txt);
 
@@ -55,6 +56,7 @@ function newtext(e) {
                 count++;
                 actualier();
                 
+                document.getElementById("imgdelete").addEventListener("click", deleteimg);
                 imgdestroy.addEventListener("click", deleteimg);
             }
         }
