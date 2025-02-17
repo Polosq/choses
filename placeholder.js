@@ -55,6 +55,8 @@ function newtext(e) {
                 count++;
                 actualier();
                 
+                document.getElementById("imgdelete").addEventListener("click", deleteimg);
+                imgdestroy.addEventListener("click", deleteimg);
             }
         }
     }
@@ -66,6 +68,8 @@ function deleteimg(e){
     this.parentNode.parentNode.removeChild(this.parentNode);
     count = count-1;
     actualier();
+    document.getElementById("imgdelete").addEventListener("click", deleteimg);
+    imgdestroy.addEventListener("click", deleteimg);
 }
 
 function actualier(e){
