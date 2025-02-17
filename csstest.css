@@ -248,10 +248,8 @@ div.body{
 }
 .flex{
     display: flex;
-    align-items: flex-end;
 }
 img.imgdelete{
-    flex-grow: 1;
     width: 30px;
 }
 img.imgdelete:hover{

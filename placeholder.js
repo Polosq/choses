@@ -25,7 +25,6 @@ function newtext(e) {
 
     var img = document.createElement("img");
 
-    var div = document.createElement("div");
 
     if(url!=""){
         if (txt!=""){
@@ -33,9 +32,8 @@ function newtext(e) {
                 alert("Vous ne pouvez pas mettre plus de 15 liens !");                
             }else {
                 div_reponse.appendChild(li);
-                li.appendChild(div);
 
-                $(div).addClass("flex");
+                $(li).addClass("flex");
 
                 a.href = url;
                 a.value = txt;
@@ -47,10 +45,10 @@ function newtext(e) {
                 
                 var texte = document.createTextNode(txt);
 
-                div.appendChild(a);
+                li.appendChild(a);
                 a.appendChild(texte);
 
-                div.appendChild(img);
+                li.appendChild(img);
                 count++;
                 actualier();
                 document.getElementById("imgdelete").addEventListener("click", deleteimg);
@@ -62,7 +60,7 @@ function newtext(e) {
 }
 
 function deleteimg(e){
-    this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+    this.parentNode.parentNode.removeChild(this.parentNode);
     count-=1
     actualier()
 }
