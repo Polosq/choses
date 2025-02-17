@@ -53,7 +53,7 @@ function newtext(e) {
                 li.appendChild(img);
                 count++;
                 actualier();
-                document.getElementById("imgdelete").addEventListener("click", deleteimg);
+                
             }
         }
     }
@@ -73,3 +73,4 @@ function actualier(e){
 }
 
 btn.addEventListener("click", newtext);
+document.getElementById("imgdelete").addEventListener("click", deleteimg);
