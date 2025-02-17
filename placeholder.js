@@ -7,6 +7,8 @@ let div_reponse = document.getElementById("zonedereponse");
 
 let nblien = document.getElementById("nombretotaldelien");
 
+let imgdestroy = document.getElementsByClassName("imgdelete");
+
 let count = 0;
 
 nblien.innerHTML="Nombre de liens : 0/15"
@@ -62,8 +64,8 @@ function newtext(e) {
 
 function deleteimg(e){
     this.parentNode.parentNode.removeChild(this.parentNode);
-    count-=1
-    actualier()
+    count = count-1;
+    actualier();
 }
 
 function actualier(e){
@@ -71,4 +73,5 @@ function actualier(e){
 }
 
 btn.addEventListener("click", newtext);
-document.getElementsByClassName("imgdelete").addEventListener("click", deleteimg);
+document.getElementById("imgdelete").addEventListener("click", deleteimg);
+imgdestroy.addEventListener("click", deleteimg);
