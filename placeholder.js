@@ -55,7 +55,6 @@ function newtext(e) {
                 count++;
                 actualier();
                 
-                document.getElementById("imgdelete").addEventListener("click", deleteimg);
                 imgdestroy.addEventListener("click", deleteimg);
             }
         }
