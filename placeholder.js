@@ -5,6 +5,8 @@ let btn = document.getElementById("searchbutton");
 
 let div_reponse = document.getElementById("zonedereponse");
 
+let nblien = document.getElementById("nombretotaldelien");
+
 let count = 0;
 
 bartxt.value = "";
@@ -23,14 +25,17 @@ function newtext(e) {
 
     var img = document.createElement("img");
 
+    var div = document.createElement("div");
+
     if(url!=""){
         if (txt!=""){
             if (count > 15){
                 alert("Vous ne pouvez pas mettre plus de 15 liens !");                
             }else {
                 div_reponse.appendChild(li);
+                li.appendChild(div);
 
-                $(li).addClass("flex");
+                $(div).addClass("flex");
 
                 a.href = url;
                 a.value = txt;
@@ -42,11 +47,12 @@ function newtext(e) {
                 
                 var texte = document.createTextNode(txt);
 
-                li.appendChild(a);
+                div.appendChild(a);
                 a.appendChild(texte);
 
-                li.appendChild(img);
+                div.appendChild(img);
                 count++;
+                actualier();
             }
         }
     }
@@ -55,7 +61,14 @@ function newtext(e) {
 }
 
 function deleteimg(e){
+    delete(this.parentNode.parentNode);
+    count-=1
+    actualier()
+}
 
+function actualier(e){
+    var texte = document.createTextNode("Nombre total de liens : "+ count + "/15")
+    nblien.appendChild(texte);
 }
 
 btn.addEventListener("click", newtext);

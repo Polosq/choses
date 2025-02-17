@@ -246,9 +246,9 @@ div.body{
     padding: 6px;
     border-radius: 10px;
 }
-li.flex{
+.flex{
     display: flex;
-    align-items: left;
+    align-items: flex-end;
 }
 img.imgdelete{
     flex-grow: 1;
