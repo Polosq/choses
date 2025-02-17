@@ -67,8 +67,7 @@ function deleteimg(e){
 }
 
 function actualier(e){
-    var texte = "Nombre total de liens : "+ count + "/15"
-    nblien.innerHTML=texte;
+    nblien.innerHTML="Nombre total de liens : " + count + "/15";
 }
 
 btn.addEventListener("click", newtext);
