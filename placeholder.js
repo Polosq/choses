@@ -43,7 +43,6 @@ function newtext(e) {
 
                 img.src="Images/dlete.png";
                 img.classList.add("imgdelete");
-                img.id="imgdelete";
                 
                 var texte = document.createTextNode(txt);
 
@@ -73,4 +72,4 @@ function actualier(e){
 }
 
 btn.addEventListener("click", newtext);
-document.getElementById("imgdelete").addEventListener("click", deleteimg);
+document.getElementsByClassName("imgdelete").addEventListener("click", deleteimg);
