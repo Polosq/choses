@@ -18,9 +18,10 @@ function newtext(e) {
     bartxt.value = "";
     barurl.value = "";
     
-    var ul = document.createElement("ul");
     var li = document.createElement("li");
     var a = document.createElement("a");
+
+    var img = document.createElement("img");
 
     if(url!=""){
         if (txt!=""){
@@ -29,14 +30,22 @@ function newtext(e) {
             }else {
                 div_reponse.appendChild(li);
 
+                $(li).addClass("flex");
+
                 a.href = url;
                 a.value = txt;
                 a.classList.add("lien");
+
+                img.src="Images/dlete.png";
+                img.classList.add("imgdelete");
+                img.id="imgdelete";
                 
-                var texte = document.createTextNode(txt)
+                var texte = document.createTextNode(txt);
 
                 li.appendChild(a);
                 a.appendChild(texte);
+
+                li.appendChild(img);
                 count++;
             }
         }
@@ -45,4 +54,9 @@ function newtext(e) {
     e.preventDefault();
 }
 
+function deleteimg(e){
+
+}
+
 btn.addEventListener("click", newtext);
+document.getElementById("imgdelete").addEventListener("click", deleteimg);
