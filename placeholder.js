@@ -66,7 +66,7 @@ function deleteimg(e){
 }
 
 function actualier(e){
-    nblien.removeChild();
+    nblien.removeChild(texte);
     var texte = document.createTextNode("Nombre total de liens : "+ count + "/15")
     nblien.appendChild(texte);
 }
