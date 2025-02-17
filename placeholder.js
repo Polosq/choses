@@ -9,6 +9,8 @@ let nblien = document.getElementById("nombretotaldelien");
 
 let count = 0;
 
+nblien.innerHTML="Nombre de liens : 0/15"
+
 bartxt.value = "";
 barurl.value = "";
 
@@ -67,7 +69,7 @@ function deleteimg(e){
 
 function actualier(e){
     var texte = document.createTextNode("Nombre total de liens : "+ count + "/15")
-    nblien.replaceChild(texte);
+    nblien.innerHTML=texte;
 }
 
 btn.addEventListener("click", newtext);
