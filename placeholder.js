@@ -30,7 +30,7 @@ function newtext(e) {
 
     if(url!=""){
         if (txt!=""){
-            if (count > 15){
+            if (count >= 15){
                 alert("Vous ne pouvez pas mettre plus de 15 liens !");                
             }else {
                 div_reponse.appendChild(li);
@@ -54,10 +54,8 @@ function newtext(e) {
                 count++;
                 actualier();
                 
-                for(let i; i >= 15; i++) {
-                    document.getElementById("imgdelete").addEventListener("click", deleteimg);
-                }
-                
+                document.getElementById("imgdelete").addEventListener("click", deleteimg);
+                                
             }
         }
     }
