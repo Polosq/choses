@@ -7,8 +7,6 @@ let div_reponse = document.getElementById("zonedereponse");
 
 let nblien = document.getElementById("nombretotaldelien");
 
-let imgdestroy = document.getElementsByClassName("imgdelete");
-
 let count = 0;
 
 nblien.innerHTML="Nombre de liens : 0/15"
@@ -57,7 +55,6 @@ function newtext(e) {
                 actualier();
                 
                 document.getElementById("imgdelete").addEventListener("click", deleteimg);
-                imgdestroy.addEventListener("click", deleteimg);
             }
         }
     }
@@ -70,7 +67,6 @@ function deleteimg(e){
     count = count-1;
     actualier();
     document.getElementById("imgdelete").addEventListener("click", deleteimg);
-    imgdestroy.addEventListener("click", deleteimg);
 }
 
 function actualier(e){
@@ -78,5 +74,3 @@ function actualier(e){
 }
 
 btn.addEventListener("click", newtext);
-document.getElementById("imgdelete").addEventListener("click", deleteimg);
-imgdestroy.addEventListener("click", deleteimg);
