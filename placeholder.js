@@ -54,7 +54,10 @@ function newtext(e) {
                 count++;
                 actualier();
                 
-                document.getElementById("imgdelete").addEventListener("click", deleteimg);
+                for(let i; i >= 15; i++) {
+                    document.getElementById("imgdelete").addEventListener("click", deleteimg);
+                }
+                
             }
         }
     }
