@@ -157,8 +157,7 @@ div.presentation{
 
 div.presentation:hover{
     background: radial-gradient(circle, rgba(132,147,255,1) 47%, rgba(128,249,247,1) 100%);
-    width: 190px;
-    border-radius: 9px;
+    border-radius: 10px;
 }
 
 a.clique{
