@@ -152,6 +152,7 @@ div.presentation{
     border-style: solid;
     border-color:black;
     width: 170px;
+    transition: all 0.3s ease;
 }
 
 div.presentation:hover{
