@@ -281,9 +281,9 @@ button.extension:hover{
 div.tutocache{
     display: none;
     position: absolute;
-    top: 100px; /* Ajuster selon votre besoin */
-    left: 100px; /* Ajuster selon votre besoin */
-    width: 350px;
+    top: 300px; /* Ajuster selon votre besoin */
+    left: 300px; /* Ajuster selon votre besoin */
+    width: 600px;
     background-color: lightblue;
     border: none;
     border-radius: 10px;
@@ -293,9 +293,9 @@ div.tutocache{
 div.tuto{
     display: block;
     position: absolute;
-    top: 100px; /* Ajuster selon votre besoin */
-    left: 100px; /* Ajuster selon votre besoin */
-    width: 350px;
+    top: 300px; /* Ajuster selon votre besoin */
+    left: 300px; /* Ajuster selon votre besoin */
+    width: 600px;
     background-color: lightblue;
     border: none;
     border-radius: 10px;
