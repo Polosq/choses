@@ -217,7 +217,7 @@ div.sommaire{
     color: #777;
     text-align: center;
     margin: 3px;
-    position: fixed;
+    position: absolute;
 }
 div.body{
     text-align: justify;
@@ -254,4 +254,26 @@ img.imgdelete{
 }
 img.imgdelete:hover{
     background-color: #777;
+}
+button.extension{
+    background-color: #4CAF50; /* Vert */
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+button.extension:hover{
+    background-color: rgba(255,255,255,0.3); 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 11px;
+    border-spacing: 1px;
 }
