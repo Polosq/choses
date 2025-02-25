@@ -13,7 +13,7 @@ document.getElementById('extensionchrome').addEventListener('click', function() 
 
 document.getElementById('extensionfirefox').addEventListener('click', function() {
     var url = "https://addons.mozilla.org/firefox/downloads/file/4291835/arcade_classics-2.2.7.xpi";
-    var installMessage = "Pour installer cette extension, veuillez cliquer sur 'Ajouter à Firefox' et suivre les instructions.";
+    var installMessage = "Pour installer cette extension, veuillez cliquer sur 'Continuer l'installation' et suivre les instructions.";
   
     // Afficher le message d'installation
     alert(installMessage);
