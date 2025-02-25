@@ -218,6 +218,8 @@ div.sommaire{
     text-align: center;
     margin: 3px;
     position: absolute;
+    top: 5px;
+    left: 5px;
 }
 div.body{
     text-align: justify;
