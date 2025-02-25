@@ -33,7 +33,7 @@ boutonextension.addEventListener('click', function(){
         });
 
         document.getElementById('extensionexample').addEventListener('click', function() {
-            var url = "https://github.com/Polosq/choses/extension.xpi";
+            var url = "https://github.com/Polosq/choses/releases/latest/download/extension.xpi";
             var installMessage = "Pour installer cette extension, veuillez cliquer sur 'Continuer l'installation' et suivre les instructions.";
           
             // Afficher le message d'installation
