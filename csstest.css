@@ -281,11 +281,12 @@ button.extension:hover{
 }
 
 div.tutocache{
+    color: black;
     font-size: 12px;
     display: none;
     position: absolute;
-    top: 300px; /* Ajuster selon votre besoin */
-    left: 300px; /* Ajuster selon votre besoin */
+    top: 150px; /* Ajuster selon votre besoin */
+    left: 400px; /* Ajuster selon votre besoin */
     width: 600px;
     background-color: lightblue;
     border: none;
