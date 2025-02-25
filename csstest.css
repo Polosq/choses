@@ -283,7 +283,7 @@ button.extension:hover{
 div.tutocache{
     font-size: 12px;
     display: none;
-    position: fixed;
+    position: absolute;
     top: 300px; /* Ajuster selon votre besoin */
     left: 300px; /* Ajuster selon votre besoin */
     width: 600px;
