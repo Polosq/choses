@@ -22,6 +22,9 @@
             <br>
             <br>
             <a class="div" href="#redirectionsearch">SearchBar</a>
+            <br>
+            <br>
+            <a class="div" href="#redirectionextension">Extensions</a>
 
         </div>
         <div class="body">
@@ -95,32 +98,35 @@
             <br>
             <br>
             <div id="redirectionembed">
-
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7zxJjsJXSaYh348OtYmW5o?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <a style = "text-decoration: none; padding: 5px; background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 45%, rgba(240,255,255,1) 55%, rgba(0,255,251,1) 100%); transition: all 0.5 ease; border: 1px black solid; border-radius: 10px; color: rgba(100,100,100,0.7);" href="https://open.spotify.com/embed/playlist/7zxJjsJXSaYh348OtYmW5o?utm_source=generator">Cliquez sur ce texte pour accéder a la page de génération de l'<i>iframe</i> !</a>
             </div>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7zxJjsJXSaYh348OtYmW5o?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <a style = "text-decoration: none; padding: 5px; background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 45%, rgba(240,255,255,1) 55%, rgba(0,255,251,1) 100%); transition: all 0.5 ease; border: 1px black solid; border-radius: 10px; color: rgba(100,100,100,0.7);" href="https://open.spotify.com/embed/playlist/7zxJjsJXSaYh348OtYmW5o?utm_source=generator">Cliquez sur ce texte pour accéder a la page de génération de l'<i>iframe</i> !</a>
-                        
+                  
             <br>
             <br>
             <div id="redirectionsearch">
-
-            </div>
-            <div style="display: flex;">
-                <input type="text" placeholder="Ecrivez quelque chose !" class = "searchbar" id="searchbar">
-                <input type="text" placeholder="Entrez un URL" class = "searchbar" id="inputweb">
-                <button style="padding: 5px; background-color: rgb(41, 160, 35);border: 1px black solid; border-radius: 10px;" id="searchbutton">Envoyer</button>
-            </div>
-
-            <div style = "background-color: rgba(255,255,255,0.20); border-radius: 8px; padding: 5px; margin-top: 8px; width: 500px;">
-                <div id="nombretotaldelien" style="color: white">
-                    
+                <div style="display: flex;">
+                    <input type="text" placeholder="Ecrivez quelque chose !" class = "searchbar" id="searchbar">
+                    <input type="text" placeholder="Entrez un URL" class = "searchbar" id="inputweb">
+                    <button style="padding: 5px; background-color: rgb(41, 160, 35);border: 1px black solid; border-radius: 10px;" id="searchbutton">Envoyer</button>
                 </div>
-                <ul id="zonedereponse">
-                
-                </ul>
+                <div style = "background-color: rgba(255,255,255,0.20); border-radius: 8px; padding: 5px; margin-top: 8px; width: 500px;">
+                    <div id="nombretotaldelien" style="color: white">
+                        
+                    </div>
+                    <ul id="zonedereponse">
+                    
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="redirectionextension" style="display: flex;">
+                <button id="extensionchrome">Ajouter l'extension pour Chrome (Compatible avec Edge, Opera, Brave, Vivaldi, et Chromium)</button>
+                <button id="extensionfirefox">Ajouter l'extension pour Firefox</button>
             </div>
         </div>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="placeholder.js"></script>
+        <script type="text/javascript" src="extension.js"></script>
     </body>
 </html>
