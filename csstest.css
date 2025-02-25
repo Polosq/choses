@@ -217,7 +217,7 @@ div.sommaire{
     color: #777;
     text-align: center;
     margin: 3px;
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 5px;
 }
@@ -282,7 +282,7 @@ button.extension:hover{
 
 div.tutocache{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 300px; /* Ajuster selon votre besoin */
     left: 300px; /* Ajuster selon votre besoin */
     width: 600px;
@@ -292,17 +292,4 @@ div.tutocache{
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-div.tuto{
-    display: block;
-    position: absolute;
-    top: 300px; /* Ajuster selon votre besoin */
-    left: 300px; /* Ajuster selon votre besoin */
-    width: 600px;
-    background-color: lightblue;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
 }
