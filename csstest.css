@@ -277,3 +277,16 @@ button.extension:hover{
     border-radius: 11px;
     border-spacing: 1px;
 }
+
+div.tutocache{
+    display: none;
+    position: absolute;
+    top: 30%; /* Ajuster selon votre besoin */
+    left: 38%; /* Ajuster selon votre besoin */
+    width: 200px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
