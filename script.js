@@ -40,6 +40,7 @@ function button_toogle(e){
         img.classList.add("buttonplay");
         img.src="Images/play.png";
         pika.muted=true;
+        pika.pause();
         if(compteur==3){
             pika.pause();
             compteur=0;
