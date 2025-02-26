@@ -18,8 +18,7 @@ document.getElementById('extensionfirefox').addEventListener('click', function()
     // Afficher le message d'installation
     alert(installMessage);
   
-    // Ouvrir le lien d'installation dans un nouvel onglet
-    window.open(url, '_blank');
+    window.location.href=url;
     }
 );
 
