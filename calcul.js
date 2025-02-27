@@ -18,6 +18,6 @@ bouton.addEventListener('click', function(){
     if (unefenetre>deuxfenetre){
         reponse.innerHTML = "Laisser une seule fenêtre ouverte ("+unefenetre+"cm²) plutôt que deux fenêtres ("+deuxfenetre+"m²)";
     }else if(unefenetre<deuxfenetre){
-        reponse.innerHTML = "Laisser deux fenêtres ouvertes ("+deuxfenetre+"cm²) plutôt qu'une seule fenêtre ("+unefenetre+"m²)";
+        reponse.innerHTML = "Laisser deux fenêtres ouvertes ("+deuxfenetre+"m²) plutôt qu'une seule fenêtre ("+unefenetre+"m²)";
     }
 });
