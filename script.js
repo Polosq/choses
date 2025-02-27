@@ -62,8 +62,7 @@ function changercurseur(e){
 }
 
 function changercurseurdiv(e){
-    $(divdefault).removeClass("rgbdefault bluedefault presentationdefault");
-    $(divhelp).removeClass("rgbhelp bluehelp presentationhelp");
+    $(divdefault, divhelp).removeClass("rgbdefault bluedefault presentationdefault");
     $(divpointer).removeClass("rgbpointer bluepointer presentationpointer");
     $(divprogress).removeClass("rgbprogress blueprogress presentationprogress");
     $(divwait).removeClass("rgbwait bluewait presentationwait");
