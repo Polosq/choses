@@ -164,7 +164,7 @@
             <p style="font-size: 10px; color: gray;">La syntaxe est la même pour les navigateurs : Chrome, Edge, Opera, Brave, Vivaldi et Chromium, mais le mode d'installation peut parfois être différent</p>
             <br>
             <button style="background-color: aqua; border-radius: 10px; color: rgb(15, 15, 15); padding: 5px;" id="tutoextension">Cliquez-ici pour avoir un tuto pour créer une extension web</button>
-            <div class="tutocache" style="display: none;" id="divtutoextension">
+            <div class="divtutocache" style="display: none;" id="divtutoextension">
                 <div style="background: linear-gradient(0deg, lightblue 0%, rgba(255,255,255,0.6334733722590599) 100%);height: 50px;">
 
                 </div>
@@ -172,76 +172,78 @@
                     <div style="background: linear-gradient(270deg, lightblue 0%, rgba(255,255,255,0.6334733722590599) 100%);width: 50px;">
 
                     </div>
-                    <div style="display: flex;">
-                        <span style="flex-grow: 1; font-size: 19px;">
-                            Créer une extension web
-                        </span>
-                        <img src="Images/close.png" style="background-color: rgba(255,255,255,0.4); width: 20px; height: 20px; padding: 1px; border-radius: 5px; cursor: pointer;" id="closeextension">
+                    <div class="tutocache">
+                        <div style="display: flex;">
+                            <span style="flex-grow: 1; font-size: 19px;">
+                                Créer une extension web
+                            </span>
+                            <img src="Images/close.png" style="background-color: rgba(255,255,255,0.4); width: 20px; height: 20px; padding: 1px; border-radius: 5px; cursor: pointer;" id="closeextension">
+                        </div>
+                        <ol>
+                            <li>
+                                Créer un fichier <i>manifest.json</i>.
+                                <br>
+                                Créer un fichier <i>popup.html</i> pour l'interface utilisateur. 
+                                <br>
+                                Créer un fichier <i>popup.js</i>. 
+                                <br>
+                                Créer un fichier <i>background.js</i> (si besoin uniquement !). 
+                            </li>
+                            <li>
+                                Compléter le fichier <i>manifest.json</i>. 
+                                <br>
+                                Voici ci contre un exemple :
+                                <br> 
+                                <img src="Images/tutomanifest.png" style="width: 300px;">
+                            </li>
+                            <li>
+                                Penser a créer les 3 icones aux différentes tailles (16*16 ; 48*48 ; 128*128), de vérifier que la version du manifeste est bonne, et que les permissions nécessaires sont bien écrites. 
+                            </li>
+                            <li>
+                                Compléter le fichier <i>background.js</i>. Afin de le compléter : il est conseillé de chercher la syntaxe sur internet. 
+                            </li>
+                            <li>
+                                Compléter le fichier <i>popup.html</i> : ce sera la page qui sera affichée quand l'utilisateur cliquera sur l'extension depuis son navigateur.
+                            </li>
+                            <li>
+                                Compléter enfin le fichier <i>popup.js</i> qui contiendra les codes principaux en lien avec la popup.
+                            </li>
+                            <li>
+                                Pour Firefox : 
+                                <ul>
+                                    <li>
+                                        Compresser le fichier au format '.zip' puis rennomer afin de mettre au format '.xpi'. 
+                                    </li>
+                                    <li>
+                                        Faire signer l'extension avec web-ext ou sur le site de mozilla.
+                                    </li>
+                                    <li>
+                                        Eberger l'extension sur un site et créer un lien pour pouvoir y accéder.
+                                    </li>
+                                </ul>
+                                Pour Chrome (et les autres navigateurs compatibles): 
+                                <ul>
+                                    <li>
+                                        Afin que l'extension soit dissponible pour tous, il faut l'installer sur le Chrome Web Store. Pour cela, il faut que les équipes de Chromes valident l'extension et poseront peut être des questions. 
+                                    </li>
+                                    <li>
+                                        Si vous n'avez pas envie de faire des démarches, vous pouvez aller sur le panneau des extensions, activer le mode développeur et donner le fichier contenant votre extension ou le fichier <i>manifest.json</i> en fonction du navigateur. 
+                                    </li>
+                                    <li>
+                                        ATTENTION : la syntaxe n'est pas la même pour les extensions firefox et pour chrome (et autres) !
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <a class="extension" href="https://github.com/Polosq/choses/releases/latest/download/extension.xpi">Voici un exemple d'extension pour firefox (bugue car pas encore signé)</a>
                     </div>
-                    <ol>
-                        <li>
-                            Créer un fichier <i>manifest.json</i>.
-                            <br>
-                            Créer un fichier <i>popup.html</i> pour l'interface utilisateur. 
-                            <br>
-                            Créer un fichier <i>popup.js</i>. 
-                            <br>
-                            Créer un fichier <i>background.js</i> (si besoin uniquement !). 
-                        </li>
-                        <li>
-                            Compléter le fichier <i>manifest.json</i>. 
-                            <br>
-                            Voici ci contre un exemple :
-                            <br> 
-                            <img src="Images/tutomanifest.png" style="width: 300px;">
-                        </li>
-                        <li>
-                            Penser a créer les 3 icones aux différentes tailles (16*16 ; 48*48 ; 128*128), de vérifier que la version du manifeste est bonne, et que les permissions nécessaires sont bien écrites. 
-                        </li>
-                        <li>
-                            Compléter le fichier <i>background.js</i>. Afin de le compléter : il est conseillé de chercher la syntaxe sur internet. 
-                        </li>
-                        <li>
-                            Compléter le fichier <i>popup.html</i> : ce sera la page qui sera affichée quand l'utilisateur cliquera sur l'extension depuis son navigateur.
-                        </li>
-                        <li>
-                            Compléter enfin le fichier <i>popup.js</i> qui contiendra les codes principaux en lien avec la popup.
-                        </li>
-                        <li>
-                            Pour Firefox : 
-                            <ul>
-                                <li>
-                                    Compresser le fichier au format '.zip' puis rennomer afin de mettre au format '.xpi'. 
-                                </li>
-                                <li>
-                                    Faire signer l'extension avec web-ext ou sur le site de mozilla.
-                                </li>
-                                <li>
-                                    Eberger l'extension sur un site et créer un lien pour pouvoir y accéder.
-                                </li>
-                            </ul>
-                            Pour Chrome (et les autres navigateurs compatibles): 
-                            <ul>
-                                <li>
-                                    Afin que l'extension soit dissponible pour tous, il faut l'installer sur le Chrome Web Store. Pour cela, il faut que les équipes de Chromes valident l'extension et poseront peut être des questions. 
-                                </li>
-                                <li>
-                                    Si vous n'avez pas envie de faire des démarches, vous pouvez aller sur le panneau des extensions, activer le mode développeur et donner le fichier contenant votre extension ou le fichier <i>manifest.json</i> en fonction du navigateur. 
-                                </li>
-                                <li>
-                                    ATTENTION : la syntaxe n'est pas la même pour les extensions firefox et pour chrome (et autres) !
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                    <a class="extension" href="https://github.com/Polosq/choses/releases/latest/download/extension.xpi">Voici un exemple d'extension pour firefox (bugue car pas encore signé)</a>
                 </div>
                 <div style="background: linear-gradient(90deg, lightblue 0%, rgba(255,255,255,0.6334733722590599) 100%); width: 50px;">
 
                 </div>
-            </div>
-            <div style="background: linear-gradient(180deg, lightblue 0%, rgba(255,255,255,0.6334733722590599) 100%); height: 50px;">
+                <div style="background: linear-gradient(180deg, lightblue 0%, rgba(255,255,255,0.6334733722590599) 100%); height: 50px;">
 
+                </div>
             </div>
         </div>
         
