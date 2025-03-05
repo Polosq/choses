@@ -281,17 +281,15 @@ button.extension:hover{
 }
 
 div.tutocache{
-    background-color: lightblue;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-div.divtutocache{
-     color: black;
+    color: black;
     font-size: 12px;
     position: absolute;
     top: 150px; /* Ajuster selon votre besoin */
     left: 400px; /* Ajuster selon votre besoin */
     width: 600px;
-    padding: 10px;
+    background-color: lightblue;
+    border: none;
     border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
