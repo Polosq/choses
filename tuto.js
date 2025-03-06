@@ -2,6 +2,10 @@ let boutoncursor = document.getElementById("tutocursor");
 
 let boutonextension = document.getElementById("tutoextension");
 
+let iframe = document.getElementById("iframe");
+let iframeinput = document.getElementById("iframeinput");
+let iframebutton = document.getElementById("iframebutton");
+
 boutoncursor.addEventListener('click', function(){
     var divtutocursor = document.getElementById("divtutocursor");
     var closecursor = document.getElementById("closecursor");
@@ -46,5 +50,18 @@ boutonextension.addEventListener('click', function(){
         
     } else {
         divtutoextension.style.display = "none";
+        divtutoextension.style.top = "300px";
     } 
+});
+
+iframebutton.addEventListener('click', function(){
+    if (iframeinput.value == ""){
+        iframe.style.display = "none";
+        divtutoextension.style.top = "300px";
+    }
+    else{
+        iframe.src = iframeinput.value;
+        iframe.style.display = "block";
+        divtutoextension.style.top = "400px";
+    }
 });
