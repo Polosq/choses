@@ -50,18 +50,18 @@ boutonextension.addEventListener('click', function(){
         
     } else {
         divtutoextension.style.display = "none";
-        divtutoextension.style.top = "300px";
+        divtutoextension.style.top = "550px";
     } 
 });
 
 iframebutton.addEventListener('click', function(){
     if (iframeinput.value == ""){
         iframe.style.display = "none";
-        divtutoextension.style.top = "300px";
+        divtutoextension.style.top = "550px";
     }
     else{
         iframe.src = iframeinput.value;
         iframe.style.display = "block";
-        divtutoextension.style.top = "400px";
+        divtutoextension.style.top = "900px";
     }
 });
