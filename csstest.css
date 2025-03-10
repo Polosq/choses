@@ -153,7 +153,8 @@ div.presentation{
     border-style: solid;
     border-color:black;
     width: 121px;
-    height: 100px;
+    height: 85px;
+    align-content: center;
     transition: all 0.3s ease;
 }
 
