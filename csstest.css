@@ -133,7 +133,6 @@ img.buttonpause{
 div.zonecurseur {
     display: flex;
     text-align: center;
-    flex-direction: column;
 }
 
 body{
