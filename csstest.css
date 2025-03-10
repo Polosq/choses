@@ -133,6 +133,7 @@ img.buttonpause{
 div.zonecurseur {
     display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
 body{
@@ -151,7 +152,8 @@ div.presentation{
     border-width: 1px;
     border-style: solid;
     border-color:black;
-    width: 170px;
+    width: 121px;
+    height: 100px;
     transition: all 0.3s ease;
 }
 
