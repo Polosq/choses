@@ -57,18 +57,18 @@ boutonextension.addEventListener('click', function(){
 iframebutton.addEventListener('click', function(){
     if (iframeinput.value == ""){
         iframe.style.display = "none";
-        if(iframeEE.style.height == '400px'){
+        if(iframeEE.height == '400px'){
             divtutoextension.style.top = "550px";
-        }else if(iframeEE.style.height == '600px'){
+        }else if(iframeEE.height == '600px'){
             divtutoextension.style.top = "750px";
         }
     }
     else{
         iframe.src = iframeinput.value;
         iframe.style.display = "block";
-        if(iframeEE.style.height == '400px'){
+        if(iframeEE.height == '400px'){
             divtutoextension.style.top = "900px";
-        }else if(iframeEE.style.height == '600px'){
+        }else if(iframeEE.height == '600px'){
             divtutoextension.style.top = "1100px";
         }
     }
