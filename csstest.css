@@ -321,7 +321,7 @@ div.tutocache{
 	width: 200px;
 	height: 190px;
 	background: url('https://www.myinstants.com/media/images/transparent_button_shadow.png') no-repeat;
+    position: absolute;
     top: 50px;
     left: 400px;
-    position:absolute;
 }
