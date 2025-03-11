@@ -1,12 +1,12 @@
-let iframe = document.getElementById('doudouIframe');
+let iframeEE = document.getElementById('doudouIframe');
 let bouton = document.getElementById('rotatebutton');
 
 bouton.addEventListener('click', function() {
-    if(iframe.height='400px'){
-        iframe.height='600px';
-        iframe.width='250px';
+    if(iframeEE.height='400px'){
+        iframeEE.height='600px';
+        iframeEE.width='250px';
     }else{
-        iframe.height='400px';
-        iframe.width='100%';
+        iframeEE.height='400px';
+        iframeEE.width='100%';
     }
 });
