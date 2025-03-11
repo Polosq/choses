@@ -5,8 +5,7 @@ bouton.addEventListener('click', function() {
     if(iframe.height='400px'){
         iframe.height='600px';
         iframe.width='250px';
-    }
-    else{
+    }else{
         iframe.height='400px';
         iframe.width='100%';
     }
