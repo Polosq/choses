@@ -1,7 +1,7 @@
 let iframe = document.getElementById('doudouIframe');
 let bouton = document.getElementById('rotatebutton');
 
-bouton.onclick = function() {
+bouton.addEventListener('click', function() {
     if(iframe.height='400px'){
         iframe.height='600px';
         iframe.width='250px';
@@ -10,4 +10,4 @@ bouton.onclick = function() {
         iframe.height='400px';
         iframe.width='100%';
     }
-}
+});
