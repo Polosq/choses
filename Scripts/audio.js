@@ -4,7 +4,7 @@ let recordedChunks = [];
 let boutonmic = document.getElementById('microbutton');
 let div = document.getElementById('micropresentation');
 
-btn.addEventListener('click', async () => {
+boutonmic.addEventListener('click', async () => {
     if(boutonmic.className == 'boutonplay'){
         boutonmic.style.display="none";
         boutonmic.className = 'boutonstop';
