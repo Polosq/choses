@@ -8,7 +8,6 @@ let dIVVVV = document.getElementById('comptearebour')
 boutonmic.addEventListener('click', async () => {
     if(boutonmic.className == 'boutonplay'){
         boutonmic.style.display="none";
-        boutonmic.className = 'boutonpause';
         
         let countdown = 3;
         let countdownInterval = setInterval(() => {
@@ -18,7 +17,9 @@ boutonmic.addEventListener('click', async () => {
             }else{
                 dIVVVV.innerHTML = "";
                 div.style.backgroundColor = "rgba(0,255,0,0.5)";
+                div.style.alignContent = "center";
                 boutonmic.style.display="block";
+                boutonmic.className = 'boutonpause';
                 boutonmic.innerHTML = "Arrêter l'enregistrement ..."; 
 
                 clearInterval(countdownInterval);
