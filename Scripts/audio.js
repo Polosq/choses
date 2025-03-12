@@ -16,6 +16,7 @@ btn.addEventListener('click', async () => {
                 countdown--;
             }else{
                 btn.style.display="block";
+                btn.innerHTML = "Arrêter l'enregistrement ...";
                 clearInterval(countdownInterval);
             }
         }, 1000);
@@ -41,6 +42,7 @@ btn.addEventListener('click', async () => {
     }else{
         mediaRecorder.stop();
         btn.className = 'boutonplay';
+        btn.innerHTML = "Démarrer l'enregistrement ...";
     }
 
 });
