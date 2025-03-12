@@ -9,9 +9,10 @@ boutonmic.addEventListener('click', async () => {
         boutonmic.style.display="none";
         
         div.style.backgroundColor = "rgba(0,255,0,0.5)";
-        div.style.alignContent = "center";
         boutonmic.style.display="block";
-        boutonmic.className = 'boutonpause';
+        div.style.alignContent = "center";
+        div.style.textAlign = "center";
+        boutonmic.className = 'boutonstop';
         boutonmic.innerHTML = "Arrêter l'enregistrement ..."; 
 
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -28,7 +29,7 @@ boutonmic.addEventListener('click', async () => {
             const blob = new Blob(recordedChunks, { type: 'audio/mp3' });
             const url = URL.createObjectURL(blob);
             document.getElementById('audiomicro').src = url;
-            document.getElementById('microdownload').download = url;
+            document.getElementById('microdownload').href = url;
             recordedChunks = [];
         };
         
