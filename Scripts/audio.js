@@ -16,6 +16,7 @@ boutonmic.addEventListener('click', async () => {
                 countdown--;
             }else{
                 boutonmic.style.display="block";
+                div.innerHTML = "";
                 boutonmic.innerHTML = "Arrêter l'enregistrement ...";
                 clearInterval(countdownInterval);
             }
