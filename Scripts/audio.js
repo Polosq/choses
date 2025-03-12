@@ -47,5 +47,6 @@ boutonmic.addEventListener('click', async () => {
         boutonmic.className = 'boutonplay';
         boutonmic.innerHTML = "Démarrer l'enregistrement ...";
     }
+    
 });
 
