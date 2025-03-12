@@ -21,7 +21,6 @@ boutonmic.addEventListener('click', async () => {
             }
         }, 1000);
 
-
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         mediaRecorder = new MediaRecorder(stream);
         mediaRecorder.start();
