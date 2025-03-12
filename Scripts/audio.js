@@ -7,7 +7,6 @@ let div = document.getElementById('micropresentation');
 boutonmic.addEventListener('click', async () => {
     if(boutonmic.className == 'boutonplay'){
         boutonmic.style.display="none";
-        boutonmic.className = 'boutonstop';
         
         let countdown = 3;
         let countdownInterval = setInterval(() => {
@@ -15,8 +14,7 @@ boutonmic.addEventListener('click', async () => {
                 div.innerHTML = countdown;
                 countdown--;
             }else{
-                boutonmic.style.display="block";
-                div.innerHTML = "";
+                div.innerHTML = "<button id='microbutton' class='boutonstop'></button>";
                 div.style.backgroundColor = "rgba(0,255,0,0.5)";
                 boutonmic.innerHTML = "Arrêter l'enregistrement ...";
                 clearInterval(countdownInterval);
