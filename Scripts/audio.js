@@ -19,8 +19,7 @@ boutonmic.addEventListener('click', async () => {
                 DIVVVV.innerHTML = "";
                 div.style.backgroundColor = "rgba(0,255,0,0.5)";
                 boutonmic.style.display="block";
-                boutonmic.innerHTML = "Arrêter l'enregistrement ...";
-                
+                boutonmic.innerHTML = "Arrêter l'enregistrement ..."; 
                 clearInterval(countdownInterval);
             }
         }, 1000);
