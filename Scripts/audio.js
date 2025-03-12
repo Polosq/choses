@@ -17,6 +17,7 @@ boutonmic.addEventListener('click', async () => {
             }else{
                 boutonmic.style.display="block";
                 div.innerHTML = "";
+                div.style.backgroundColor = "rgba(0,255,0,0.5)";
                 boutonmic.innerHTML = "Arrêter l'enregistrement ...";
                 clearInterval(countdownInterval);
             }
