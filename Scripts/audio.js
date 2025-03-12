@@ -3,7 +3,6 @@ let recordedChunks = [];
 
 let boutonmic = document.getElementById('microbutton');
 let div = document.getElementById('micropresentation');
-let dIVVVV = document.getElementById('comptearebour')
 
 boutonmic.addEventListener('click', async () => {
     if(boutonmic.className == 'boutonplay'){
