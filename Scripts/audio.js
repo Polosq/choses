@@ -3,7 +3,7 @@ let recordedChunks = [];
 
 let boutonmic = document.getElementById('microbutton');
 let div = document.getElementById('micropresentation');
-let DIVVVV = document.getElementById('comptearebour')
+let dIVVVV = document.getElementById('comptearebour')
 
 boutonmic.addEventListener('click', async () => {
     if(boutonmic.className == 'boutonplay'){
@@ -13,10 +13,10 @@ boutonmic.addEventListener('click', async () => {
         let countdown = 3;
         let countdownInterval = setInterval(() => {
             if(countdown >= 0){
-                DIVVVV.innerHTML = countdown;
+                dIVVVV.innerHTML = countdown;
                 countdown--;
             }else{
-                DIVVVV.innerHTML = "";
+                dIVVVV.innerHTML = "";
                 div.style.backgroundColor = "rgba(0,255,0,0.5)";
                 boutonmic.style.display="block";
                 boutonmic.innerHTML = "Arrêter l'enregistrement ..."; 
