@@ -35,18 +35,6 @@ boutonextension.addEventListener('click', function(){
         closeextension.addEventListener('click', function(){
             divtutoextension.style.display = "none";
         });
-
-        document.getElementById('extensionexample').addEventListener('click', function() {
-            var url = "https://github.com/Polosq/choses/releases/latest/download/extension.xpi";
-            var installMessage = "Pour installer cette extension, veuillez cliquer sur 'Continuer l'installation' et suivre les instructions.";
-          
-            // Afficher le message d'installation
-            alert(installMessage);
-          
-            // Ouvrir le lien d'installation dans un nouvel onglet
-            window.open(url, '_blank');
-            }
-        );
         
     } else {
         divtutoextension.style.display = "none";
