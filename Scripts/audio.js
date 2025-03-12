@@ -11,7 +11,7 @@ boutonmic.addEventListener('click', async () => {
         
         let countdown = 3;
         let countdownInterval = setInterval(() => {
-            if(countdown > 0){
+            if(countdown >= 0){
                 div.innerHTML = countdown;
                 countdown--;
             }else{
