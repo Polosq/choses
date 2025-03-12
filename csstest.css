@@ -316,3 +316,20 @@ div.tutocache{
     top: 50px;
     left: 400px;
 }
+
+button.boutonstop{
+    padding:5px;
+    border-radius: 10px;
+    background-color: #bb0000;
+    border: none;
+    color: rgb(0,0,0);
+    text-align: center;
+}
+button.boutonplay{
+    padding:5px;
+    border-radius: 10px;
+    background-color: #00b400;
+    border: none;
+    color: rgb(0,0,0);
+    text-align: center;
+}
