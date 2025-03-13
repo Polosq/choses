@@ -30,6 +30,7 @@ boutonmic.addEventListener('click', async () => {
             const url = URL.createObjectURL(blob);
             document.getElementById('audiomicro').src = url;
             document.getElementById('microdownload').href = url;
+            document.getElementById('microdownload').style.backgroundColor = 'rgb(0,0,255)';
             recordedChunks = [];
         };
         
