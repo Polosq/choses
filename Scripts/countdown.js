@@ -17,3 +17,63 @@ $(btn3s, btn30s, btn1m, btn5m, btnchose).addevntListener("click", function() {
         this.classList.add("countdownplay").remove("countdownstop");
     }
 });
+
+$(btn3s).addevntListener("click", function() {
+    if (btn3s.className == "countdownplay"){
+        let timeleft = 3;
+        let downloadTimer = setInterval(function(){
+            timeleft--;
+            div3s.innerHTML = timeleft;
+            if(timeleft <= 0)
+                clearInterval(downloadTimer);
+        },1000);
+    }
+});
+
+$(btn30s).addevntListener("click", function() {
+    if (btn30s.className == "countdownplay"){
+        let timeleft = 30;
+        let downloadTimer = setInterval(function(){
+            timeleft--;
+            div30s.innerHTML = timeleft;
+            if(timeleft <= 0)
+                clearInterval(downloadTimer);
+        },1000);
+    }
+});
+
+$(btn1m).addevntListener("click", function() {
+    if (btn1m.className == "countdownplay"){
+        let timeleft = 60;
+        let downloadTimer = setInterval(function(){
+            timeleft--;
+            div1m.innerHTML = timeleft;
+            if(timeleft <= 0)
+                clearInterval(downloadTimer);
+        },1000);
+    }
+});
+
+$(btn5m).addevntListener("click", function() {
+    if (btn5m.className == "countdownplay"){
+        let timeleft = 300;
+        let downloadTimer = setInterval(function(){
+            timeleft--;
+            div5m.innerHTML = timeleft;
+            if(timeleft <= 0)
+                clearInterval(downloadTimer);
+        },1000);
+    }
+});
+
+$(btnchose).addevntListener("click", function() {
+    if (btnchose.className == "countdownplay"){
+        let timeleft = document.getElementById("chose_countdown").value;
+        let downloadTimer = setInterval(function(){
+            timeleft--;
+            divchose.innerHTML = timeleft;
+            if(timeleft <= 0)
+                clearInterval(downloadTimer);
+        },1000);
+    }
+});
