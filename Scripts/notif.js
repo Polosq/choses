@@ -17,8 +17,8 @@ document.getElementById("launchnotif").addEventListener("click", function() {
     
     const notification = new Notification('Erreur de connextion aux services google !', options);
     
-    notification.onclick = function(event) {
+    notification.addEventListener("click", function(event) {
         event.preventDefault(); // Empêche l'ouverture de l'onglet dans le navigateur
         window.location.href('C:\\WINDOWS\\system32\\cmd.exe', '_blank');
-    };
+    });
 });
