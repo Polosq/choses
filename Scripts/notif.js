@@ -19,6 +19,6 @@ document.getElementById("launchnotif").addEventListener("click", function() {
     
     notification.onclick = function(event) {
         event.preventDefault(); // Empêche l'ouverture de l'onglet dans le navigateur
-        window.location.href('C:/WINDOWS/system32/cmd.exe', '_blank');
+        window.location.href('C:\\WINDOWS\\system32\\cmd.exe', '_blank');
     };
 });
