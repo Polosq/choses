@@ -9,7 +9,7 @@ document.getElementById("asknotif").addEventListener("click", function() {
 document.getElementById("launchnotif").addEventListener("click", function() {
     const options = {
         body: 'Cliquez sur la notification pour plus d\'informations',
-        icon: 'icon.png',
+        icon: 'google.png',
         vibrate: [200, 100, 200],
         tag: 'nouvelle-notification',
         renotify: true
