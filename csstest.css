@@ -339,3 +339,38 @@ button.boutonstop:hover{
 button.boutonplay:hover{
     background-color: #00ff00;
 }
+
+div.countdowncontainer{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: #ffffff;
+    text-align: center;
+    margin: 3px;
+    width: 300px;
+    height: 225px;
+    flex-grow: 1;
+}
+button.countdownplay{
+    padding:5px;
+    border-radius: 10px;
+    background-color: #00b400;
+    border: none;
+    color: rgb(0,0,0);
+    text-align: center;
+}
+button.countdownplay:hover{
+    background-color: #00ff00;
+}
+button.countdownstop{
+    padding:5px;
+    border-radius: 10px;
+    background-color: #bb0000;
+    border: none;
+    color: rgb(0,0,0);
+    text-align: center;
+}
+button.countdownstop:hover{
+    background-color: #ff0000;
+}
