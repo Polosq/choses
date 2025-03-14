@@ -11,5 +11,9 @@ let btn5m = document.getElementById("start5m");
 let btnchose = document.getElementById("startchose");
 
 $(btn3s, btn30s, btn1m, btn5m, btnchose).addevntListener("click", function() {
-    this.classList.add()
+    if (this.className == "countdownplay"){
+        this.classList.add("countdownstop").remove("countdownplay");
+    }else if(this.className == "countdownstop"){
+        this.classList.add("countdownplay").remove("countdownstop");
+    }
 });
