@@ -18,12 +18,16 @@ btn3s.addEventListener("click", function() {
         btn3s.classList.add("countdownstop");
         btn3s.classList.remove("countdownplay");
         let timeleft = 3;
+        btn3s.disabled = true;
         let downloadTimer = setInterval(function(){
             div3s.innerHTML = "0 : 0"+timeleft;
             timeleft--;
 
             if(timeleft < 0){
                 clearInterval(downloadTimer);
+                div3s.innerHTML = "";
+
+                btn3s.disabled = false;
                 btn3s.classList.add("countdownplay");
                 btn3s.classList.remove("countdownstop");
             }
@@ -35,6 +39,7 @@ btn30s.addEventListener("click", function() {
     if (btn30s.className == "countdownplay"){
         btn30s.classList.add("countdownstop");
         btn30s.classList.remove("countdownplay");
+        btn30s.disabled=true;
         let timeleft = 30;
         let downloadTimer = setInterval(function(){
             if (timeleft< 10)
@@ -46,8 +51,11 @@ btn30s.addEventListener("click", function() {
 
             if(timeleft < 0){
                 clearInterval(downloadTimer);
+                btn30s.disabled=false;
                 btn30s.classList.add("countdownplay");
                 btn30s.classList.remove("countdownstop");
+
+                div30s.innerHTML = "";
             }
         },1000);
     }
@@ -57,6 +65,7 @@ btn1m.addEventListener("click", function() {
     if (btn1m.className == "countdownplay"){
         btn1m.classList.add("countdownstop");
         btn1m.classList.remove("countdownplay");
+        btn1m.disabled=true;
         let timeleft = 60;
         let downloadTimer = setInterval(function(){
             if (timeleft%60 < 10)
@@ -68,8 +77,11 @@ btn1m.addEventListener("click", function() {
             
             if(timeleft < 0){
                 clearInterval(downloadTimer);
+                btn1m.disabled=false;
                 btn1m.classList.add("countdownplay");
                 btn1m.classList.remove("countdownstop");
+
+                div1m.innerHTML = "";
             }
         },1000);
     }
@@ -79,6 +91,7 @@ btn5m.addEventListener("click", function() {
     if (btn5m.className == "countdownplay"){
         btn5m.classList.add("countdownstop");
         btn5m.classList.remove("countdownplay");
+        btn5m.disabled=true;
         let timeleft = 300;
         let downloadTimer = setInterval(function(){
             if (timeleft%60 < 10)
@@ -90,8 +103,11 @@ btn5m.addEventListener("click", function() {
 
             if(timeleft < 0){
                 clearInterval(downloadTimer);
+                btn5m.disabled=false;
                 btn5m.classList.add("countdownplay");
                 btn5m.classList.remove("countdownstop");
+
+                div5m.innerHTML = "";
             }
         },1000);
     }
@@ -101,6 +117,8 @@ btnchose.addEventListener("click", function() {
     if (btnchose.className == "countdownplay"){
         btnchose.classList.add("countdownstop");
         btnchose.classList.remove("countdownplay");
+        btnchose.disabled=true;
+
         let timeleft = document.getElementById("countinput").value*60;
         document.getElementById("countinput").value = NaN;
         let downloadTimer = setInterval(function(){
@@ -113,6 +131,7 @@ btnchose.addEventListener("click", function() {
             
             if(timeleft < 0){
                 clearInterval(downloadTimer);
+                btnchose.disabled=false;
                 divchose.innerHTML = "";
                 btnchose.classList.add("countdownplay");
                 btnchose.classList.remove("countdownstop");
