@@ -30,6 +30,9 @@
             <a class="div" href="#redirectionmicro">Micro</a>
             <br>
             <br>
+            <a class="div" href="#redirectioncount"></a>
+            <br>
+            <br>
             <a class="div" href="#redirectionnotification">Notifs</a>
         </div>
         <div class="body">
@@ -270,8 +273,8 @@
             <br>
             <br>
 
-            <div id="#redirectioncount" style="display: flex;">
-                <div>
+            <div id="redirectioncount" style="display: flex;">
+                <div style="align-content: center;">
                     <div class="countdowncontainer" id="3s_countdown">
 
                     </div>
@@ -279,7 +282,7 @@
                         Démmarer (3s)
                     </button>
                 </div>
-                <div>
+                <div style="align-content: center;">
                     <div class="countdowncontainer" id="30s_countdown">
 
                     </div>
@@ -287,14 +290,14 @@
                         Démmarer (30s)
                     </button>
                 </div>
-                <div>
+                <div style="align-content: center;">
                     <div class="countdowncontainer" id="1m_countdown">
 
                     </div>
                     <button class="countdownplay" id="start1m">
                         Démmarer (1m)
                     </button>
-                </div>
+                </div style="align-content: center;">
                 <div>
                     <div class="countdowncontainer" id="5m_countdown">
 
@@ -303,12 +306,12 @@
                         Démmarer (5m)
                     </button>
                 </div>
-                <div>
+                <div style="align-content: center;">
                     <div class="countdowncontainer" id="chose_countdown">
 
                     </div>
                     <button class="countdownplay" id="startchose">
-                        Démmarer (mettre un input.. en cours de développement)
+                        Démmarer (<input type="number" id="countinput" style="background-color: transparent; border: none;">m)
                     </button>
                 </div>
             </div>
