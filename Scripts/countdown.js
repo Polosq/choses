@@ -78,6 +78,7 @@ btnchose.addevntListener("click", function() {
         btnchose.classList.add("countdownpause");
         btnchose.classList.remove("countdownplay");
         let timeleft = document.getElementById("countinput").value*60;
+        document.getElemnentById("countinput").value = NaN;
         let downloadTimer = setInterval(function(){
             timeleft--;
             divchose.innerHTML = ""+timeleft+"";
