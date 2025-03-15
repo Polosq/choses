@@ -43,7 +43,7 @@ btn30s.addEventListener("click", function() {
         let timeleft = 30;
         let downloadTimer = setInterval(function(){
             if (timeleft< 10)
-                divchose.innerHTML = "0 : 0" + timeleft;
+                div30s.innerHTML = "0 : 0" + timeleft;
             else{
                 div30s.innerHTML = "0 : "+timeleft;
             }
@@ -69,7 +69,7 @@ btn1m.addEventListener("click", function() {
         let timeleft = 60;
         let downloadTimer = setInterval(function(){
             if (timeleft%60 < 10)
-                divchose.innerHTML = Math.floor(timeleft/60) + " : 0" + timeleft%60;
+                div1m.innerHTML = Math.floor(timeleft/60) + " : 0" + timeleft%60;
             else{
                 div1m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             }
@@ -95,7 +95,7 @@ btn5m.addEventListener("click", function() {
         let timeleft = 300;
         let downloadTimer = setInterval(function(){
             if (timeleft%60 < 10)
-                divchose.innerHTML = Math.floor(timeleft/60) + " : 0" + timeleft%60;
+                div5m.innerHTML = Math.floor(timeleft/60) + " : 0" + timeleft%60;
             else{
                 div5m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             }
@@ -106,7 +106,7 @@ btn5m.addEventListener("click", function() {
                 btn5m.disabled=false;
                 btn5m.classList.add("countdownplay");
                 btn5m.classList.remove("countdownstop");
-
+                
                 div5m.innerHTML = "";
             }
         },1000);
