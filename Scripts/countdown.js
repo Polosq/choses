@@ -19,7 +19,7 @@ btn3s.addEventListener("click", function() {
         btn3s.classList.remove("countdownplay");
         let timeleft = 3;
         let downloadTimer = setInterval(function(){
-            div3s.innerHTML = ""+timeleft+"";
+            div3s.innerHTML = "0 : "+timeleft;
             timeleft--;
 
             if(timeleft <= 0){
@@ -37,7 +37,7 @@ btn30s.addEventListener("click", function() {
         btn30s.classList.remove("countdownplay");
         let timeleft = 30;
         let downloadTimer = setInterval(function(){
-            div30s.innerHTML = ""+timeleft+"";
+            div30s.innerHTML = "0 : "+timeleft;
             timeleft--;
 
             if(timeleft <= 0){
@@ -75,7 +75,7 @@ btn5m.addEventListener("click", function() {
         let downloadTimer = setInterval(function(){
             div5m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             timeleft--;
-            
+
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 btn5m.classList.add("countdownplay");
