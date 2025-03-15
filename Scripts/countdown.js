@@ -132,9 +132,10 @@ btnchose.addEventListener("click", function() {
             if(timeleft < 0){
                 clearInterval(downloadTimer);
                 btnchose.disabled=false;
-                divchose.innerHTML = "";
                 btnchose.classList.add("countdownplay");
                 btnchose.classList.remove("countdownstop");
+                
+                divchose.innerHTML = "";
             }
         },1000);
     }
