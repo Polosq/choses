@@ -23,6 +23,8 @@ btn3s.addEventListener("click", function() {
             div3s.innerHTML = ""+timeleft+"";
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
+                btn3s.classList.add("countdownplay");
+                btn3s.classList.remove("countdownpause");
             }
         },1000);
     }
@@ -38,6 +40,8 @@ btn30s.addEventListener("click", function() {
             div30s.innerHTML = ""+timeleft+"";
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
+                btn30s.classList.add("countdownplay");
+                btn30s.classList.remove("countdownpause");
             }
         },1000);
     }
@@ -53,6 +57,8 @@ btn1m.addEventListener("click", function() {
             div1m.innerHTML = "0 : "+timeleft+"";
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
+                btn1m.classList.add("countdownplay");
+                btn1m.classList.remove("countdownpause");
             }
         },1000);
     }
@@ -68,6 +74,8 @@ btn5m.addEventListener("click", function() {
             div5m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
+                btn5m.classList.add("countdownplay");
+                btn5m.classList.remove("countdownpause");
             }
         },1000);
     }
@@ -85,6 +93,8 @@ btnchose.addEventListener("click", function() {
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 divchose.innerHTML = "";
+                btnchose.classList.add("countdownplay");
+                btnchose.classList.remove("countdownpause");
             }
         },1000);
     }
