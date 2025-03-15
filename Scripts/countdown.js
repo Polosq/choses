@@ -50,7 +50,7 @@ btn1m.addEventListener("click", function() {
         let timeleft = 60;
         let downloadTimer = setInterval(function(){
             timeleft--;
-            div1m.innerHTML = ""+timeleft+"";
+            div1m.innerHTML = "0 : "+timeleft+"";
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
             }
@@ -65,7 +65,7 @@ btn5m.addEventListener("click", function() {
         let timeleft = 300;
         let downloadTimer = setInterval(function(){
             timeleft--;
-            div5m.innerHTML = ""+timeleft+"";
+            div5m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
             }
@@ -81,7 +81,7 @@ btnchose.addEventListener("click", function() {
         document.getElemnentById("countinput").value = NaN;
         let downloadTimer = setInterval(function(){
             timeleft--;
-            divchose.innerHTML = ""+timeleft+"";
+            divchose.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 divchose.innerHTML = "";
