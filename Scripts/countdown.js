@@ -22,7 +22,7 @@ btn3s.addEventListener("click", function() {
             div3s.innerHTML = "0 : 0"+timeleft;
             timeleft--;
 
-            if(timeleft <= 0){
+            if(timeleft < 0){
                 clearInterval(downloadTimer);
                 btn3s.classList.add("countdownplay");
                 btn3s.classList.remove("countdownstop");
@@ -44,7 +44,7 @@ btn30s.addEventListener("click", function() {
             }
             timeleft--;
 
-            if(timeleft <= 0){
+            if(timeleft < 0){
                 clearInterval(downloadTimer);
                 btn30s.classList.add("countdownplay");
                 btn30s.classList.remove("countdownstop");
@@ -66,7 +66,7 @@ btn1m.addEventListener("click", function() {
             }
             timeleft--;
             
-            if(timeleft <= 0){
+            if(timeleft < 0){
                 clearInterval(downloadTimer);
                 btn1m.classList.add("countdownplay");
                 btn1m.classList.remove("countdownstop");
@@ -88,7 +88,7 @@ btn5m.addEventListener("click", function() {
             }
             timeleft--;
 
-            if(timeleft <= 0){
+            if(timeleft < 0){
                 clearInterval(downloadTimer);
                 btn5m.classList.add("countdownplay");
                 btn5m.classList.remove("countdownstop");
@@ -111,7 +111,7 @@ btnchose.addEventListener("click", function() {
             }
             timeleft--;
             
-            if(timeleft <= 0){
+            if(timeleft < 0){
                 clearInterval(downloadTimer);
                 divchose.innerHTML = "";
                 btnchose.classList.add("countdownplay");
