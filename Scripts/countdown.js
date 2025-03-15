@@ -13,7 +13,7 @@ let btn5m = document.getElementById("start5m");
 let btnchose = document.getElementById("startchose");
 
 
-btn3s.addevntListener("click", function() {
+btn3s.addEventListener("click", function() {
     if (btn3s.className == "countdownplay"){
         btn3s.classList.add("countdownpause");
         btn3s.classList.remove("countdownplay");
@@ -28,7 +28,7 @@ btn3s.addevntListener("click", function() {
     }
 });
 
-btn30s.addevntListener("click", function() {
+btn30s.addEventListener("click", function() {
     if (btn30s.className == "countdownplay"){
         btn30s.classList.add("countdownpause");
         btn30s.classList.remove("countdownplay");
@@ -43,7 +43,7 @@ btn30s.addevntListener("click", function() {
     }
 });
 
-btn1m.addevntListener("click", function() {
+btn1m.addEventListener("click", function() {
     if (btn1m.className == "countdownplay"){
         btn1m.classList.add("countdownpause");
         btn1m.classList.remove("countdownplay");
@@ -58,7 +58,7 @@ btn1m.addevntListener("click", function() {
     }
 });
 
-btn5m.addevntListener("click", function() {
+btn5m.addEventListener("click", function() {
     if (btn5m.className == "countdownplay"){
         btn5m.classList.add("countdownpause");
         btn5m.classList.remove("countdownplay");
@@ -73,7 +73,7 @@ btn5m.addevntListener("click", function() {
     }
 });
 
-btnchose.addevntListener("click", function() {
+btnchose.addEventListener("click", function() {
     if (btnchose.className == "countdownplay"){
         btnchose.classList.add("countdownpause");
         btnchose.classList.remove("countdownplay");
