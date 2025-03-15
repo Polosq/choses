@@ -19,8 +19,9 @@ btn3s.addEventListener("click", function() {
         btn3s.classList.remove("countdownplay");
         let timeleft = 3;
         let downloadTimer = setInterval(function(){
-            timeleft--;
             div3s.innerHTML = ""+timeleft+"";
+            timeleft--;
+
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 btn3s.classList.add("countdownplay");
@@ -36,8 +37,9 @@ btn30s.addEventListener("click", function() {
         btn30s.classList.remove("countdownplay");
         let timeleft = 30;
         let downloadTimer = setInterval(function(){
-            timeleft--;
             div30s.innerHTML = ""+timeleft+"";
+            timeleft--;
+
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 btn30s.classList.add("countdownplay");
@@ -53,8 +55,9 @@ btn1m.addEventListener("click", function() {
         btn1m.classList.remove("countdownplay");
         let timeleft = 60;
         let downloadTimer = setInterval(function(){
+            div1m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
             timeleft--;
-            div1m.innerHTML = "0 : "+timeleft+"";
+            
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 btn1m.classList.add("countdownplay");
@@ -70,8 +73,9 @@ btn5m.addEventListener("click", function() {
         btn5m.classList.remove("countdownplay");
         let timeleft = 300;
         let downloadTimer = setInterval(function(){
-            timeleft--;
             div5m.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
+            timeleft--;
+            
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 btn5m.classList.add("countdownplay");
@@ -88,8 +92,9 @@ btnchose.addEventListener("click", function() {
         let timeleft = document.getElementById("countinput").value*60;
         document.getElemnentById("countinput").value = NaN;
         let downloadTimer = setInterval(function(){
+            divchose.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60; 
             timeleft--;
-            divchose.innerHTML = Math.floor(timeleft/60) + " : " + timeleft%60;
+            
             if(timeleft <= 0){
                 clearInterval(downloadTimer);
                 divchose.innerHTML = "";
