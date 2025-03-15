@@ -46,18 +46,18 @@ iframebutton.addEventListener('click', function(){
     if (iframeinput.value == ""){
         iframe.style.display = "none";
         if(iframeEE.height == '400px'){
-            divtutoextension.style.top = "550px";
-        }else if(iframeEE.height == '600px'){
-            divtutoextension.style.top = "750px";
+            divtutoextension.style.top = "1550px";
+        }else if(iframeEE.height == '1600px'){
+            divtutoextension.style.top = "1750px";
         }
     }
     else{
         iframe.src = iframeinput.value;
         iframe.style.display = "block";
-        if(iframeEE.height == '400px'){
-            divtutoextension.style.top = "900px";
-        }else if(iframeEE.height == '600px'){
-            divtutoextension.style.top = "1100px";
+        if(iframeEE.height == '1400px'){
+            divtutoextension.style.top = "1900px";
+        }else if(iframeEE.height == '1600px'){
+            divtutoextension.style.top = "2100px";
         }
     }
 });
