@@ -23,7 +23,7 @@ btn3s.addEventListener("click", function() {
             div3s.innerHTML = "0 : 0"+timeleft;
             timeleft--;
 
-            if(timeleft < 0){
+            if(timeleft < -1){
                 clearInterval(downloadTimer);
                 div3s.innerHTML = "";
 
@@ -49,7 +49,7 @@ btn30s.addEventListener("click", function() {
             }
             timeleft--;
 
-            if(timeleft < 0){
+            if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btn30s.disabled=false;
                 btn30s.classList.add("countdownplay");
@@ -75,7 +75,7 @@ btn1m.addEventListener("click", function() {
             }
             timeleft--;
             
-            if(timeleft < 0){
+            if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btn1m.disabled=false;
                 btn1m.classList.add("countdownplay");
@@ -101,7 +101,7 @@ btn5m.addEventListener("click", function() {
             }
             timeleft--;
 
-            if(timeleft < 0){
+            if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btn5m.disabled=false;
                 btn5m.classList.add("countdownplay");
@@ -129,7 +129,7 @@ btnchose.addEventListener("click", function() {
             }
             timeleft--;
             
-            if(timeleft < 0){
+            if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btnchose.disabled=false;
                 btnchose.classList.add("countdownplay");
