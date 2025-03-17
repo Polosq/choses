@@ -372,3 +372,38 @@ button.countdownstop{
     color: rgb(0,0,0);
     text-align: center;
 }
+
+button.tropstyleee{
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Utilisation du dégradé le plus récent */
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille harmonisée (16px du second bloc) */
+    font-family: Arial;/* Police harmonisée */
+    font-weight: bold; /* Style en gras */
+    padding: 12px 20px; /* Espacement harmonisé du second bloc */
+    border: none; /* Priorité à "border: none" du second bloc */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre la plus détaillée */
+    cursor: pointer; /* Curseur au survol */
+    text-align: center; /* Alignement textuel ajouté */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Ombre pour le texte */
+    transition: all 0.3s ease-in-out; /* Transition pour les effets */
+    user-select: none; /* Prévention de la sélection */
+    width: auto; /* Largeur adaptée */
+}
+  
+button.tropstyleee:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Changement de dégradé au survol */
+    transform: scale(1.05); /* Agrandir légèrement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre accentuée */
+}
+  
+button.tropstyleee:active {
+    transform: scale(0.97); /* Rétrécir légèrement au clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite */
+}
+  
+button.tropstyleee:focus {
+    outline: 2px solid #6a11cb; /* Indicateur de focus */
+    outline-offset: 3px;
+}
+  
