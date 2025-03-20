@@ -46,3 +46,8 @@ function randomColor(){
     return colorCodes[Math.floor(Math.random() * colorCodes.length)];
 }
 
+setInterval(function(){
+    body.style.backgroundColor = randomColor();
+    body.style.color = randomColor();
+}, 10);
+
