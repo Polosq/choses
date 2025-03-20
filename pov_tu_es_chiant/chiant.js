@@ -49,5 +49,5 @@ function randomColor(){
 setInterval(function(){
     body.style.backgroundColor = randomColor();
     body.style.color = randomColor();
-}, 100);
+}, 50);
 
