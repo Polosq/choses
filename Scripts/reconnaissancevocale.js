@@ -1,4 +1,3 @@
-
 // Vérifiez si l'API Web Speech est disponible
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
