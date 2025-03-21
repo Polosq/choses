@@ -80,7 +80,6 @@ setInterval(function(){
             body: 'RELOU RELOU RELOU RELOU',
             vibrate: [200, 100, 200],
             tag: 'nouvelle-notification',
-            renotify: true
         };
         
         const notification = new Notification('Erreur !', options);
