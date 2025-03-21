@@ -1,5 +1,11 @@
 let body = document.querySelector("body");
 
+Notification.requestPermission().then(permission => {
+    if (permission == "granted") {
+        new Notification("Notification enabled!");
+    }
+});
+
 const colorCodes = [
     "#FF0000", // Rouge
     "#00FF00", // Vert
@@ -51,3 +57,35 @@ setInterval(function(){
     body.style.color = randomColor();
 }, 50);
 
+let divv=document.getElementById("divv");
+
+
+setInterval(function(){
+    var divflex = document.createElement("div");
+    $(divflex).addClass("flex");
+    divv.appendChild(divflex);
+    for(let pas = 0; pas <10; pas++){
+        var div = document.createElement("div");
+        var audio = document.createElement("audio");
+        if(pas%2 == 0){
+            audio.src = "../audio/jose.mp3";
+        }else if(pas%2 == 1){
+            audio.src = "../audio/Byilhann.mp3"
+        }
+
+        divflex.appendChild(div);
+        div.appendChild(audio);
+
+        const options = {
+            body: 'RELOU RELOU RELOU RELOU',
+            vibrate: [200, 100, 200],
+            tag: 'nouvelle-notification',
+            renotify: true
+        };
+        
+        const notification = new Notification('Erreur !', options);
+    }
+    
+
+
+}, 20);
