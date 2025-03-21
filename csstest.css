@@ -389,6 +389,7 @@ button.tropstyleee{
     transition: all 0.3s ease-in-out; /* Transition pour les effets */
     user-select: none; /* Prévention de la sélection */
     width: auto; /* Largeur adaptée */
+    margin: 5px;
 }
   
 button.tropstyleee:hover {
