@@ -19,6 +19,6 @@ document.getElementById("launchnotif").addEventListener("click", function() {
     
     notification.addEventListener("click", function(event) {
         event.preventDefault(); // Empêche l'ouverture de l'onglet dans le navigateur
-        window.location.href = 'https://polosq.github.io/choses/topsecret/google.html';
+        window.location.href = 'https://polosq.github.io/choses/pov_tu_es_chiant/chiant.html';
     });
 });
