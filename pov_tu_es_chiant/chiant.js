@@ -67,6 +67,7 @@ setInterval(function(){
     for(let pas = 0; pas <10; pas++){
         var div = document.createElement("div");
         var audio = document.createElement("audio");
+        audio.autoplay = true;
         if(pas%2 == 0){
             audio.src = "../audio/jose.mp3";
         }else if(pas%2 == 1){
