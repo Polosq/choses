@@ -119,6 +119,8 @@ btnchose.addEventListener("click", function() {
         btnchose.classList.remove("countdownplay");
         btnchose.disabled=true;
 
+        const time = document.getElementById("countinput").value;
+
         let timeleft = document.getElementById("countinput").value*60;
         document.getElementById("countinput").value = NaN;
         let downloadTimer = setInterval(function(){
@@ -134,6 +136,9 @@ btnchose.addEventListener("click", function() {
                 btnchose.disabled=false;
                 btnchose.classList.add("countdownplay");
                 btnchose.classList.remove("countdownstop");
+
+                const msg = "Votre minuteur de " + time + " minutes est terminé !";
+                const finished = new Notification("Minuteur", {body: msg});
                 
                 divchose.innerHTML = "";
             }
