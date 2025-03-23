@@ -38,7 +38,6 @@ boutonextension.addEventListener('click', function(){
         
     } else {
         divtutoextension.style.display = "none";
-        divtutoextension.style.top = "550px";
     } 
 });
 
