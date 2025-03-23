@@ -292,7 +292,7 @@ div.tutocache{
     border: none;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 12px 24px rgba(176, 216, 230, 0.5), 0 3px 9px rgba(176, 216, 230, 0.1); /* Ombre la plus détaillée */
+    box-shadow: 10px 10px 10px rgba(176, 216, 230, 0.5), 0px 1px 300px rgba(176, 216, 230, 0.1);
 }
 .large-button {
 	width: 200px;
