@@ -47,16 +47,16 @@ iframebutton.addEventListener('click', function(){
         iframe.style.display = "none";
         if(iframeEE.height == '400px'){
             divtutoextension.style.top = "1550px";
-        }else if(iframeEE.height == '1600px'){
+        }else if(iframeEE.height == '600px'){
             divtutoextension.style.top = "1750px";
         }
     }
     else{
         iframe.src = iframeinput.value;
         iframe.style.display = "block";
-        if(iframeEE.height == '1400px'){
+        if(iframeEE.height == '400px'){
             divtutoextension.style.top = "1900px";
-        }else if(iframeEE.height == '1600px'){
+        }else if(iframeEE.height == '600px'){
             divtutoextension.style.top = "2100px";
         }
     }
