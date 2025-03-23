@@ -288,11 +288,11 @@ div.tutocache{
     font-size: 12px;
     position: absolute;
     width: 600px;
-    background-color: lightblue;
+    background-color: rgb(173,216,230);
     border: none;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(176, 216, 230, 0.5), 0 1px 3px rgba(176, 216, 230, 0.1); /* Ombre la plus détaillée */
 }
 .large-button {
 	width: 200px;
