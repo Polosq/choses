@@ -144,10 +144,14 @@ function codesecret(e){
         code.push(this.id);
         console.error(code);
         console.info(this.id);
+        if(code.length==1){
+            if (code[-1] == "divNA"){
+                alert("CAMARCHEEEE");
+            }
+        }  
     } else if(code.length>= 15){
         code.push(this.id);
         if (code[-1] === "divV"){
-            console.error("TEST REALISE EST C BON?")
             if(code[-2] === "divwait"){
                 if(code[-3] === "divcrosshair"){
                     if(code[-4] === "divdefault"){
