@@ -159,7 +159,7 @@ function codesecret(e){
         code.push(this.id);
     } else if(code.length>= 15){
         code.push(this.id);
-        if (code[-1] == "divV" && code[-2] == "divwait" && code[-3] == "divcrosshair" && code[-4] == "divdefault" && code[-5] == "divcrosshair" && code[-6] == "divpointer" && code[-7] == "divhelp" && code[-8] == "divdefault" && code[-9] == "divcrosshair" && code[-10] == "divpointer" && code[-11] == "divnesw" && code[-12] == "divNA" && code[-13] == "divtext" && code[-14] == "divmove" && code[-15] == "divNA" && divdefault.className=="presentation rgbdefault"){
+        if (code[-1] == "divV" && code[-2] == "divwait" && code[-3] == "divcrosshair" && code[-4] == "divdefault" && code[-5] == "divcrosshair" && code[-6] == "divpointer" && code[-7] == "divhelp" && code[-8] == "divdefault" && code[-9] == "divH" && code[-10] == "divpointer" && code[-11] == "divnesw" && code[-12] == "divNA" && code[-13] == "divtext" && code[-14] == "divmove" && code[-15] == "divNA" && divdefault.className=="presentation rgbdefault"){
             alert("Bravo, vous avez trouvé le code secret !");
         }
     }
