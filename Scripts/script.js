@@ -144,12 +144,8 @@ function codesecret(e){
         code.push(this.id);
         console.error(code);
         console.info(this.id);
-        if(code.length==1){
-            if (code[-1] == "divNA"){
-                alert("CAMARCHEEEE");
-            }
-        }  
-    } else if(code.length>= 15){
+    }  
+    else if(code.length>= 15){
         code.push(this.id);
         if (code[code.length-1] === "divV"){
             if(code[code.length-2] === "divwait"){
