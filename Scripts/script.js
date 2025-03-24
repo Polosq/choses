@@ -146,7 +146,6 @@ function codesecret(e){
         console.info(this.id);
     }  
     else if(code.length>= 15){
-        code.push(this.id);
         if (code[code.length-1] === "divV"){
             if(code[code.length-2] === "divwait"){
                 if(code[code.length-3] === "divcrosshair"){
@@ -154,6 +153,7 @@ function codesecret(e){
                         if(code[code.length-5] === "divcrosshair"){
                             if(code[code.length-6] === "divpointer"){
                                 if(code[code.length-7] === "divhelp"){
+                                    console.error("CAMARCHEPRESQUE")
                                     if(code[code.length-8] === "divdefault"){
                                         if(code[code.length-9] === "divH"){
                                             if(code[code.length10] === "divpointer"){
