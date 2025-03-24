@@ -150,7 +150,7 @@ function codesecret(e){
                             if(code[code.length-7] == "divhelp"){
                                 if(code[code.length-8] == "divdefault"){
                                     if(code[code.length-9] == "divH"){
-                                        if(code[code.length10] == "divpointer"){
+                                        if(code[code.length-10] == "divpointer"){
                                             if(code[code.length-11] == "divnesw"){
                                                 if(code[code.length-12] == "divNA"){
                                                     if(code[code.length-13] == "divtext"){
