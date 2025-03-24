@@ -148,7 +148,6 @@ function codesecret(e){
                     if(code[code.length-5] === "divcrosshair"){
                         if(code[code.length-6] === "divpointer"){
                             if(code[code.length-7] === "divhelp"){
-                                console.error("CAMARCHEPRESQUE")
                                 if(code[code.length-8] === "divdefault"){
                                     if(code[code.length-9] === "divH"){
                                         if(code[code.length10] === "divpointer"){
@@ -156,6 +155,7 @@ function codesecret(e){
                                                 if(code[code.length-12] === "divNA"){
                                                     if(code[code.length-13] === "divtext"){
                                                         if(code[code.length-14] === "divmove"){
+                                                            alert("JLSQKEDJFLQKSJDf");
                                                             if(code[code.length-15] === "divNA"){
                                                                 console.log("CAMARCHEPRESQUE")
                                                                 if(divdefault.className=="presentation rgbdefault"){
