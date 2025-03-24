@@ -155,11 +155,9 @@ function codesecret(e){
                                                 if(code[code.length-12] === "divNA"){
                                                     if(code[code.length-13] === "divtext"){
                                                         if(code[code.length-14] === "divmove"){
-                                                            console.error("JLSQKEDJFLQKSJDf");
                                                             if(code[code.length-15] === "divNA"){
-                                                                console.log("CAMARCHEPRESQUE")
                                                                 if(divdefault.className == "presentation rgbdefault"){
-                                                                    console.error("Bravo, vous avez trouvé le code secret !");
+                                                                    alert("Bravo, vous avez trouvé le code secret !");
                                                                 }
                                                             }
                                                         }
