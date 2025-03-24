@@ -140,32 +140,26 @@ lien3.addEventListener("click", changercurseur);
 let code = [];
 
 function codesecret(e){
-    if(code.length<15){
-        code.push(this.id);
-        console.error(code);
-        console.info(this.id);
-    }  
-    else if(code.length>= 15){
-        if (code[code.length-1] === "divV"){
-            if(code[code.length-2] === "divwait"){
-                if(code[code.length-3] === "divcrosshair"){
-                    if(code[code.length-4] === "divdefault"){
-                        if(code[code.length-5] === "divcrosshair"){
-                            if(code[code.length-6] === "divpointer"){
-                                if(code[code.length-7] === "divhelp"){
-                                    console.error("CAMARCHEPRESQUE")
-                                    if(code[code.length-8] === "divdefault"){
-                                        if(code[code.length-9] === "divH"){
-                                            if(code[code.length10] === "divpointer"){
-                                                if(code[code.length-11] === "divnesw"){
-                                                    if(code[code.length-12] === "divNA"){
-                                                        if(code[code.length-13] === "divtext"){
-                                                            if(code[code.length-14] === "divmove"){
-                                                                if(code[code.length-15] === "divNA"){
-                                                                    console.log("CAMARCHEPRESQUE")
-                                                                    if(divdefault.className=="presentation rgbdefault"){
-                                                                        alert("Bravo, vous avez trouvé le code secret !");
-                                                                    }
+    code.push(this.id);
+    if (code[code.length-1] === "divV"){
+        if(code[code.length-2] === "divwait"){
+            if(code[code.length-3] === "divcrosshair"){
+                if(code[code.length-4] === "divdefault"){
+                    if(code[code.length-5] === "divcrosshair"){
+                        if(code[code.length-6] === "divpointer"){
+                            if(code[code.length-7] === "divhelp"){
+                                console.error("CAMARCHEPRESQUE")
+                                if(code[code.length-8] === "divdefault"){
+                                    if(code[code.length-9] === "divH"){
+                                        if(code[code.length10] === "divpointer"){
+                                            if(code[code.length-11] === "divnesw"){
+                                                if(code[code.length-12] === "divNA"){
+                                                    if(code[code.length-13] === "divtext"){
+                                                        if(code[code.length-14] === "divmove"){
+                                                            if(code[code.length-15] === "divNA"){
+                                                                console.log("CAMARCHEPRESQUE")
+                                                                if(divdefault.className=="presentation rgbdefault"){
+                                                                    alert("Bravo, vous avez trouvé le code secret !");
                                                                 }
                                                             }
                                                         }
