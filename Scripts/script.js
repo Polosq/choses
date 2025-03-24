@@ -136,4 +136,31 @@ img.addEventListener("click", button_toogle);
 lien1.addEventListener("click", changercurseur);
 lien2.addEventListener("click", changercurseur);
 lien3.addEventListener("click", changercurseur);
- 
+
+
+divdefault.addEventListener("click", codesecret);
+divhelp.addEventListener("click", codesecret);
+divpointer.addEventListener("click", codesecret);
+divprogress.addEventListener("click", codesecret);
+divwait.addEventListener("click", codesecret);
+divcrosshair.addEventListener("click", codesecret);
+divtext.addEventListener("click", codesecret);
+divmove.addEventListener("click", codesecret);
+divNA.addEventListener("click", codesecret);
+divV.addEventListener("click", codesecret);
+divH.addEventListener("click", codesecret);
+divnwse.addEventListener("click", codesecret);
+divnesw.addEventListener("click", codesecret);
+
+let code = [];
+
+function codesecret(e){
+    if(code.length<15){
+        code.push(this.id);
+    } else if(code.length>= 15){
+        code.push(this.id);
+        if (code[-1] == "divV" && code[-2] == "divwait" && code[-3] == "divcrosshair" && code[-4] == "divdefault" && code[-5] == "divcrosshair" && code[-6] == "divpointer" && code[-7] == "divhelp" && code[-8] == "divdefault" && code[-9] == "divcrosshair" && code[-10] == "divpointer" && code[-11] == "divnesw" && code[-12] == "divNA" && code[-13] == "divtext" && code[-14] == "divmove" && code[-15] == "divNA" && divdefault.className=="presentation rgbdefault"){
+            alert("Bravo, vous avez trouvé le code secret !");
+        }
+    }
+}
