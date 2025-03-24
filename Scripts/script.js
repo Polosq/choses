@@ -144,7 +144,7 @@ function codesecret(e){
         code.push(this.id);
         console.error(code);
         console.info(this.id);
-        if(code.length==1){
+        if(code.length===1){
             if (code[-1] === "divNA"){
                 alert("CAMARCHEEEE");
             }
