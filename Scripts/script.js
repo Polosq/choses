@@ -151,21 +151,21 @@ function codesecret(e){
         }  
     } else if(code.length>= 15){
         code.push(this.id);
-        if (code[-1] == "divV"){
-            if(code[-2] == "divwait"){
-                if(code[-3] == "divcrosshair"){
-                    if(code[-4] == "divdefault"){
-                        if(code[-5] == "divcrosshair"){
-                            if(code[-6] == "divpointer"){
-                                if(code[-7] == "divhelp"){
-                                    if(code[-8] == "divdefault"){
-                                        if(code[-9] == "divH"){
-                                            if(code[-10] == "divpointer"){
-                                                if(code[-11] == "divnesw"){
-                                                    if(code[-12] == "divNA"){
-                                                        if(code[-13] == "divtext"){
-                                                            if(code[-14] == "divmove"){
-                                                                if(code[-15] == "divNA"){
+        if (code[code.length-1] === "divV"){
+            if(code[code.length-2] === "divwait"){
+                if(code[code.length-3] === "divcrosshair"){
+                    if(code[code.length-4] === "divdefault"){
+                        if(code[code.length-5] === "divcrosshair"){
+                            if(code[code.length-6] === "divpointer"){
+                                if(code[code.length-7] === "divhelp"){
+                                    if(code[code.length-8] === "divdefault"){
+                                        if(code[code.length-9] === "divH"){
+                                            if(code[code.length10] === "divpointer"){
+                                                if(code[code.length-11] === "divnesw"){
+                                                    if(code[code.length-12] === "divNA"){
+                                                        if(code[code.length-13] === "divtext"){
+                                                            if(code[code.length-14] === "divmove"){
+                                                                if(code[code.length-15] === "divNA"){
                                                                     console.log("CAMARCHEPRESQUE")
                                                                     if(divdefault.className=="presentation rgbdefault"){
                                                                         alert("Bravo, vous avez trouvé le code secret !");
