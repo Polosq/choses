@@ -8,12 +8,12 @@ let dick = document.getElementById("dickgenerator")
 popup("off");
 
 function popup(onoff){
-    if(onoff == "on"){
+    if(onoff == "off"){
         msgboxcorpus.style.height = "0px";
         setTimeout(function(){
             secretpopup.style.display = "none";
         },1000);
-    }else if(onoff == "off"){
+    }else if(onoff == "on"){
         secretpopup.style.display = "flex";
         msgboxcorpus.style.height = "400px";
     }
