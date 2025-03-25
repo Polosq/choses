@@ -64,11 +64,11 @@ function draw(name){
     if(name == "dick"){
         const largeur = document.getElementById('cotedick').value;
         const hauteur = document.getElementById('hauteurdick').value;
+        
         let dessin_a_push = BITE(largeur, hauteur);
-
-
-
     }
+
+    msgboxcorpus.innerHTML = dessin_a_push;
 }
 
 dick.addEventListener("click", function(){
