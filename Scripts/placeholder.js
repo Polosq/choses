@@ -54,7 +54,7 @@ function newtext(e) {
                 count++;
                 actualier();
                 
-                $("#imgdelete").addEventListener("click", deleteimg);
+                document.getElementById("imgdelete").addEventListener("click", deleteimg);
                                 
             }
         }
@@ -67,7 +67,7 @@ function deleteimg(e){
     this.parentNode.parentNode.removeChild(this.parentNode);
     count = count-1;
     actualier();
-    $("#imgdelete").addEventListener("click", deleteimg);
+    document.getElementById("imgdelete").addEventListener("click", deleteimg);
 }
 
 function actualier(e){
