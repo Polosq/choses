@@ -157,7 +157,7 @@ function codesecret(e){
                                                         if(code[code.length-14] === "divmove"){
                                                             if(code[code.length-15] === "divNA"){
                                                                 if(divdefault.className == "presentation rgbdefault"){
-                                                                    alert("Bravo, vous avez trouvé le code secret !");
+                                                                    window.open("SΣ⊂ℝ€t/SΣ⊂ℝ€t_∂χρ∈⊥θχ.html", "_blank");
                                                                 }
                                                             }
                                                         }
