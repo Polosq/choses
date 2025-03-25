@@ -68,7 +68,7 @@ function draw(name){
         var dessin_a_push = BITE(largeur, hauteur);
     }
 
-    msgboxcorpus.innerHTML = dessin_a_push;
+    msgboxcorpus.innerHTML = `<pre>${dessin_a_push}</pre>`;
 }
 
 dick.addEventListener("click", function(){
