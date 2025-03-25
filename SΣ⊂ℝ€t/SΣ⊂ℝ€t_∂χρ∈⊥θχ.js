@@ -22,7 +22,7 @@ function popup(onoff){
 function BITE(cote, hauteur) {
     // Initialisation des variables
     let chaine = "";
-    let espace = (cote + 1) / 2;
+    let espace = (cote + 1) / 12;
   
     // Programme qui fait la partie supérieure
     chaine += " ".repeat(espace + 1) + "_".repeat(cote) + "\n";
