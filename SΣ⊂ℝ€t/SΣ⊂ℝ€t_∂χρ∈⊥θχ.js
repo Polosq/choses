@@ -56,11 +56,7 @@ function BITE(cote, hauteur) {
     chaine += "|" + "_".repeat(cote) + "|" + "_".repeat(cote) + "|" + "\n";
   
     return chaine;
-  }
-  
-  // Exemple d'utilisation
-  console.log(dessin_forme_speciale(10, 5));
-
+}
 
 
 
@@ -70,7 +66,7 @@ function draw(name){
         const hauteur = document.getElementById('hauteurdick').value;
         let dessin_a_push = BITE(largeur, hauteur);
 
-        
+
 
     }
 }
