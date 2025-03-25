@@ -22,14 +22,14 @@ function popup(onoff){
 function BITE(cote, hauteur) {
     // Initialisation des variables
     let chaine = "";
-    let espace = Math.floor((cote + 1) / 2);
+    let espace = Math.floor((cote + 1) * 0.5);
   
     // Programme qui fait la partie supérieure
     chaine += " ".repeat(espace + 1) + "_".repeat(cote) + "\n";
     chaine += " ".repeat(espace) + "/" + " ".repeat(cote) + "\\" + "\n";
     chaine += " ".repeat(espace - 1) + "/" + " ".repeat(cote + 2) + "\\" + "\n";
   
-    for (let i = 0; i < Math.floor(cote / 2) - 1; i++) {
+    for (let i = 0; i < Math.floor(cote * 0.5) - 1; i++) {
       chaine += " ".repeat(espace - 2) + "|" + " ".repeat(cote + 4) + "|" + "\n";
     }
   
@@ -43,12 +43,12 @@ function BITE(cote, hauteur) {
     // Partie qui fait les ronds
     // La partie d'où part le corps
     for (let i = 0; i < 2; i++) {
-      chaine += " " + "_".repeat(Math.floor(cote / 2)) + "|" + "_".repeat(Math.floor(cote / 2));
+      chaine += " " + "_".repeat(Math.floor(cote * 0.5)) + "|" + "_".repeat(Math.floor(cote * 0.5));
     }
     chaine += "\n";
   
     // Hauteur des ronds
-    for (let i = 0; i < Math.floor(cote / 2); i++) {
+    for (let i = 0; i < Math.floor(cote * 0.5); i++) {
       chaine += "|" + " ".repeat(cote) + "|" + " ".repeat(cote) + "|" + "\n";
     }
   
