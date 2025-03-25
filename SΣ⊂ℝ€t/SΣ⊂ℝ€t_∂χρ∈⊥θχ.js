@@ -22,15 +22,15 @@ function popup(onoff){
 function BITE(cote, hauteur) {
     // Initialisation des variables
     let chaine = "";
-    let espace = Math.floor((cote + 1) / 12);
+    let espace = Math.floor((cote + 1) / 12)-1;
   
     // Programme qui fait la partie supérieure
     chaine += " ".repeat(espace + 1) + "_".repeat(cote) + "\n";
     chaine += " ".repeat(espace) + "/" + " ".repeat(cote) + "\\" + "\n";
-    chaine += " ".repeat(espace - 1) + "/" + " ".repeat(cote + 2) + "\\" + "\n";
+    chaine += " ".repeat(espace - 1) + "/" + " ".repeat(cote) + "  \\" + "\n";
   
     for (let i = 0; i < Math.floor(cote / 2) - 1; i++) {
-      chaine += " ".repeat(espace - 2) + "|" + " ".repeat(cote + 4) + "|" + "\n";
+      chaine += " ".repeat(espace - 2) + "|" + " ".repeat(cote) + "    |" + "\n";
     }
   
     chaine += " ".repeat(espace - 2) + "\\/|" + " ".repeat(cote) + "|\\/" + "\n";
