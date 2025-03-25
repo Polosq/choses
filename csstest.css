@@ -411,6 +411,5 @@ button.tropstyleee:focus {
 #msgboxcorpus {
     white-space: pre;
     overflow: auto; /* Ensure content is scrollable if it overflows */
-    padding: 10px; /* Add some padding for better readability */
     font-family: monospace; /* Use a monospace font for better alignment */
 }
