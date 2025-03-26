@@ -4,17 +4,20 @@ let msgboxcorpus = document.getElementById("msgboxcorpus");
 
 let dick = document.getElementById("dickgenerator")
 
-document.querySelector("form").addEventListener("submit", function(e){
-  const boutonsRadio = document.querySelectorAll('input[name="options"]');
-  var caractere = " ";
-  boutonsRadio.forEach(bouton => {
-    if (bouton.checked) {
-      caractere = bouton.value;
-      console.log(caractere);
-    }
-  })
-  e.preventDefault();
-});
+const form = document.querySelector("form");
+const log = document.querySelector("#log");
+
+form.addEventListener("submit",(event) => {
+      const data = new FormData(form);
+      let caractere = "";
+      for (const entry of data) {
+        caractere = `${entry[1]}\r`;
+      }
+      event.preventDefault();
+  },
+  false,
+);
+
 
 popup("off");
 
@@ -97,17 +100,3 @@ dick.addEventListener("click", function(){
 
 
 
-/*
-const form = document.querySelector("form");
-const log = document.querySelector("#log");
-
-form.addEventListener("submit",(event) => {
-        const data = new FormData(form);
-        let caractere = "";
-        for (const entry of data) {
-        caractere = `${entry[1]}\r`;}
-        event.preventDefault();
-    },
-    false,
-    );
-*/
