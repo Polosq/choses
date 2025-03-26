@@ -415,8 +415,6 @@ button.tropstyleee:focus {
 }
 
 input.form {
-    appearance: none;
-  
     border-radius: 50%;
     width: 16px;
     height: 16px;

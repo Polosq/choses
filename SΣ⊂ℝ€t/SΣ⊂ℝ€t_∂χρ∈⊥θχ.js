@@ -2,7 +2,9 @@ let secretpopup = document.getElementById("secret_popup");
 let msgboxtitle = document.getElementById("msgboxtitle");
 let msgboxcorpus = document.getElementById("msgboxcorpus");
 
-let dick = document.getElementById("dickgenerator")
+let dick = document.getElementById("dickgenerator");
+
+let close_popup = document.getElementById("close_popup");
 
 const form = document.querySelector("form");
 const log = document.querySelector("#log");
@@ -97,6 +99,8 @@ dick.addEventListener("click", function(){
     popup("on");
     draw("dick");
 });
+
+close_popup.addEventListener("click", popup("off"));
 
 
 
