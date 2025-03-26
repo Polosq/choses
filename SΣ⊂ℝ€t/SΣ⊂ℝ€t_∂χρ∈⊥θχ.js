@@ -9,10 +9,12 @@ let close_popup = document.getElementById("close_popup");
 const form = document.querySelector("form");
 const log = document.querySelector("#log");
 
+let caractere = " ";
+
 form.addEventListener("submit",(event) => {
       const data = new FormData(form);
       for (const entry of data) {
-        const caractere = `${entry[1]}\r`;
+        caractere = `${entry[1]}\r`;
       }
       event.preventDefault();
       console.error(caractere)
