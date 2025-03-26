@@ -11,9 +11,8 @@ const log = document.querySelector("#log");
 
 form.addEventListener("submit",(event) => {
       const data = new FormData(form);
-      const caractere = "";
       for (const entry of data) {
-        caractere = `${entry[1]}\r`;
+        const caractere = `${entry[1]}\r`;
       }
       event.preventDefault();
       console.error(caractere)
