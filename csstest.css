@@ -353,6 +353,7 @@ div.countdowncontainer{
     height: 122px;
     flex-grow: 1;
 }
+
 button.countdownplay{
     padding:5px;
     border-radius: 10px;
@@ -426,6 +427,7 @@ input.form {
     border: 2px solid #999;
     transition: 0.2s all linear;
     margin-right: 5px;
+    background-color: #000;
 }
   
 input.form:checked {
