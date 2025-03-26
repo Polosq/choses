@@ -9,7 +9,7 @@ const log = document.querySelector("#log");
 
 form.addEventListener("submit",(event) => {
       const data = new FormData(form);
-      let caractere = "";
+      var caractere = "";
       for (const entry of data) {
         caractere = `${entry[1]}\r`;
       }
