@@ -61,6 +61,7 @@ function BITE(cote, hauteur) {
     // Partie basse (partie finale)
     chaine += "|" + "_".repeat(cote) + "|" + "_".repeat(cote) + "|" + "\n";
   
+    console.log(chaine);
     return chaine;
 }
 
@@ -88,6 +89,7 @@ document.querySelector("form").addEventListener("submit", function(){
   boutonsRadio.forEach(bouton => {
     if (bouton.checked) {
       caractere = bouton.value;
+      console.log(caractere)
     }
   })
 });
