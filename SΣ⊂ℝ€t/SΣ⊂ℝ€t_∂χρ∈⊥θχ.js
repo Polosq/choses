@@ -4,6 +4,17 @@ let msgboxcorpus = document.getElementById("msgboxcorpus");
 
 let dick = document.getElementById("dickgenerator")
 
+document.querySelector("form").addEventListener("submit", function(){
+  const boutonsRadio = document.querySelectorAll('input[name="options"]');
+  var caractere = " ";
+  boutonsRadio.forEach(bouton => {
+    if (bouton.checked) {
+      caractere = bouton.value;
+      console.log(caractere)
+    }
+  })
+});
+
 popup("off");
 
 function popup(onoff){
@@ -83,13 +94,19 @@ dick.addEventListener("click", function(){
     draw("dick");
 });
 
-document.querySelector("form").addEventListener("submit", function(){
-  const boutonsRadio = document.querySelectorAll('input[name="options"]');
-  var caractere = " ";
-  boutonsRadio.forEach(bouton => {
-    if (bouton.checked) {
-      caractere = bouton.value;
-      console.log(caractere)
-    }
-  })
-});
+
+
+/*
+const form = document.querySelector("form");
+const log = document.querySelector("#log");
+
+form.addEventListener("submit",(event) => {
+        const data = new FormData(form);
+        let caractere = "";
+        for (const entry of data) {
+        caractere = `${entry[1]}\r`;}
+        event.preventDefault();
+    },
+    false,
+    );
+*/
