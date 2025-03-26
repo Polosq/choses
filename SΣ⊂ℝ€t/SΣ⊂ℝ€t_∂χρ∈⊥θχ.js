@@ -20,8 +20,15 @@ function popup(onoff){
 
 function BITE(cote, hauteur) {
     // Initialisation des variables
+    let correction = 0;
+    if(cote >= 29){
+      correction = Math.floor((cote-11)/18);
+    }else if(cote < 11){
+      correction = -1;
+    }
+    
     let chaine = "";
-    let espace = Math.floor((Math.floor((cote + 1) / 2)-1)/9);
+    let espace = Math.floor(Math.floor((Math.floor((cote + 1) / 2)-1)/9) - correction);
   
     // Programme qui fait la partie supérieure
     chaine += " ".repeat(espace + 1) + "_".repeat(cote) + "\n";
