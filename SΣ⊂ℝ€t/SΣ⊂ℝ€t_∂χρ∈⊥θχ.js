@@ -30,12 +30,12 @@ function popup(onoff){
         msgboxcorpus.style.height = "0px";
         setTimeout(function(){
             secretpopup.style.display = "none";
-        },500);
+        },100);
     }else if(onoff == "on"){
         secretpopup.style.display = "flex";
         setTimeout(function(){
           msgboxcorpus.style.height = "400px";
-        })   
+        }, 100)   
     }
 }
 
