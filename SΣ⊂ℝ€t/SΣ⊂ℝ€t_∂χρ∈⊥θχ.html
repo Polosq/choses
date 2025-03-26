@@ -45,9 +45,9 @@
                         Points éloignés : "▒"
                     </label>
                     
-                    <label>
+                    <label style="display: flex;">
                         <input type="radio" name="caractere" value="" class="form" id="choose_button"/>
-                        <input type="text" maxlength="1" id="choose_caractere">
+                        <input type="text" maxlength="1" id="choose_caractere" style="flex-grow: 1;">
                         <script>
                             document.getElementById("choose_caractere").addEventListener('change', function(){
                                 document.getElementById('choose_button').value = document.getElementById('choose_caractere').value;
