@@ -71,9 +71,8 @@ function BITE(cote, hauteur) {
     // La partie d'où part le corps
     chaine += caractere
     for (let i = 0; i < 2; i++) {
-      chaine += "_".repeat(Math.floor(cote / 2)) + "|" + "_".repeat(Math.floor(cote / 2));
+      chaine += "_".repeat(Math.floor(cote / 2)) + "|" + "_".repeat(Math.floor(cote / 2)) + caractere;
     }
-    chaine += caractere
     chaine += "\n";
   
     // Hauteur des ronds
