@@ -2,7 +2,6 @@ let secretpopup = document.getElementById("secret_popup");
 let msgboxtitle = document.getElementById("msgboxtitle");
 let msgboxcorpus = document.getElementById("msgboxcorpus");
 
-
 let dick = document.getElementById("dickgenerator")
 
 popup("off");
