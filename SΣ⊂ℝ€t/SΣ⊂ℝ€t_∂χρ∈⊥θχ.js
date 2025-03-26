@@ -98,9 +98,12 @@ function draw(name){
 dick.addEventListener("click", function(){
     popup("on");
     draw("dick");
+    close_popup.addEventListener("click", function(){
+      popup("off")
+    });
 });
 
-close_popup.addEventListener("click", popup("off"));
+
 
 
 
