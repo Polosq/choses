@@ -426,6 +426,6 @@ input.form {
     margin-right: 5px;
 }
   
-input.form :checked {
+input.form:checked {
     border: 6px solid rgb(0, 0, 255);
 }
