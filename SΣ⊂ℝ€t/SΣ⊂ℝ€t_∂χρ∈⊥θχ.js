@@ -4,15 +4,16 @@ let msgboxcorpus = document.getElementById("msgboxcorpus");
 
 let dick = document.getElementById("dickgenerator")
 
-document.querySelector("form").addEventListener("submit", function(){
+document.querySelector("form").addEventListener("submit", function(e){
   const boutonsRadio = document.querySelectorAll('input[name="options"]');
   var caractere = " ";
   boutonsRadio.forEach(bouton => {
     if (bouton.checked) {
       caractere = bouton.value;
-      console.log(caractere)
+      console.log(caractere);
     }
   })
+  e.preventDefault();
 });
 
 popup("off");
