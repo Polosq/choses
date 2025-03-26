@@ -33,10 +33,10 @@ function BITE(cote, hauteur) {
     // Programme qui fait la partie supérieure
     chaine += " ".repeat(espace + 1) + "_".repeat(cote) + "\n";
     chaine += " ".repeat(espace) + "/" + " ".repeat(cote) + "\\" + "\n";
-    chaine += " ".repeat(espace - 1) + "/" + " ".repeat(cote) + "  \\" + "\n";
+    chaine += " ".repeat(espace - 1) + "/" + " ".repeat(cote) + " ".repeat(2) + "\\" + "\n";
   
     for (let i = 0; i < Math.floor(cote / 2) - 1; i++) {
-      chaine += " ".repeat(espace - 2) + "|" + " ".repeat(cote) + "    |" + "\n";
+      chaine += " ".repeat(espace - 2) + "|" + " ".repeat(cote) + " ".repeat(4) + "|" + "\n";
     }
   
     chaine += " ".repeat(espace - 2) + "\\/|" + " ".repeat(cote) + "|\\/" + "\n";
