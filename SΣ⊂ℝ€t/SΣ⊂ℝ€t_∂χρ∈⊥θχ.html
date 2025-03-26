@@ -26,13 +26,13 @@
                     </label>
                     
                     <label>
-                        <input type="radio" name="caractere" value="ᆞ" class="form"/>
-                        Point : "ᆞ"
+                        <input type="radio" name="caractere" value="•" class="form"/>
+                        Point : "•"
                     </label>
                 
                     <label>
-                        <input type="radio" name="caractere" value="⊹" class="form"/>
-                        Crosshair : "⊹"
+                        <input type="radio" name="caractere" value="⫶" class="form"/>
+                        Traits : "⫶"
                     </label>
                         
                     <label>
@@ -45,6 +45,16 @@
                         Points éloignés : "▒"
                     </label>
                     
+                    <label>
+                        <input type="radio" name="caractere" value="" class="form" id="choose_button"/>
+                        <input type="text" maxlength="1" id="choose_caractere">
+                        <script>
+                            document.getElementById("choose_caractere").addEventListener('change', function(){
+                                document.getElementById('choose_button').value = document.getElementById('choose_caractere').value;
+                            });
+                        </script>
+                    </label>
+
                     <button type="submit" style="margin-top: 10px;">
                         Valider
                     </button>
