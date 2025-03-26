@@ -14,10 +14,9 @@ let caractere = " ";
 form.addEventListener("submit",(event) => {
       const data = new FormData(form);
       for (const entry of data) {
-        caractere = `${entry[1]}\r`;
+        caractere = entry[1];
       }
       event.preventDefault();
-      console.error(caractere)
   },
   false,
 );
@@ -69,7 +68,7 @@ function BITE(cote, hauteur) {
   
     // Partie qui fait les ronds
     // La partie d'où part le corps
-    chaine += caractere
+    chaine += caractere;
     for (let i = 0; i < 2; i++) {
       chaine += "_".repeat(Math.floor(cote / 2)) + "|" + "_".repeat(Math.floor(cote / 2)) + caractere;
     }
@@ -104,7 +103,7 @@ dick.addEventListener("click", function(){
     popup("on");
     draw("dick");
     close_popup.addEventListener("click", function(){
-      popup("off")
+      popup("off");
     });
 });
 
