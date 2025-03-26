@@ -95,8 +95,26 @@ function draw(name){
         
       var dessin_a_push = BITE(largeur, hauteur);
   }
-
-    msgboxcorpus.innerHTML = `<pre>${dessin_a_push}</pre>`;
+  var container = document.createElement("div");
+  container.appendChildd(div);
+  
+  var div = document.createElement("div");
+  $(div).addClass("corpuscopypaste");
+  div.innerHTML = `<pre>${dessin_a_push}</pre>`;
+  
+  var btnn = document.createElement("button");
+  let txt = "Copier";
+  var btnvalue = document.createTextNode(txt);
+  btnn.id="COPY_PASTE";
+  $(btnn).addClass("countdownplay");
+  container.appendChild(btnn);
+  btnn.appendChild(btnvalue)
+  
+  msgboxcorpus.appendChild(container);
+  
+  btnn.addEventListener("click", function(){
+    navigator.clipboard.writeText(dessin_a_push);
+  });
 }
 
 dick.addEventListener("click", function(){

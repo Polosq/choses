@@ -433,3 +433,9 @@ input.form {
 input.form:checked {
     border: 6px solid rgb(0, 0, 255);
 }
+
+div.corpuscopypaste{
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+}
