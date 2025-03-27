@@ -89,13 +89,13 @@ function BITE(cote, hauteur) {
 function uninstalling(){
 
   chaine = "";
-  chaine += caractere.repeat(3) + "UNINSTALLING VALORANT" + caractere.repeat(3) + "\n";
+  chaine += caractere.repeat(3) + "UNINSTALLING VALORANT" + caractere.repeat(2) + "\n";
   chaine += "▇▇▇▇▇▇▇▇▇▇▇▇▇▇▢" + "\n";
-  chaine += caractere.repeat(8) + "╭━╮╭━╮╭╮ ╱ " + caractere.repeat(8) + "\n";
-  chaine += caractere.repeat(8) + "╰━┫╰━┫╰╯╱╭╮" + caractere.repeat(8) + "\n";
-  chaine += caractere.repeat(8) + "╰━╯╰━╯ ╱ ╰╯" + caractere.repeat(8) + "\n"
-  chaine += caractere.repeat(9) + "COMPLETE" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(27);
+  chaine += caractere.repeat(8) + "╭━╮╭━╮╭╮ ╱ " + caractere.repeat(7) + "\n";
+  chaine += caractere.repeat(8) + "╰━┫╰━┫╰╯╱╭╮" + caractere.repeat(7) + "\n";
+  chaine += caractere.repeat(8) + "╰━╯╰━╯ ╱ ╰╯" + caractere.repeat(7) + "\n"
+  chaine += caractere.repeat(9) + "COMPLETE" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(26);
   return chaine;
 
 /*
