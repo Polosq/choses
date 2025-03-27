@@ -441,6 +441,7 @@ div.corpuscopypaste{
     padding: 5px;
     border-radius: 10px;
     color: white;
+    width: fit-content;
 }
 
 div.secretCategory{
