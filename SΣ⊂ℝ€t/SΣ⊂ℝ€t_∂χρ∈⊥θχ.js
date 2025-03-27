@@ -217,7 +217,8 @@ function draw(name){
   }
   
   var container = document.createElement("div");
-  
+  var br = document.createElement("br");
+
   var div = document.createElement("div");
   container.appendChild(div);
   $(div).addClass("corpuscopypaste");
@@ -229,12 +230,13 @@ function draw(name){
   var btnvalue = document.createTextNode(txt);
   btnn.id="COPY_PASTE";
   $(btnn).addClass("countdownplay");
+  container.appendChild(br);
   container.appendChild(btnn);
   btnn.appendChild(btnvalue)
   
-  var br = document.createElement("br");
-
+ 
   msgboxcorpus.appendChild(container);
+  msgboxcorpus.appendChild(br);
   msgboxcorpus.appendChild(br);
   
   
