@@ -3,7 +3,7 @@ let msgboxtitle = document.getElementById("msgboxtitle");
 let msgboxcorpus = document.getElementById("msgboxcorpus");
 
 let dick = document.getElementById("dickgenerator");
-let uninstalling_val = doucument.getElementById("uninstalling-val_generator");
+let uninstalling_val = document.getElementById("uninstalling-val_generator");
 
 let close_popup = document.getElementById("close_popup");
 
