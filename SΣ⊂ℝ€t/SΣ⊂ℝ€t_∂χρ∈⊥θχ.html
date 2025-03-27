@@ -7,7 +7,8 @@
         <link rel="icon" type="image/vnd.icon" href="../Images/logo.png">
     </head>
     <body id="body">
-        <div style="display: flex;">
+
+        <div style="display: flex;" class="secretCategory">
             <input type="number" placeholder="Côté" id="cotedick" min="5" step="2">
             <input type="number" placeholder="hauteur" id="hauteurdick" min="3" step="2">
             <button id="dickgenerator">
@@ -18,7 +19,7 @@
         <br>
         <br>
 
-        <div>
+        <div class="secretCategory">
             <button id="uninstalling-val_generator">
                 Générer : uninstalling valorant (99% complete)
             </button>
@@ -27,7 +28,7 @@
         <br>
         <br>
 
-        <div>
+        <div class="secretCategory">
             <button id="mario-pooping_generator">
                 Générer : Mario qui fait caca (points rapprochés déconseillés)
             </button>
@@ -35,46 +36,54 @@
 
         <br>
         <br>
-        <br>
-        <br>
-
-        <h1>
-            Transformateur de texte : 
-        </h1>
-        <div>
-            <textarea type="text" id="user-text-to-modif" placeholder="Entrez le texte à modifier ..." style="width: 600px; height: 100px;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: left; resize: vertical;"></textarea>
-            <br>
-
-            <form id="caractere_to_modif">
-                <fieldset style="display: flex; width: 600px;">
-                    <legend>Sélectionnez le caractère a remplacer : </legend>
-                
-                    <label>
-                        <input type="radio" name="to_modif" value=" " checked class="form"/>
-                        Espace (par défault)
-                    </label>
-                                        
-                    <label style="display: flex;">
-                        <input type="radio" name="to_modif" value="" class="form" id="radio_to_modif"/>
-                        <input type="text" maxlength="1" id="choose_caractere_to_modif" placeholder="Entrez le caractère de votre choix..." style="flex-grow: 1;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: center;">
-                        <script>
-                            document.getElementById("choose_caractere_to_modif").addEventListener('change', function(){
-                                document.getElementById('radio_to_modif').value = document.getElementById('choose_caractere_to_modif').value;
-                            });
-                        </script>
-                    </label>
-
-                    <button type="submit" style="margin-top: 10px;">
-                        Valider
-                    </button>
-                
-                </fieldset>
-            </form>
-
-            <br>
-            <button id="transform_generator">
-                Transformer le texte
+        <div class="secretCategory">
+            <button id="-20rr-truck_generator" disabled>
+                Générer : camion de livraison -20rr (en développement)
             </button>
+        </div>
+        <br>
+        <br>
+
+        <div class="secretCategory">
+
+            <h1>
+                Transformateur de texte : 
+            </h1>
+            <div>
+                <textarea type="text" id="user-text-to-modif" placeholder="Entrez le texte à modifier ..." style="width: 600px; height: 100px;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: left; resize: vertical;"></textarea>
+                <br>
+
+                <form id="caractere_to_modif">
+                    <fieldset style="display: flex; width: 600px;">
+                        <legend>Sélectionnez le caractère a remplacer : </legend>
+                    
+                        <label>
+                            <input type="radio" name="to_modif" value=" " checked class="form"/>
+                            Espace (par défault)
+                        </label>
+                                            
+                        <label style="display: flex;">
+                            <input type="radio" name="to_modif" value="" class="form" id="radio_to_modif"/>
+                            <input type="text" maxlength="1" id="choose_caractere_to_modif" placeholder="Entrez le caractère de votre choix..." style="flex-grow: 1;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: center;">
+                            <script>
+                                document.getElementById("choose_caractere_to_modif").addEventListener('change', function(){
+                                    document.getElementById('radio_to_modif').value = document.getElementById('choose_caractere_to_modif').value;
+                                });
+                            </script>
+                        </label>
+
+                        <button type="submit" style="margin-top: 10px;">
+                            Valider
+                        </button>
+                    
+                    </fieldset>
+                </form>
+
+                <br>
+                <button id="transform_generator">
+                    Transformer le texte
+                </button>
+            </div>
         </div>
 
 
