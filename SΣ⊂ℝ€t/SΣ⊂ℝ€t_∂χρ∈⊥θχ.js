@@ -4,6 +4,7 @@ let msgboxcorpus = document.getElementById("msgboxcorpus");
 
 let dick = document.getElementById("dickgenerator");
 let uninstalling_val = document.getElementById("uninstalling-val_generator");
+let poop_mario = document.getElementById("mario-pooping_generator");
 
 let close_popup = document.getElementById("close_popup");
 
@@ -125,6 +126,7 @@ function mario(){
   chaine += caractere.repeat(2) + "▐█▐▄" + caractere.repeat(2) + "▀" + caractere.repeat(6) + "▐" + caractere + "█▄▄" + caractere.repeat(8) + "\n";
   chaine += caractere.repeat(3) + "▀▀" + caractere.repeat(2) + "YOU" + caractere.repeat(4) + "▐▄▄▄▀" + caractere.repeat(9);
 
+  return chaine;
   
 }
 
@@ -139,6 +141,9 @@ function draw(name){
   }
   else if(name == "uninstalling"){
     var dessin_a_push = uninstalling();
+  }
+  else if(name == "mario"){
+    var dessin_a_push = mario();
   }
   
   var container = document.createElement("div");
@@ -180,3 +185,10 @@ uninstalling_val.addEventListener("click", function(){
   });
 });
 
+poop_mario.addEventListener("click", function(){
+  popup("on");
+  draw("mario");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  });
+});
