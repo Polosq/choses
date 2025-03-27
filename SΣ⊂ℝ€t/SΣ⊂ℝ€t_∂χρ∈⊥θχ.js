@@ -3,6 +3,7 @@ let msgboxtitle = document.getElementById("msgboxtitle");
 let msgboxcorpus = document.getElementById("msgboxcorpus");
 
 let dick = document.getElementById("dickgenerator");
+let uninstalling_val = doucument.getElementById("uninstalling-val_generator");
 
 let close_popup = document.getElementById("close_popup");
 
@@ -85,14 +86,40 @@ function BITE(cote, hauteur) {
     return chaine;
 }
 
+function uninstalling(){
+
+  chaine = "";
+  chaine += caractere.repeat(3) + "UNINSTALLING VALORANT" + caractere.repeat(3) + "\n";
+  chaine += "▇▇▇▇▇▇▇▇▇▇▇▇▇▇▢" + "\n";
+  chaine += caractere.repeat(8) + "╭━╮╭━╮╭╮ ╱ " + caractere.repeat(8) + "\n";
+  chaine += caractere.repeat(8) + "╰━┫╰━┫╰╯╱╭╮" + caractere.repeat(8) + "\n";
+  chaine += caractere.repeat(8) + "╰━╯╰━╯ ╱ ╰╯" + caractere.repeat(8) + "\n"
+  chaine += caractere.repeat(9) + "COMPLETE" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(27);
+  return chaine;
+
+/*
+   UNINSTALLING VALORANT     
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▢   
+        ╭━╮╭━╮╭╮ ╱                　　
+        ╰━┫╰━┫╰╯╱╭╮                 
+        ╰━╯╰━╯ ╱ ╰╯           　 
+         COMPLETE          
+                                
+*/
+
+}
 
 
 function draw(name){
   if(name == "dick"){
-      const largeur = document.getElementById('cotedick').value;
-      const hauteur = document.getElementById('hauteurdick').value;
+    const largeur = document.getElementById('cotedick').value;
+    const hauteur = document.getElementById('hauteurdick').value;
         
-      var dessin_a_push = BITE(largeur, hauteur);
+    var dessin_a_push = BITE(largeur, hauteur);
+  }
+  else if(name == "uninstalling"){
+    var dessin_a_push = uninstalling();
   }
   
   var container = document.createElement("div");
@@ -119,14 +146,18 @@ function draw(name){
 }
 
 dick.addEventListener("click", function(){
-    popup("on");
-    draw("dick");
-    close_popup.addEventListener("click", function(){
-      popup("off");
-    });
+  popup("on");
+  draw("dick");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  });
 });
 
-
-
-
+uninstalling_val.addEventListener("click", function(){
+  popup("on");
+  draw("uninstalling");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  });
+});
 
