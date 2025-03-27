@@ -5,11 +5,12 @@ let msgboxcorpus = document.getElementById("msgboxcorpus");
 let dick = document.getElementById("dickgenerator");
 let uninstalling_val = document.getElementById("uninstalling-val_generator");
 let poop_mario = document.getElementById("mario-pooping_generator");
+let transform_generator = document.getElementById("transform_generator");
 
 let close_popup = document.getElementById("close_popup");
 
-const form = document.querySelector("form");
-const log = document.querySelector("#log");
+const form = document.getElementById("form_separator");
+const form2 = document.getElementById("caractere_to_modif");
 
 let caractere = " ";
 
@@ -21,6 +22,18 @@ form.addEventListener("submit",(event) => {
       event.preventDefault();
   },
   false,
+);
+
+let caractere_a_modif = "";
+
+form2.addEventListener("submit",(event) => {
+  const data = new FormData(form);
+  for (const entry of data) {
+    caractere_a_modif = entry[1];
+  }
+  event.preventDefault();
+},
+false,
 );
 
 
@@ -131,6 +144,18 @@ function mario(){
 }
 
 
+function choose(){
+  let text = document.getElementById("user-text-to-modif").value;
+  let reponse = text.replace(caractere_a_modif, caractere);
+
+  return reponse;
+}
+
+
+
+
+
+
 
 function draw(name){
   if(name == "dick"){
@@ -144,6 +169,9 @@ function draw(name){
   }
   else if(name == "mario"){
     var dessin_a_push = mario();
+  }
+  else if(name == "choose"){
+    var dessin_a_push = choose();
   }
   
   var container = document.createElement("div");
@@ -169,6 +197,9 @@ function draw(name){
   });
 }
 
+
+
+
 dick.addEventListener("click", function(){
   popup("on");
   draw("dick");
@@ -191,4 +222,12 @@ poop_mario.addEventListener("click", function(){
   close_popup.addEventListener("click", function(){
     popup("off");
   });
+});
+
+transform_generator.addEventListener("click", function(){
+  popup("on");
+  draw("choose");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
 });

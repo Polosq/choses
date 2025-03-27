@@ -32,6 +32,52 @@
                 Générer : Mario qui fait caca (points rapprochés déconseillés)
             </button>
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>
+            Transformateur de texte : 
+        </h1>
+        <div>
+            <input type="text" id="user-text-to-modif" placeholder="Entrez le texte à modifier ..." style="width: 400px; height: 100px;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: left; resize: vertical;">
+            <br>
+
+            <form id="caractere_to_modif">
+                <fieldset style="display: flex;">
+                    <legend>Sélectionnez le caractère a remplacer : </legend>
+                
+                    <label>
+                        <input type="radio" name="to_modif" value=" " checked class="form"/>
+                        Espace (par défault)
+                    </label>
+                                        
+                    <label style="display: flex;">
+                        <input type="radio" name="to_modif" value="" class="form" id="radio_to_modif"/>
+                        <input type="text" maxlength="1" id="choose_caractere_to_modif" placeholder="Entrez le caractère de votre choix..." style="flex-grow: 1;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: center;">
+                        <script>
+                            document.getElementById("choose_caractere_to_modif").addEventListener('change', function(){
+                                document.getElementById('radio_to_modif').value = document.getElementById('choose_caractere_to_modif').value;
+                            });
+                        </script>
+                    </label>
+
+                    <button type="submit" style="margin-top: 10px;">
+                        Valider
+                    </button>
+                
+                </fieldset>
+            </form>
+
+            <br>
+            <button id="transform_generator">
+                Transformer le texte
+            </button>
+        </div>
+
+
         
         <div style="position: fixed; top: 25px; right: 400px; background-color: rgba(255,255,255,0.5); padding: 5px; border-radius: 10px; align-content: center;">
             <form id="form_separator">
