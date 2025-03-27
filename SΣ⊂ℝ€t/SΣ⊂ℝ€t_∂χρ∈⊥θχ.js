@@ -82,7 +82,6 @@ function BITE(cote, hauteur) {
     // Partie basse (partie finale)
     chaine += "|" + "_".repeat(cote) + "|" + "_".repeat(cote) + "|" + "\n";
   
-    console.log(chaine);
     return chaine;
 }
 
@@ -100,7 +99,8 @@ function draw(name){
   
   var div = document.createElement("div");
   $(div).addClass("corpuscopypaste");
-  div.innerHTML = `<pre>${dessin_a_push}</pre>`;
+  var dessin = document.createTextNode(dessin_a_push);
+  div.appendChild(dessin);
   
   var btnn = document.createElement("button");
   let txt = "Copier";
