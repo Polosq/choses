@@ -87,8 +87,7 @@ function BITE(cote, hauteur) {
 }
 
 function uninstalling(){
-
-  chaine = "";
+  let chaine = "";
   chaine += caractere.repeat(3) + "UNINSTALLING VALORANT" + caractere.repeat(2) + "\n";
   chaine += "▇▇▇▇▇▇▇▇▇▇▇▇▇▇▢" + "\n";
   chaine += caractere.repeat(8) + "╭━╮╭━╮╭╮ ╱ " + caractere.repeat(7) + "\n";
@@ -107,8 +106,28 @@ function uninstalling(){
          COMPLETE          
                                 
 */
-
 }
+
+function mario(){
+  let chaine = "";
+  chaine += caractere.repeat(9) + "▓▓▓▓▀█" + caractere.repeat(13) + "\n";
+  chaine += caractere.repeat(6) + "▄▀▓▓▄██████▄" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(5) + "▄█▄█▀" + caractere.repeat(2) +"▄" + caractere + "▄" + caractere + "█▀" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(4) + "▄▀" + caractere + "██▄" + caractere.repeat(2) +"▀" + caractere + "▀" + caractere + "▀▄" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(4) + "▀▄" + caractere.repeat(2) + "▀" + caractere + "▄█▄▄" + caractere.repeat(2) + "▄█▄" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(6) + "▀█▄▄" + caractere.repeat(2) + "▀▀▀█▀" + caractere.repeat(11) + "\n";
+  chaine += caractere.repeat(6) + "█" + caractere.repeat(8) + "▄▀▀" + caractere + "▐" + caractere.repeat(8) + "\n";
+  chaine += caractere.repeat(4) + "▄▀" + caractere.repeat(8) + "▐" + caractere + "▄▄▀" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(2) + "▄▀" + caractere.repeat(3) + "▐" + caractere.repeat(5) + "█▄▀" + caractere + "▐" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(2) + "█" + caractere.repeat(3) + "▐" + caractere.repeat(8) + "▄" + caractere + "█" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(3) + "█▄" + caractere.repeat(2) + "▀▄" + caractere.repeat(4) + "▄▀▐" + caractere + "█" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(3) + "█▐▀▀▀" + caractere + "▀▀▀▀" + caractere.repeat(2) + "▐" + caractere + "█" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(2) + "▐█▐▄" + caractere.repeat(2) + "▀" + caractere.repeat(6) + "▐" + caractere + "█▄▄" + caractere.repeat(8) + "\n";
+  chaine += caractere.repeat(3) + "▀▀" + caractere.repeat(2) + "YOU" + caractere.repeat(4) + "▐▄▄▄▀" + caractere.repeat(9);
+
+  
+}
+
 
 
 function draw(name){
