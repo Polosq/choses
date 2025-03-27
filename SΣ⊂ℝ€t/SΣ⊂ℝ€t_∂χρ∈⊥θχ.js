@@ -98,6 +98,33 @@ function BITE(cote, hauteur) {
     chaine += "|" + "_".repeat(cote) + "|" + "_".repeat(cote) + "|" + "\n";
   
     return chaine;
+  
+/*
+
+      _________      
+     /         \     
+    /           \    
+   |             |   
+   |             |   
+   |             |   
+   \/|         |\/   
+     |         |     
+     |         |     
+     |         |     
+     |         |     
+     |         |     
+     |         |     
+     |         |     
+ ____|____ ____|____ 
+|         |         |
+|         |         |
+|         |         |
+|         |         |
+|_________|_________|
+
+
+*/
+
 }
 
 function uninstalling(){
@@ -141,6 +168,25 @@ function mario(){
 
   return chaine;
   
+/*
+
+         ▓▓▓▓▀█             
+      ▄▀▓▓▄██████▄          
+     ▄█▄█▀  ▄ ▄ █▀          
+    ▄▀ ██▄  ▀ ▀ ▀▄          
+    ▀▄  ▀ ▄█▄▄  ▄█▄         
+      ▀█▄▄  ▀▀▀█▀           
+      █        ▄▀▀ ▐        
+    ▄▀        ▐ ▄▄▀         
+  ▄▀   ▐     █▄▀ ▐          
+  █   ▐        ▄ █          
+   █▄  ▀▄    ▄▀▐ █          
+   █▐▀▀▀ ▀▀▀▀  ▐ █          
+  ▐█▐▄  ▀      ▐ █▄▄        
+   ▀▀  YOU    ▐▄▄▄▀         
+
+*/
+
 }
 
 
@@ -149,9 +195,6 @@ function choose(){
   let reponse = text.replace(new RegExp(caractere_a_modif, "g"), caractere);
   return reponse;
 }
-
-
-
 
 
 
