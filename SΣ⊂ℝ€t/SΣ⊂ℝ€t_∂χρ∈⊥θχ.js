@@ -232,7 +232,11 @@ function draw(name){
   container.appendChild(btnn);
   btnn.appendChild(btnvalue)
   
+  var br = document.createElement("br");
+
   msgboxcorpus.appendChild(container);
+  msgboxcorpus.appendChild(br);
+  
   
   btnn.addEventListener("click", function(){
     navigator.clipboard.writeText(dessin_a_push);
