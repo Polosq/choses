@@ -52,7 +52,7 @@ function BITE(cote, hauteur) {
   
     // Programme qui fait la partie supérieure
     chaine += caractere.repeat(espace) + caractere + "_".repeat(cote) + caractere + caractere.repeat(espace) + "\n";
-    chaine += caractere.repeat(espace) + "/" + " ".repeat(cote) + "\\" + caractere.repeat(espace) + "\n";
+    chaine += caractere.repeat(espace) + "/" + caractere.repeat(cote) + "\\" + caractere.repeat(espace) + "\n";
     chaine += caractere.repeat(espace - 1) + "/" + caractere.repeat(cote) + caractere.repeat(2) + "\\" + caractere.repeat(espace-1) + "\n";
   
     for (let i = 0; i < Math.floor(cote / 2) - 1; i++) {
