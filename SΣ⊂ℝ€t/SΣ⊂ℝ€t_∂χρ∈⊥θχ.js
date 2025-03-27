@@ -94,10 +94,11 @@ function draw(name){
         
       var dessin_a_push = BITE(largeur, hauteur);
   }
+  
   var container = document.createElement("div");
-  container.appendChild(div);
   
   var div = document.createElement("div");
+  container.appendChild(div);
   $(div).addClass("corpuscopypaste");
   var dessin = document.createTextNode(dessin_a_push);
   div.appendChild(dessin);
