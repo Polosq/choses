@@ -146,7 +146,7 @@ function mario(){
 
 function choose(){
   let text = document.getElementById("user-text-to-modif").value;
-  let reponse = text.replace(/caractere_a_modif/g, caractere);
+  let reponse = text.replace(/${caractere_a_modif}/g, caractere);
   return reponse;
 }
 
