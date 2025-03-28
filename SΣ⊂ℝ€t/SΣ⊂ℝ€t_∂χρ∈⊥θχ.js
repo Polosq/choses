@@ -24,7 +24,7 @@ form.addEventListener("submit",(event) => {
   false,
 );
 
-let caractere_a_modif = "";
+let caractere_a_modif = " ";
 
 form2.addEventListener("submit",(event) => {
   const data = new FormData(form2);
