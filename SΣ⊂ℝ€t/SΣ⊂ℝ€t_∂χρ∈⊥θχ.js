@@ -189,6 +189,47 @@ function mario(){
 
 }
 
+function ggez(){
+  let chaine = "";
+  chaine += caractere.repeat(27) + "\n";
+  chaine += caractere.repeat(3) + "█▀▀▀" + caractere + "█▀▀▀" + caractere.repeat(2) + "█▀▀" + caractere + "▀▀█" + caractere.repeat(2) + "█" + caractere.repeat(3) + "\n";
+  chaine += caractere.repeat(3) + "█" + caractere + "▀█" + caractere + "█" + caractere + "▀█" + caractere.repeat(2) + "█▀▀" + caractere + "▄▀" + caractere.repeat(3) + "▀" + caractere.repeat(3) + "\n";
+  chaine += caractere.repeat(3) + "▀▀▀▀" + caractere + "▀▀▀▀" + caractere.repeat(2) + "▀▀▀" + caractere + "▀▀▀" + caractere.repeat(2) + "▀" + caractere.repeat(3) + "\n";
+  chaine += caractere.repeat(15) + "( ͡° ͜u ͡°)_╭∩╮" + "\n";
+  return chaine;
+
+/*
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+░░░█▀▀▀░█▀▀▀░░█▀▀░▀▀█░░█░░░ 
+░░░█░▀█░█░▀█░░█▀▀░▄▀░░░▀░░░ 
+░░░▀▀▀▀░▀▀▀▀░░▀▀▀░▀▀▀░░▀░░░ 
+░░░░░░░░░░░░░░░( ͡° ͜u ͡°)_╭∩╮
+
+*/
+}
+
+function valo_truck(){
+  let chaine = "";
+  chaine += caractere.repeat(6) + "▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌" + "\n";
+  chaine += caractere.repeat(3) + "▄▄██▌█ BEEP BEEP" + "\n";
+  chaine += "▄▄▄▌▐██▌█ -20 rr DELIVERY" + "\n";
+  chaine += "███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌" + "\n";
+  chaine += "▀(⊙)▀▀▀▀(⊙)(⊙)▀▀▀▀▀▀▀(⊙)▀▀" + "\n";
+  return chaine;
+
+/*
+
+──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
+───▄▄██▌█ BEEP BEEP
+▄▄▄▌▐██▌█ -20 rr DELIVERY
+███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌
+▀(⊙)▀▀▀▀(⊙)(⊙)▀▀▀▀▀▀▀(⊙)▀▀ 
+
+*/
+}
+
+
 
 function choose(){
   let text = document.getElementById("user-text-to-modif").value;
@@ -214,6 +255,12 @@ function draw(name){
   }
   else if(name == "choose"){
     var dessin_a_push = choose();
+  }
+  else if(name == "ggez"){
+    var dessin_a_push = ggez();
+  }
+  else if(name == "truck"){
+    var dessin_a_push = valo_truck();
   }
   
   var container = document.createElement("div");
@@ -275,6 +322,22 @@ poop_mario.addEventListener("click", function(){
 transform_generator.addEventListener("click", function(){
   popup("on");
   draw("choose");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
+});
+
+document.getElementById("GG-EZ_generator").addEventListener("click", function(){
+  popup("on");
+  draw("ggez");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
+});
+
+document.getElementById("-20rr-truck_generator").addEventListener("click", function(){
+  popup("on");
+  draw("truck");
   close_popup.addEventListener("click", function(){
     popup("off");
   })
