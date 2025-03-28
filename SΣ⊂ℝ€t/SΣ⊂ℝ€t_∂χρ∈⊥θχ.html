@@ -56,11 +56,20 @@
         <br>
 
         <div class="secretCategory">
+            <button id="sexy-girl_generator">
+                Générer : Sexy girl (attention message très long: peut y avoir des problèmes de largeur)
+            </button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="secretCategory">
             <h1 style="margin-top: 0px;">
                 Transformateur de texte : 
             </h1>
             <div>
-                <textarea type="text" id="user-text-to-modif" placeholder="Entrez le texte à modifier ..." style="width: 600px; height: 100px;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: left; resize: vertical;"></textarea>
+                <textarea type="text" id="user-text-to-modif" placeholder="Entrez le texte à modifier ..." style="min-width: 600px; width: fit-content; height: 100px;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: left; resize: vertical;"></textarea>
                 <br>
 
                 <form id="caractere_to_modif">
@@ -74,7 +83,7 @@
                                             
                         <label style="display: flex;">
                             <input type="radio" name="to_modif" value="" class="form" id="radio_to_modif"/>
-                            <input type="text" maxlength="1" id="choose_caractere_to_modif" placeholder="Entrez le caractère de votre choix..." style="flex-grow: 1;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: center;">
+                            <input type="text" id="choose_caractere_to_modif" placeholder="Entrez le caractère de votre choix..." style="flex-grow: 1;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: center;">
                             <script>
                                 document.getElementById("choose_caractere_to_modif").addEventListener('change', function(){
                                     document.getElementById('radio_to_modif').value = document.getElementById('choose_caractere_to_modif').value;
