@@ -334,15 +334,15 @@
                             let check3 = document.getElementById("check3");
                             let spannnnnn = document.getElementById("check_box");
                             function print(e){
-                                var topush = [];
+                                var topush = "";
                                 if (check1.checked){
-                                    topush.push("1");
+                                    topush + "1";
                                 }else if(check2.checked){
-                                    topush.push("2");
+                                    topush + "2";
                                 }else if(check3.checked){
-                                    topush.push("3")
+                                    topush + "3";
                                 }
-                                spannnnnn.innerHTML = print;                              
+                                spannnnnn.innerHTML = topush;
                             }
 
                             check1.addEventListener("click", print);
@@ -360,10 +360,10 @@
                                 let color_input = document.getElementById("bg-color");
                                 btn.addEventListener("click", function(){
                                     if (color_input.disabled == true){
-                                        btn.value = "Disable background-color modification"
+                                        btn.value = "Disable background-color modification";
                                         color_input.disabled = false;
                                     }else if(color_input.disabled == false){
-                                        btn.value = "Enable background-color modification"
+                                        btn.value = "Enable background-color modification";
                                         color_input.disabled = true;
                                     }
                                 });
