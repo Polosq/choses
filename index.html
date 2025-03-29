@@ -6,7 +6,7 @@
         <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
         <link rel="icon" type="image/vnd.icon" href="Images/logo.png">
     </head>
-    <body id="body">
+    <body id="body" style="background-color: #252525;">
         <audio autoplay loop id="pikaaudio">
             <source src="audio/jose.mp3" type="audio/mpeg">
         </audio>
@@ -320,9 +320,61 @@
             <br>
             <br>
 
-            <div id="redirectionnotification">
-                <button id="asknotif" title="AJOUTE OU JTE BZ" class="tropstyleee">Ajoute les notifs stp sinon ca marche pas</button>
-                <button id="launchnotif" title="CLIQUEEEEEE" class="tropstyleee"> Recevoir la notif</button>
+            <div id="redirectioninputs" style="display: flex; flex-direction: column;">
+                <div style="display: flex;">
+                    <div>
+                        Checkbox : 
+                        <input type="checkbox" name="check" value="1" id="check1">
+                        <input type="checkbox" name="check" value="2" id="check2">
+                        <input type="checkbox" name="check" value="3" id="check3">
+                        <span id="check_box"></span>
+                        <script>
+                            let check1 = document.getElementById("check1");
+                            let check2 = document.getElementById("check2");
+                            let check3 = document.getElementById("check3");
+                            let spannnnnn = document.getElementById("check_box");
+                            function print(e){
+                                var topush = [];
+                                if (check1.checked){
+                                    topush.push("1");
+                                }else if(check2.checked){
+                                    topush.push("2");
+                                }else if(check3.checked){
+                                    topush.push("3")
+                                }
+                                spannnnnn.innerHTML = print;                              
+                            }
+
+                            check1.addEventListener("click", print);
+                            check2.addEventListener("click", print);
+                            check3.addEventListener("click", print);
+                        </script>
+                    </div>
+                    <div>
+                        Color : 
+                        <div style="display: flex;">
+                            <input type="button" value="Enable background-color modification" id="button_bckg-modif">
+                            <input type="color" value="#252525" disabled id="bg_color">
+                            <script>
+                                let btn = document.getElementById("button_bckg-modif");
+                                let color_input = document.getElementById("bg-color");
+                                btn.addEventListener("click", function(){
+                                    if (color_input.disabled == true){
+                                        btn.value = "Disable background-color modification"
+                                        color_input.disabled = false;
+                                    }else if(color_input.disabled == false){
+                                        btn.value = "Enable background-color modification"
+                                        color_input.disabled = true;
+                                    }
+                                });
+                                color_input.addEventListener("change", function(){
+                                    document.getElementById("body").style.backgroundColor = color_input.value;
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <br>
