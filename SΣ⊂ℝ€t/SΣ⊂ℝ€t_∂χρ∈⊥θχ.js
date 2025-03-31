@@ -449,19 +449,17 @@ function pushh(element_a_push){
   divflex.appendChild(close_btn);
   close_btn.appendChild(close_btn_value);
   
+  container.appendChild(br);
+  container.appendChild(br);
  
-  msgboxcorpus.appendChild(container);
-  msgboxcorpus.appendChild(br);
-  msgboxcorpus.appendChild(br);
-  
+  msgboxcorpus.appendChild(container); //Push
   
   btnn.addEventListener("click", function(){
     navigator.clipboard.writeText(element_a_push);
   });
   close_btn.addEventListener("click", function(){
-    msgboxcorpus.removeChild(container);
-    msgboxcorpus.removeChild(br);
-    msgboxcorpus.removeChild(br);
+    msgboxcorpus.removeChild(container); //Supprime le contenu souhaité
+
     if(msgboxcorpus.childElementCount == 0){
       setTimeout(popup("off"), 500);
     }
