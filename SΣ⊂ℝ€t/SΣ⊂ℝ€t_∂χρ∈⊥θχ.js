@@ -416,14 +416,17 @@ function draw(name){
   else if(name == "sexy-girl"){
     var dessin_a_push = sexy_woman();
   }
-  
+  pushh(dessin_a_push)
+}
+
+function pushh(element_a_push){
   var container = document.createElement("div");
   var br = document.createElement("br");
 
   var div = document.createElement("div");
   container.appendChild(div);
   $(div).addClass("corpuscopypaste");
-  var dessin = document.createTextNode(dessin_a_push);
+  var dessin = document.createTextNode(element_a_push);
   div.appendChild(dessin);
 
   var divflex = document.createElement("div");
@@ -453,7 +456,7 @@ function draw(name){
   
   
   btnn.addEventListener("click", function(){
-    navigator.clipboard.writeText(dessin_a_push);
+    navigator.clipboard.writeText(element_a_push);
   });
   close_btn.addEventListener("click", function(){
     msgboxcorpus.removeChild(container);
