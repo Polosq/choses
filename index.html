@@ -40,6 +40,7 @@
         </div>
         <div class="body">
             <div id="redirectioncursor">
+                <h1>Les curseurs :</h1>
                 <div>
                     <a class="clique" id="curseur1">Curseur 1 (par défaut)</a>
                     <a class="cliquer" id="curseur2">Curseur 2 (rgb - noir bugue car animé)</a>
@@ -129,6 +130,7 @@
             </div>
             <br>
             <div id="redirectionaudio">
+                <h1>La balise audio :</h1>
                 <div style="display:flex;">
                     <div style="width:60px; height: 60px;">
                         <img class="buttonpause" src="" id="boutonn">
@@ -147,6 +149,7 @@
             <br>
             <br>
             <div id="redirectionembed">
+                <h1>Les iframes (embed) :</h1>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7zxJjsJXSaYh348OtYmW5o?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <a style = "text-decoration: none; padding: 5px; background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 45%, rgba(240,255,255,1) 55%, rgba(0,255,251,1) 100%); transition: all 0.5 ease; border: 1px black solid; border-radius: 10px; color: rgba(100,100,100,0.7);" href="https://open.spotify.com/embed/playlist/7zxJjsJXSaYh348OtYmW5o?utm_source=generator">Cliquez sur ce texte pour accéder a la page de génération de l'<i>iframe</i> !</a>
                 <br>
@@ -168,6 +171,7 @@
             <br>
             <br>
             <div id="redirectionsearch">
+                <h1>Les inputs de texte :</h1>
                 <div style="display: flex;">
                     <input type="text" placeholder="Ecrivez quelque chose !" class = "searchbar" id="searchbar">
                     <input type="text" placeholder="Entrez un URL" class = "searchbar" id="inputweb">
@@ -184,209 +188,223 @@
             </div>
             <br>
             <br>
-            <div id="redirectionextension" style="display: flex;">
-                <button id="extensionchrome" class="extension">Ajouter l'extension pour Chrome</button>
-                <button id="extensionfirefox" class="extension">Ajouter l'extension pour Firefox</button>
-                <a href="https://microsoftedge.microsoft.com/addons/detail/adblocker-ultimate/pciakllldcajllepkbbihkmfkikheffb" class="extension"><button class="extension">Ajouter l'extension pour Edge</button></a>
-            </div>
-            <p style="font-size: 10px; color: gray;">La syntaxe est la même pour les navigateurs : Chrome, Edge, Opera, Brave, Vivaldi et Chromium, mais le mode d'installation peut parfois être différent</p>
-            <br>
-            <button style="background-color: aqua; border-radius: 10px; color: rgb(15, 15, 15); padding: 5px;" id="tutoextension">Cliquez-ici pour avoir un tuto pour créer une extension web</button>
-            <div class="tutocache" style="display: none; left: 400px; top: 1550px; " id="divtutoextension">
+            <div id="redirectionextension">
+                <h1>Les extension dans le navigateur :</h1>
                 <div style="display: flex;">
-                    <span style="flex-grow: 1; font-size: 19px;">
-                        Créer une extension web
-                    </span>
-                    <img src="Images/close.png" style="background-color: rgba(255,255,255,0.4); width: 20px; height: 20px; padding: 1px; border-radius: 5px; cursor: pointer;" id="closeextension">
+                    <button id="extensionchrome" class="extension">Ajouter l'extension pour Chrome</button>
+                    <button id="extensionfirefox" class="extension">Ajouter l'extension pour Firefox</button>
+                    <a href="https://microsoftedge.microsoft.com/addons/detail/adblocker-ultimate/pciakllldcajllepkbbihkmfkikheffb" class="extension"><button class="extension">Ajouter l'extension pour Edge</button></a>
                 </div>
-                <ol>
-                    <li>
-                        Créer un fichier <i>manifest.json</i>.
-                        <br>
-                        Créer un fichier <i>popup.html</i> pour l'interface utilisateur. 
-                        <br>
-                        Créer un fichier <i>popup.js</i>. 
-                        <br>
-                        Créer un fichier <i>background.js</i> (si besoin uniquement !). 
-                    </li>
-                    <li>
-                        Compléter le fichier <i>manifest.json</i>. 
-                        <br>
-                        Voici ci contre un exemple :
-                        <br> 
-                        <img src="Images/tutomanifest.png" style="width: 300px;">
-                    </li>
-                    <li>
-                        Penser a créer les 3 icones aux différentes tailles (16*16 ; 48*48 ; 128*128), de vérifier que la version du manifeste est bonne, et que les permissions nécessaires sont bien écrites. 
-                    </li>
-                    <li>
-                        Compléter le fichier <i>background.js</i>. Afin de le compléter : il est conseillé de chercher la syntaxe sur internet. 
-                    </li>
-                    <li>
-                        Compléter le fichier <i>popup.html</i> : ce sera la page qui sera affichée quand l'utilisateur cliquera sur l'extension depuis son navigateur.
-                    </li>
-                    <li>
-                        Compléter enfin le fichier <i>popup.js</i> qui contiendra les codes principaux en lien avec la popup.
-                    </li>
-                    <li>
-                        Pour Firefox : 
-                        <ul>
-                            <li>
-                                Compresser le fichier au format '.zip' puis rennomer afin de mettre au format '.xpi'. 
-                            </li>
-                            <li>
-                                Faire signer l'extension avec web-ext ou sur le site de mozilla.
-                            </li>
-                            <li>
-                                Eberger l'extension sur un site et créer un lien pour pouvoir y accéder.
-                            </li>
-                        </ul>
-                        Pour Chrome (et les autres navigateurs compatibles): 
-                        <ul>
-                            <li>
-                                Afin que l'extension soit dissponible pour tous, il faut l'installer sur le Chrome Web Store. Pour cela, il faut que les équipes de Chromes valident l'extension et poseront peut être des questions. 
-                            </li>
-                            <li>
-                                Si vous n'avez pas envie de faire des démarches, vous pouvez aller sur le panneau des extensions, activer le mode développeur et donner le fichier contenant votre extension ou le fichier <i>manifest.json</i> en fonction du navigateur. 
-                            </li>
-                            <li>
-                                ATTENTION : la syntaxe n'est pas la même pour les extensions firefox et pour chrome (et autres) !
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-                <a class="extension" href="https://github.com/Polosq/choses/releases/latest/download/extension.xpi">Voici un exemple d'extension pour firefox (bugue car pas encore signé)</a>
+                <p style="font-size: 10px; color: gray;">La syntaxe est la même pour les navigateurs : Chrome, Edge, Opera, Brave, Vivaldi et Chromium, mais le mode d'installation peut parfois être différent</p>
+                <br>
+                <button style="background-color: aqua; border-radius: 10px; color: rgb(15, 15, 15); padding: 5px;" id="tutoextension">Cliquez-ici pour avoir un tuto pour créer une extension web</button>
+                <div class="tutocache" style="display: none; left: 400px; top: 1550px; " id="divtutoextension">
+                    <div style="display: flex;">
+                        <span style="flex-grow: 1; font-size: 19px;">
+                            Créer une extension web
+                        </span>
+                        <img src="Images/close.png" style="background-color: rgba(255,255,255,0.4); width: 20px; height: 20px; padding: 1px; border-radius: 5px; cursor: pointer;" id="closeextension">
+                    </div>
+                    <ol>
+                        <li>
+                            Créer un fichier <i>manifest.json</i>.
+                            <br>
+                            Créer un fichier <i>popup.html</i> pour l'interface utilisateur. 
+                            <br>
+                            Créer un fichier <i>popup.js</i>. 
+                            <br>
+                            Créer un fichier <i>background.js</i> (si besoin uniquement !). 
+                        </li>
+                        <li>
+                            Compléter le fichier <i>manifest.json</i>. 
+                            <br>
+                            Voici ci contre un exemple :
+                            <br> 
+                            <img src="Images/tutomanifest.png" style="width: 300px;">
+                        </li>
+                        <li>
+                            Penser a créer les 3 icones aux différentes tailles (16*16 ; 48*48 ; 128*128), de vérifier que la version du manifeste est bonne, et que les permissions nécessaires sont bien écrites. 
+                        </li>
+                        <li>
+                            Compléter le fichier <i>background.js</i>. Afin de le compléter : il est conseillé de chercher la syntaxe sur internet. 
+                        </li>
+                        <li>
+                            Compléter le fichier <i>popup.html</i> : ce sera la page qui sera affichée quand l'utilisateur cliquera sur l'extension depuis son navigateur.
+                        </li>
+                        <li>
+                            Compléter enfin le fichier <i>popup.js</i> qui contiendra les codes principaux en lien avec la popup.
+                        </li>
+                        <li>
+                            Pour Firefox : 
+                            <ul>
+                                <li>
+                                    Compresser le fichier au format '.zip' puis rennomer afin de mettre au format '.xpi'. 
+                                </li>
+                                <li>
+                                    Faire signer l'extension avec web-ext ou sur le site de mozilla.
+                                </li>
+                                <li>
+                                    Eberger l'extension sur un site et créer un lien pour pouvoir y accéder.
+                                </li>
+                            </ul>
+                            Pour Chrome (et les autres navigateurs compatibles): 
+                            <ul>
+                                <li>
+                                    Afin que l'extension soit dissponible pour tous, il faut l'installer sur le Chrome Web Store. Pour cela, il faut que les équipes de Chromes valident l'extension et poseront peut être des questions. 
+                                </li>
+                                <li>
+                                    Si vous n'avez pas envie de faire des démarches, vous pouvez aller sur le panneau des extensions, activer le mode développeur et donner le fichier contenant votre extension ou le fichier <i>manifest.json</i> en fonction du navigateur. 
+                                </li>
+                                <li>
+                                    ATTENTION : la syntaxe n'est pas la même pour les extensions firefox et pour chrome (et autres) !
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <a class="extension" href="https://github.com/Polosq/choses/releases/latest/download/extension.xpi">Voici un exemple d'extension pour firefox (bugue car pas encore signé)</a>
+                </div>
             </div>
 
             <br>
             <br>
 
-            <div id="redirectionmicro" style="display: flex; flex-direction: column;">
-                <div style="align-content: center; text-align: center; border-radius: 10px; background-color: rgba(255,0,0,0.5); padding: 5px; width: 400px; height: 300px; color: white;" id="micropresentation">
-                    <button id="microbutton" class="boutonplay">
-                        Démarrer l'enregistrement...
-                    </button>
-                </div>
-                <audio controls id="audiomicro" style="width:300px; padding: 5px; border-radius: 10px; margin-top: 5px; margin-bottom: 5px;"></audio>
-                <a id="microdownload" download="popole signifie 'pénis'.mp3" style="background-color: rgb(0, 0, 102); width: 100px; padding: 5px; border: none;border-radius: 10px; text-decoration: none;">
-                    Télécharger
-                </a>
-            </div>
-            
-            <br>
-            <br>
-
-            <div id="redirectioncount" style="display: flex;">
-                <div style="align-content: center; text-align: center;">
-                    <div class="countdowncontainer" id="3s_countdown">
-
+            <div id="redirectionmicro">
+                <h1>L'accès au micro :</h1>
+                <div style="display: flex; flex-direction: column;">
+                    <div style="align-content: center; text-align: center; border-radius: 10px; background-color: rgba(255,0,0,0.5); padding: 5px; width: 400px; height: 300px; color: white;" id="micropresentation">
+                        <button id="microbutton" class="boutonplay">
+                            Démarrer l'enregistrement...
+                        </button>
                     </div>
-                    <button class="countdownplay" id="start3s">
-                        Démmarer (3s)
-                    </button>
-                </div>
-                <div style="align-content: center; text-align: center;">
-                    <div class="countdowncontainer" id="30s_countdown">
-
-                    </div>
-                    <button class="countdownplay" id="start30s">
-                        Démmarer (30s)
-                    </button>
-                </div>
-                <div style="align-content: center; text-align: center;">
-                    <div class="countdowncontainer" id="1m_countdown">
-
-                    </div>
-                    <button class="countdownplay" id="start1m">
-                        Démmarer (1m)
-                    </button>
-                </div>
-                <div style="align-content: center; text-align: center;">
-                    <div class="countdowncontainer" id="5m_countdown">
-
-                    </div>
-                    <button class="countdownplay" id="start5m">
-                        Démmarer (5m)
-                    </button>
-                </div>
-                <div style="align-content: center; text-align: center;">
-                    <div class="countdowncontainer" id="chose_countdown">
-
-                    </div>
-                    <button class="countdownplay" id="startchose">
-                        Démmarer (temps choisi)
-                    </button>
-                    <input type="number" min="0" id="countinput" style="background-color: rgba(255,255,255,0.20); border: none; width: 50px;">
+                    <audio controls id="audiomicro" style="width:300px; padding: 5px; border-radius: 10px; margin-top: 5px; margin-bottom: 5px;"></audio>
+                    <a id="microdownload" download="popole signifie 'pénis'.mp3" style="background-color: rgb(0, 0, 102); width: 100px; padding: 5px; border: none;border-radius: 10px; text-decoration: none;">
+                        Télécharger
+                    </a>
                 </div>
             </div>
             
             <br>
             <br>
 
-            <div id="redrectionnotification" style="display: flex;">
-                <button id="asknotif" class="tropstyleee" value="AJOUTE OU JTE BZ">
-                    Ajoute les notifs sinon ça marche pas
-                </button>
-                <button id="launchnotif" class="tropstyleee" value="CLIQUEEE">
-                    Recevoir la notif
-                </button>
+            <div id="redirectioncount">
+                <h1>La fonction setInterval :</h1>
+                <div style="display: flex;">
+                    <div style="align-content: center; text-align: center;">
+                        <div class="countdowncontainer" id="3s_countdown">
+
+                        </div>
+                        <button class="countdownplay" id="start3s">
+                            Démmarer (3s)
+                        </button>
+                    </div>
+                    <div style="align-content: center; text-align: center;">
+                        <div class="countdowncontainer" id="30s_countdown">
+
+                        </div>
+                        <button class="countdownplay" id="start30s">
+                            Démmarer (30s)
+                        </button>
+                    </div>
+                    <div style="align-content: center; text-align: center;">
+                        <div class="countdowncontainer" id="1m_countdown">
+
+                        </div>
+                        <button class="countdownplay" id="start1m">
+                            Démmarer (1m)
+                        </button>
+                    </div>
+                    <div style="align-content: center; text-align: center;">
+                        <div class="countdowncontainer" id="5m_countdown">
+
+                        </div>
+                        <button class="countdownplay" id="start5m">
+                            Démmarer (5m)
+                        </button>
+                    </div>
+                    <div style="align-content: center; text-align: center;">
+                        <div class="countdowncontainer" id="chose_countdown">
+
+                        </div>
+                        <button class="countdownplay" id="startchose">
+                            Démmarer (temps choisi)
+                        </button>
+                        <input type="number" min="0" id="countinput" style="background-color: rgba(255,255,255,0.20); border: none; width: 50px;">
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+
+            <div id="redrectionnotification">
+                <div style="display: flex;">
+                    <button id="asknotif" class="tropstyleee" value="AJOUTE OU JTE BZ">
+                        Ajoute les notifs sinon ça marche pas
+                    </button>
+                    <button id="launchnotif" class="tropstyleee" value="CLIQUEEE">
+                        Recevoir la notif
+                    </button>
+                </div>
             </div>
 
             <br>
             <br>
 
-            <div id="redirectioninputs" style="display: flex; flex-direction: column;">
-                <div style="display: flex;">
-                    <div>
-                        Checkbox : 
-                        <br>
-                        <input type="checkbox" name="check" value="1" id="check1">
-                        <input type="checkbox" name="check" value="2" id="check2">
-                        <input type="checkbox" name="check" value="3" id="check3">
-                        <div id="check_box"></div>
-                        <script>
-                            let check1 = document.getElementById("check1");
-                            let check2 = document.getElementById("check2");
-                            let check3 = document.getElementById("check3");
-                            let spannnnnn = document.getElementById("check_box");
-                            function print(e){
-                                var topush = "";
-                                if (check1.checked==true){
-                                    topush + "1";
-                                }else if(check2.checked==true){
-                                    topush + "2";
-                                }else if(check3.checked==true){
-                                    topush + "3";
-                                }
-                                spannnnnn.innerHTML = topush;
-                            }
-
-                            check1.addEventListener("input", print);
-                            check2.addEventListener("input", print);
-                            check3.addEventListener("input", print);
-                        </script>
-                    </div>
-                    <div style="margin-left: 50px;">
-                        Color : 
-                        <div style="display: flex;">
-                            <input type="button" value="Enable background-color modification" id="button_bckg-modif">
-                            <input type="color" value="#252525" disabled id="bg_color">
+            <div id="redirectioninputs">
+                <h1>Les différents types d'inputs :</h1>
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <div>
+                            Checkbox : 
+                            <br>
+                            <input type="checkbox" name="check" value="1" id="check1">
+                            <input type="checkbox" name="check" value="2" id="check2">
+                            <input type="checkbox" name="check" value="3" id="check3">
+                            <div id="check_box"></div>
                             <script>
-                                let boutoutoutounnnn = document.getElementById("button_bckg-modif");
-                                let color_input = document.getElementById("bg_color");
-                                boutoutoutounnnn.addEventListener("click", function(){
-                                    if (color_input.disabled == true){
-                                        boutoutoutounnnn.value = "Disable background-color modification";
-                                        color_input.disabled = false;
-                                    }else if(color_input.disabled == false){
-                                        boutoutoutounnnn.value = "Enable background-color modification";
-                                        color_input.disabled = true;
+                                let check1 = document.getElementById("check1");
+                                let check2 = document.getElementById("check2");
+                                let check3 = document.getElementById("check3");
+                                let spannnnnn = document.getElementById("check_box");
+                                function print(e){
+                                    var topush = "";
+                                    if (check1.checked==true){
+                                        topush + "1";
+                                    }else if(check2.checked==true){
+                                        topush + "2";
+                                    }else if(check3.checked==true){
+                                        topush + "3";
                                     }
-                                });
-                                color_input.addEventListener("change", function(){
-                                    document.getElementById("body").style.backgroundColor = color_input.value;
-                                });
+                                    spannnnnn.innerHTML = topush;
+                                }
+
+                                check1.addEventListener("input", print);
+                                check2.addEventListener("input", print);
+                                check3.addEventListener("input", print);
                             </script>
+                        </div>
+                        <div style="margin-left: 50px;">
+                            Color : 
+                            <div style="display: flex;">
+                                <input type="button" value="Enable background-color modification" id="button_bckg-modif">
+                                <input type="color" value="#252525" disabled id="bg_color">
+                                <script>
+                                    let boutoutoutounnnn = document.getElementById("button_bckg-modif");
+                                    let color_input = document.getElementById("bg_color");
+                                    boutoutoutounnnn.addEventListener("click", function(){
+                                        if (color_input.disabled == true){
+                                            boutoutoutounnnn.value = "Disable background-color modification";
+                                            color_input.disabled = false;
+                                        }else if(color_input.disabled == false){
+                                            boutoutoutounnnn.value = "Enable background-color modification";
+                                            color_input.disabled = true;
+                                        }
+                                    });
+                                    color_input.addEventListener("change", function(){
+                                        document.getElementById("body").style.backgroundColor = color_input.value;
+                                    });
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
