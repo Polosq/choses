@@ -366,21 +366,24 @@
                                 let check2 = document.getElementById("check2");
                                 let check3 = document.getElementById("check3");
                                 let spannnnnn = document.getElementById("check_box");
+                                check1.checked = false;
+                                check2.checked = false;
+                                check3.checked = false;
                                 function print(e){
                                     var topush = "";
                                     if (check1.checked==true){
-                                        topush + "1";
+                                        topush += "1";
                                     }else if(check2.checked==true){
-                                        topush + "2";
+                                        topush += "2";
                                     }else if(check3.checked==true){
-                                        topush + "3";
+                                        topush += "3";
                                     }
                                     spannnnnn.innerHTML = topush;
                                 }
 
-                                check1.addEventListener("input", print);
-                                check2.addEventListener("input", print);
-                                check3.addEventListener("input", print);
+                                check1.addEventListener("click", print);
+                                check2.addEventListener("click", print);
+                                check3.addEventListener("click", print);
                             </script>
                         </div>
                         <div style="margin-left: 50px;">
@@ -391,6 +394,7 @@
                                 <script>
                                     let boutoutoutounnnn = document.getElementById("button_bckg-modif");
                                     let color_input = document.getElementById("bg_color");
+                                    color_input.disabled = true;
                                     boutoutoutounnnn.addEventListener("click", function(){
                                         if (color_input.disabled == true){
                                             boutoutoutounnnn.value = "Disable background-color modification";
