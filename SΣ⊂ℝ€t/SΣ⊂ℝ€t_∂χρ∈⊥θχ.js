@@ -462,6 +462,9 @@ function pushh(element_a_push){
     msgboxcorpus.removeChild(container);
     msgboxcorpus.removeChild(br);
     msgboxcorpus.removeChild(br);
+    if(msgboxcorpus.childElementCount == 0){
+      setTimeout(popup("off"), 500);
+    }
   });
 }
 
