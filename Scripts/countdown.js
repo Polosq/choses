@@ -14,9 +14,9 @@ let btnchose = document.getElementById("startchose");
 
 
 btn3s.addEventListener("click", function() {
-    if (btn3s.className == "countdownplay"){
-        btn3s.classList.add("countdownstop");
-        btn3s.classList.remove("countdownplay");
+    if (btn3s.className == "boutonplay"){
+        btn3s.classList.add("boutonstop");
+        btn3s.classList.remove("boutonplay");
         let timeleft = 3;
         btn3s.disabled = true;
         let downloadTimer = setInterval(function(){
@@ -28,17 +28,17 @@ btn3s.addEventListener("click", function() {
                 div3s.innerHTML = "";
 
                 btn3s.disabled = false;
-                btn3s.classList.add("countdownplay");
-                btn3s.classList.remove("countdownstop");
+                btn3s.classList.add("boutonplay");
+                btn3s.classList.remove("boutonstop");
             }
         },1000);
     }
 });
 
 btn30s.addEventListener("click", function() {
-    if (btn30s.className == "countdownplay"){
-        btn30s.classList.add("countdownstop");
-        btn30s.classList.remove("countdownplay");
+    if (btn30s.className == "boutonplay"){
+        btn30s.classList.add("boutonstop");
+        btn30s.classList.remove("boutonplay");
         btn30s.disabled=true;
         let timeleft = 30;
         let downloadTimer = setInterval(function(){
@@ -52,8 +52,8 @@ btn30s.addEventListener("click", function() {
             if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btn30s.disabled=false;
-                btn30s.classList.add("countdownplay");
-                btn30s.classList.remove("countdownstop");
+                btn30s.classList.add("boutonplay");
+                btn30s.classList.remove("boutonstop");
 
                 div30s.innerHTML = "";
             }
@@ -62,9 +62,9 @@ btn30s.addEventListener("click", function() {
 });
 
 btn1m.addEventListener("click", function() {
-    if (btn1m.className == "countdownplay"){
-        btn1m.classList.add("countdownstop");
-        btn1m.classList.remove("countdownplay");
+    if (btn1m.className == "bontouplay"){
+        btn1m.classList.add("boutonstop");
+        btn1m.classList.remove("boutonplay");
         btn1m.disabled=true;
         let timeleft = 60;
         let downloadTimer = setInterval(function(){
@@ -78,8 +78,8 @@ btn1m.addEventListener("click", function() {
             if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btn1m.disabled=false;
-                btn1m.classList.add("countdownplay");
-                btn1m.classList.remove("countdownstop");
+                btn1m.classList.add("boutonplay");
+                btn1m.classList.remove("boutonstop");
 
                 div1m.innerHTML = "";
             }
@@ -88,9 +88,9 @@ btn1m.addEventListener("click", function() {
 });
 
 btn5m.addEventListener("click", function() {
-    if (btn5m.className == "countdownplay"){
-        btn5m.classList.add("countdownstop");
-        btn5m.classList.remove("countdownplay");
+    if (btn5m.className == "boutonplay"){
+        btn5m.classList.add("boutonstop");
+        btn5m.classList.remove("boutonplay");
         btn5m.disabled=true;
         let timeleft = 300;
         let downloadTimer = setInterval(function(){
@@ -104,8 +104,8 @@ btn5m.addEventListener("click", function() {
             if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btn5m.disabled=false;
-                btn5m.classList.add("countdownplay");
-                btn5m.classList.remove("countdownstop");
+                btn5m.classList.add("boutonplay");
+                btn5m.classList.remove("boutonstop");
                 
                 div5m.innerHTML = "";
             }
@@ -114,9 +114,9 @@ btn5m.addEventListener("click", function() {
 });
 
 btnchose.addEventListener("click", function() {
-    if (btnchose.className == "countdownplay"){
-        btnchose.classList.add("countdownstop");
-        btnchose.classList.remove("countdownplay");
+    if (btnchose.className == "boutonplay"){
+        btnchose.classList.add("boutonstop");
+        btnchose.classList.remove("boutonplay");
         btnchose.disabled=true;
 
         const time = document.getElementById("countinput").value;
@@ -134,8 +134,8 @@ btnchose.addEventListener("click", function() {
             if(timeleft < -1){
                 clearInterval(downloadTimer);
                 btnchose.disabled=false;
-                btnchose.classList.add("countdownplay");
-                btnchose.classList.remove("countdownstop");
+                btnchose.classList.add("boutonplay");
+                btnchose.classList.remove("boutonstop");
 
                 const msg = "Votre minuteur de " + time + " minutes est terminé !";
                 const finished = new Notification("Minuteur", {body: msg});

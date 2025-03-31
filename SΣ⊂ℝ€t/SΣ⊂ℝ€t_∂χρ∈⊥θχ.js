@@ -425,15 +425,26 @@ function draw(name){
   $(div).addClass("corpuscopypaste");
   var dessin = document.createTextNode(dessin_a_push);
   div.appendChild(dessin);
+
+  var divflex = document.createElement("div");
+  divflex.style.display = "flex";
   
   var btnn = document.createElement("button");
   let txt = "Copier";
   var btnvalue = document.createTextNode(txt);
   btnn.id="COPY_PASTE";
-  $(btnn).addClass("countdownplay");
+  $(btnn).addClass("boutonplay");
   container.appendChild(br);
-  container.appendChild(btnn);
+  container.appendChild(divflex);
+  divflex.appendChild(btnn);
   btnn.appendChild(btnvalue)
+
+  var close_btn = document.createElement("button");
+  var close_btn_value = document.createTextNode("Delete");
+  close_btn.id="CLOSE";
+  $(close_btn).addClass("boutonstop");
+  divflex.appendChild(close_btn);
+  close_btn.appendChild(close_btn_value);
   
  
   msgboxcorpus.appendChild(container);
@@ -443,6 +454,11 @@ function draw(name){
   
   btnn.addEventListener("click", function(){
     navigator.clipboard.writeText(dessin_a_push);
+  });
+  close_btn.addEventListener("click", function(){
+    msgboxcorpus.removeChild(container);
+    msgboxcorpus.removeChild(br);
+    msgboxcorpus.removeChild(br);
   });
 }
 

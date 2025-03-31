@@ -354,27 +354,6 @@ div.countdowncontainer{
     flex-grow: 1;
 }
 
-button.countdownplay{
-    padding:5px;
-    border-radius: 10px;
-    background-color: #00b400;
-    border: none;
-    color: rgb(0,0,0);
-    text-align: center;
-}
-
-button.countdownplay:hover{
-    background-color: #00ff00;
-}
-
-button.countdownstop{
-    padding:5px;
-    border-radius: 10px;
-    background-color: #bb0000;
-    border: none;
-    color: rgb(0,0,0);
-    text-align: center;
-}
 
 button.tropstyleee{
     background: linear-gradient(135deg, #6a11cb, #2575fc); /* Utilisation du dégradé le plus récent */
