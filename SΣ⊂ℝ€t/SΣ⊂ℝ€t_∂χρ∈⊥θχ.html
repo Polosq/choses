@@ -108,14 +108,10 @@
 
         <h1>TUTO - Prendre le contrôle d'un ordinateur <strong>windows</strong> sans mot de passe :</h1>
         <div>
-            <div style="background-color: rgba(168, 168, 168, 0.733); padding: 5px; border-radius: 10px;" id="blured_div">
-                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                    <button id="blur_button" style="background-color: rgb(168, 168, 168); padding: 5px; border-radius: 10px;">
-                        Afficher les instructions
-                    </button>
-                </div>
-            </div>
-            <div style="background-color: white; color: black;">
+            <button id="blur_button" style="background-color: rgb(168, 168, 168); padding: 5px; border-radius: 10px;">
+                Afficher les instructions
+            </button>
+            <div style="background-color: white; color: black; transition: filter 0.3s ease-in-out; filter: blur(5px);" id="blured_div">
                 <ol>
                     <li>
                         Aller dans le menu pour éteindre l'ordinateur.
@@ -173,12 +169,12 @@
         </button>
         <script>
             document.getElementById("blur_button").addEventListener('click', function(){
-                document.getElementById("blured_div").style.display = "none";
+                document.getElementById("blured_div").style.filter = "blur(0px)";
                 document.getElementById("blur_button").style.display = "none";
             });
         </script>
         
-        <div style="position: fixed; top: 25px; right: 370px; background-color: rgba(255,255,255,0.5); padding: 5px; border-radius: 10px; align-content: center;">
+        <div style="position: fixed; top: 25px; right: 370px; background-color: rgb(92,92,92); padding: 5px; border-radius: 10px; align-content: center;">
             <form id="form_separator">
                 <fieldset style="display: flex;flex-direction: column;">
                     <legend>Sélectionnez un séparateur :</legend>
