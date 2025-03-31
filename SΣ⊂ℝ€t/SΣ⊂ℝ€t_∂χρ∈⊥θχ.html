@@ -8,6 +8,7 @@
     </head>
     <body id="body">
 
+        <h1>La génération de texte :</h1>
         <div style="display: flex;" class="secretCategory">
             <input type="number" placeholder="Côté" id="cotedick" min="5" step="2">
             <input type="number" placeholder="hauteur" id="hauteurdick" min="3" step="2">
@@ -65,9 +66,9 @@
         <br>
 
         <div class="secretCategory">
-            <h1 style="margin-top: 0px;">
+            <h2 style="margin-top: 0px;">
                 Transformateur de texte : 
-            </h1>
+            </h2>
             <div>
                 <textarea type="text" id="user-text-to-modif" placeholder="Entrez le texte à modifier ..." style="min-width: 600px; width: fit-content; height: 100px;border: none; text-decoration: none; background-color: rgba(255,255,255,0.2); border-radius: 10px; text-align: left; resize: vertical;"></textarea>
                 <br>
@@ -105,7 +106,75 @@
             </div>
         </div>
 
-
+        <h1>TUTO - Prendre le contrôle d'un ordinateur <strong>windows</strong> sans mot de passe :</h1>
+        <div style="background-color: rgba(168, 168, 168, 0.733); padding: 5px; border-radius: 10px;" id="blured_div">
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <button id="blur_button" style="background-color: rgb(168, 168, 168); padding: 5px; border-radius: 10px;">
+                    Afficher les instructions
+                </button>
+            </div>
+            <div style="background-color: white; color: black;">
+                <ol>
+                    <li>
+                        Aller dans le menu pour éteindre l'ordinateur.
+                    </li>
+                    <li>
+                        Laisser appuyé sur la touche "Shift" ou "Maj" et cliquer tout en laissant appuyé sur "Redémarrer". 
+                        <br>
+                        Cela ouvrira le mode de dépannage de l'ordinateur. 
+                    </li>
+                    <li>
+                        Une fois dans le mode de dépannage, cliquer sur "Dépanner" puis sur "Options avancées".
+                    </li>
+                    <li>
+                        Cliquer maintenant sur "Invite de commandes".
+                    </li>
+                    <li>
+                        Une fois dans l'invite de commandes, taper la commande suivante : 
+                        <br>
+                        <code>ren sethc.exe sethold.exe</code> qui va renommer le service des touches rémanantes en 'sethold.exe'.
+                        <br>
+                        Vous pouvez nommer 'sethold.exe' comme vous le souhaitez, il faut seulement que le nom soit différent de l'ancien et que vous le reteniez facilement pour remettre l'ordinateur à la normale ensuite. 
+                    </li>
+                    <li>
+                        Par sécuritée, si vous le souhaitez, vous pouvez faire une copie de cmd : 
+                        <br>
+                        <code>copy cmd.exe <i>le_nom_que_vous_voulez</i></code>
+                    </li>
+                    <li>
+                        Ensuite, renommez le fichier 'cmd.exe' en 'sethc.exe' : 
+                        <br>
+                        <code>ren cmd.exe sethc.exe</code>. 
+                        <br>
+                        Ainsi, quand vouez appuirez 5 fois sur la touche 'Shift' ou 'Maj', l'invite de commande s'ouvrira en mode administrateur, que vous soyez connectés a un compte ou non.
+                    </li>
+                    <li>
+                        Pour finir, redémarrez l'ordinateur et appuyez 5 fois sur la touche 'Shift' ou 'Maj' pour ouvrir l'invite de commande.
+                        <br>
+                        Pour que chaque commande s'exécute ou soit prise en compte, il faut parfois redémarrer l'ordinateur. 
+                    </li>
+                </ol>
+                <span>Pour aller plus loin :</span>
+                <br>
+                <span>Un compte adminstrateur existe sur chaque ordinateur par défaut :</span>
+                <br>
+                <span>Il est possible de le réactiver en tappant : <code>net user Administrateur /active:yes</code> puis <code>net user Administrateur *</code> qui vous permettra de mettre le mot de passe de votre choix pour ce compte.</span> 
+                <br>
+                <span>Enfin, n'oubliez pas de redémarrer l'ordinateur afin que les changements soit appliqués</span>
+                <p style="color: red; font-weight: bold;">ATTENTION : Cette méthode est illégale et peut causer des problèmes si vous ne savez pas ce que vous faites. Utilisez-la à vos risques et périls.</p>
+                
+            </div>
+            
+        </div>
+        <button id="push_netuser" style="background-color: rgb(168, 168, 168); padding: 5px; border-radius: 10px; margin-bottom: 5px;">
+            Afficher les instructions dans la boite de dialogue
+        </button>
+        <script>
+            document.getElementById("blur_button").addEventListener('click', function(){
+                document.getElementById("blured_div").style.display = "none";
+                document.getElementById("blur_button").style.display = "none";
+            });
+        </script>
         
         <div style="position: fixed; top: 25px; right: 370px; background-color: rgba(255,255,255,0.5); padding: 5px; border-radius: 10px; align-content: center;">
             <form id="form_separator">

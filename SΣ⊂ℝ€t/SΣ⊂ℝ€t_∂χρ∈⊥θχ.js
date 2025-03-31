@@ -381,14 +381,11 @@ function sexy_woman(){
 }
 
 
-
 function choose(){
   let text = document.getElementById("user-text-to-modif").value;
   let reponse = text.replace(new RegExp(caractere_a_modif, "g"), caractere);
   return reponse;
 }
-
-
 
 
 function draw(name){
@@ -418,6 +415,23 @@ function draw(name){
   }
   pushh(dessin_a_push)
 }
+
+
+function netuser_push(){
+  let text = "1. Aller dans le menu pour éteindre l'ordinateur." + "\n";
+  text += "2. Laisser appuyé sur la touche 'Shift' ou 'Maj' et cliquer tout en laissant appuyé sur 'Redémarrer'. " + "\n" + "Cela ouvrira le mode de dépannage de l'ordinateur. " + "\n";
+  text += "3. Une fois dans le mode de dépannage, cliquer sur 'Dépanner' puis sur 'Options avancées'." + "\n";
+  text += "4. Cliquer maintenant sur 'Invite de commandes'." + "\n";
+  text += "5. Une fois dans l'invite de commandes, taper la commande suivante : " + "\n" + "'ren sethc.exe sethold.exe' qui va renommer le service des touches rémanantes en 'sethold.exe'." + "\n" + "Vous pouvez nommer 'sethold.exe' comme vous le souhaitez, il faut seulement que le nom soit différent de l'ancien et que vous le reteniez facilement pour remettre l'ordinateur à la normale ensuite. " + "\n";
+  text += "6. Par sécuritée, si vous le souhaitez, vous pouvez faire une copie de cmd : " + "\n" + "copy cmd.exe *le_nom_que_vous_voulez*" + "\n";
+  text += "7. Ensuite, renommez le fichier 'cmd.exe' en 'sethc.exe' : " + "\n" + "'ren cmd.exe sethc.exe'" + "\n" + "Ainsi, quand vouez appuirez 5 fois sur la touche 'Shift' ou 'Maj', l'invite de commande s'ouvrira en mode administrateur, que vous soyez connectés a un compte ou non." + "\n";
+  text += "8. Pour finir, redémarrez l'ordinateur et appuyez 5 fois sur la touche 'Shift' ou 'Maj' pour ouvrir l'invite de commande." + "\n" + "Pour que chaque commande s'exécute ou soit prise en compte, il faut parfois redémarrer l'ordinateur. " + "\n";
+  text += "Pour aller plus loin : \nUn compte administrateur existe sur chaque ordinateur par défaut : \nIl est possible de le réactiver en tappant : 'net user Administrateur /active:yes' puis 'net user Administrateur *' qui vous permettra de mettre le mot de passe de votre choix pour ce compte \nEnfin, n'oubliez pas de redémarrer l'ordinateur afin que les changements soit appliqués \nATTENTION : Cette méthode est illégale et peut causer des problèmes si vous ne savez pas ce que vous faites. Utilisez-la à vos risques et périls..."
+
+  pushh(text);
+}
+
+
 
 function pushh(element_a_push){
   var container = document.createElement("div");
@@ -520,6 +534,14 @@ document.getElementById("-20rr-truck_generator").addEventListener("click", funct
 document.getElementById("sexy-girl_generator").addEventListener("click", function(){
   popup("on");
   draw("sexy-girl");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
+});
+
+document.getElementById("push_netuser").addEventListener("click", function(){
+  popup("on");
+  netuser_push();
   close_popup.addEventListener("click", function(){
     popup("off");
   })
