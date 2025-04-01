@@ -34,7 +34,7 @@ function score_actualiser(){
 
 function upgrades_actualiser(){
     let upgraded = false;
-    for (let i; i>=20; i++){
+    for (let i; i>=length(upgrades); i++){
         // Tests pour savoir si l'amélioration est débloquée
         if(upgrades_débloquées[i] == "unlocked"){
             upgraded = true;
