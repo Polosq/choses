@@ -83,6 +83,7 @@ function upgrades_actualiser(){
 
                 score -= parseInt(upgrades[i][3]);
                 $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
+                actualiser();
             }
         })
     }
