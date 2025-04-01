@@ -546,3 +546,14 @@ document.getElementById("push_netuser").addEventListener("click", function(){
     popup("off");
   })
 });
+
+window.addEventListener("scroll", function () {
+  var maDiv = document.getElementById("separator_selector");
+  if (window.scrollY > 889) {
+      maDiv.style.position = "absolute";
+      maDiv.style.top = "725px";
+  } else {
+      maDiv.style.position = "fixed";
+      maDiv.style.top = "25px";
+  }
+});
