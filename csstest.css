@@ -306,6 +306,10 @@ div.tutocache{
     top: 50px;
     left: 400px;
 }
+.large-button:focus {
+	background: url('https://www.myinstants.com/media/images/transparent_button_sprite.png') no-repeat;
+	background-position: -5px -5px;
+}
 
 .large-button-background {
 	width: 188px;
