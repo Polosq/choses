@@ -13,20 +13,30 @@
                 <h3>Le nouveau clicker de ...</h3>
             </div>
             <div style="display: flex;">
-                <div style="text-align: center; align-content: center; justify-content: center;">
+                <div style="text-align: center; align-content: center; justify-content: center; align-items: center; flex-grow: 0.3;">
                     <div style="margin-bottom: 20px;">
                         <h4 id="score">Score total : 0</h4>
                     </div>
                     <div>
-                        <div class="circle large-button-background" style="background-color:#FF0000; border-radius: 100%;"></div>
+                        <div style="background-color:#FF0000; border-radius: 100%;"></div>
                         <button id="click_button" class="large-button" title="- Click to earn -"></button>
                     </div>
                 </div>
-                <div>
-
+                <div style="flex-grow: 0.5;">
+                    <div style="text-align: center; align-content: center; justify-content: center; align-items: center;">
+                        <h4 id="score_middle">Score total : 0</h4>
+                        <h4 id="best_score">Méilleur score : 0</h4>
+                    </div>
+                    <div>
+                        Blabla bckground stylé annimations et events a cliquer (en position absolute ou relative)
+                    </div>
                 </div>
-                <div>
-
+                <div style="flex-grow: 0.2; background-color: rgb(146, 146, 146); border-radius: 10px;">
+                    <h4>Améliorations :</h4>
+                    <h6>Modifier le background en fonction du thème avec différents styles/images et idem pour chaque cases d'amélioration</h6>
+                    <div id="amelioration_list">
+                        
+                    </div>
                 </div>
             </div>
         </div>
