@@ -33,7 +33,7 @@ function score_actualiser(){
 function upgrades_actualiser(){
     amelioration_container.innerHTML = "";
     let upgraded = false;
-    for (let i=1; i<upgrades_débloquées.length+1; i++){
+    for (let i=1; i<upgrades_débloquées.length; i++){
         // Tests pour savoir si l'amélioration est débloquée
         if(upgrades_débloquées[i] == "unlocked"){
             upgraded = true;
