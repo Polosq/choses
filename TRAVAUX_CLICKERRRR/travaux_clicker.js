@@ -41,9 +41,6 @@ function upgrades_actualiser(){
             upgraded = false;
         }
 
-        console.error(upgrades_debloquees[i]);
-        console.info(upgraded);
-
         // Création de la boite d'amélioration
         let flexcontent = document.createElement("div");
         flexcontent.style.display = "flex";
