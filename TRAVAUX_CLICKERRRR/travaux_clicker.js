@@ -88,7 +88,8 @@ function upgrades_actualiser(){
         amelioration_container.appendChild(container);
 
         container.addEventListener("click", function(){
-            if(score-upgrades[i][2]>=0){
+            console.info(upgrades[i][2]);
+            if(score >= upgrades[i][2]){
                 if(upgraded && upgrades_débloquées[i-1] == "unlocked"){
                     upgrades_débloquées[i+1] = "unlocked";
                     upgrades[i][3]++;
@@ -98,6 +99,9 @@ function upgrades_actualiser(){
                     // faire une animation plus tard
 
                 }
+            }
+            else{
+                // faire une animation en rouge pour dire que pas assez de crédits
             }
             
         });
