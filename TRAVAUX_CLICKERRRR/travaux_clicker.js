@@ -98,7 +98,6 @@ function upgrades_actualiser(){
                     $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
                     actualiser();
                     // faire une animation plus tard
-
                 }
             }
             else{
