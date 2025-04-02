@@ -41,6 +41,7 @@ function upgrades_actualiser(){
             upgraded = false;
         }
 
+        console.error(upgrades_debloquees[i]);
         console.info(upgraded);
 
         // Création de la boite d'amélioration
@@ -92,7 +93,7 @@ function upgrades_actualiser(){
         container.addEventListener("click", function(){
             if(score >= upgrades[i][2]){
                 console.info(upgraded);
-                if(upgraded == true && upgrades_debloquees[i-1] == "unlocked"){
+                if(upgraded && upgrades_debloquees[i-1] == "unlocked"){
                     upgrades_debloquees[i+1] = "unlocked";
                     upgrades[i][3]++;
                     score -= upgrades[i][2];
