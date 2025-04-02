@@ -44,12 +44,8 @@ function upgrades_actualiser(){
         // Création de la boite d'amélioration
 
         let container = document.createElement("div");
-        if (upgrades_débloquées[i+1] == "unlocked" && upgraded && upgrades_débloquées[i-1] == "unlocked"){
-            $(container).addClass("upgradecontainer_upgraded");
-        }else{
-            $(container).addClass("upgradecontainer");
-        }
-
+        $(container).addClass("upgradecontainer");
+        
         let h4 = document.createElement("h4");
         if(upgraded){
             var h4value = document.createTextNode(upgrades[i][0]);
@@ -79,15 +75,15 @@ function upgrades_actualiser(){
         amelioration_container.appendChild(container);
 
         container.addEventListener("click", function(){
-            upgrades_débloquées[i+1] = "unlocked";
-            upgrades[i][3]++;
-            // faire une animation plus tard
-
             if(score-upgrades[i][2]>=0){
-                if(upgraded){
+                if(upgrades_débloquées[i+1] == "unlocked" && upgraded && upgrades_débloquées[i-1] == "unlocked"){
+                    upgrades_débloquées[i+1] = "unlocked";
+                    upgrades[i][3]++;
                     score -= upgrades[i][2];
                     $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
                     actualiser();
+                    // faire une animation plus tard
+
                 }
             }
             
