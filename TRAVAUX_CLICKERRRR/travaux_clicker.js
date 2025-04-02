@@ -33,7 +33,7 @@ function score_actualiser(){
 
 function upgrades_actualiser(){
     let upgraded = false;
-    for (let i; i>=upgrades_débloquées.length; i++){
+    for (let i=0; i>=upgrades_débloquées.length; i++){
         // Tests pour savoir si l'amélioration est débloquée
         if(upgrades_débloquées[i] == "unlocked"){
             upgraded = true;
@@ -52,39 +52,47 @@ function upgrades_actualiser(){
         }
 
         let h4 = document.createElement("h4");
-        let h4value = document.createTextNode(upgrades[i][0]);
+        if(upgraded){
+            var h4value = document.createTextNode(upgrades[i][0]);
+        }else{
+            var h4value = document.createTextNode("???");
+        }
         $(h4).addClass("upgradetitle");
         container.appendChild(h4);
         h4.appendChild(h4value);
         container.appendChild(br);
 
         let h6 = document.createElement("h6");
-        let h6value = document.createTextNode(upgrades[i][1]);
+        if (upgraded){
+            var h6value = document.createTextNode(upgrades[i][1]);
+        }else {
+            var h6value = document.createTextNode("???");
+        }
         container.appendChild(h6);
         h6.appendChild(h6value);
 
-        if (upgrades_débloquées[i+1] == "locked"){ //ligne utile???? est ce qu'on affiche le prix qd on a déja acheté
-            if (upgrades_débloquées[i]=="unlocked"){
-                let prix = document.createElement("h6");
-                let prixvalue = document.createTextNode(upgrades[i][3] + " crédits")
+         //ligne utile???? est ce qu'on affiche le prix qd on a déja acheté
+        if (upgrades_débloquées[i]=="unlocked"){
+            let prix = document.createElement("h6");
+            let prixvalue = document.createTextNode(upgrades[i][3] + " crédits")
 
-                container.appendChild(br);
-                container.appendChild(prix);
-            }
+            container.appendChild(br);
+            container.appendChild(prix);
         }
-
+        
         amelioration_container.appendChild(container);
 
         container.addEventListener("click", function(){
-            if(upgrades_débloquées[i+1]=="locked"){
-                upgrades_débloquées[i+1] = "unlocked";
-                // faire une animation plus tard
+            upgrades_débloquées[i+1] = "unlocked";
+            upgrades[i][4]++;
+            // faire une animation plus tard
 
-                score -= upgrades[i][3];
+            if(score-upgrades[i][3]>=0){
                 $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
                 actualiser();
             }
-        })
+            
+        });
     }
 }
 
