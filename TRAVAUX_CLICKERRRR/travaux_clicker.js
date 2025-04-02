@@ -26,7 +26,6 @@ function score_actualiser(){
     }
 
     // PENSER A FAIRE DES ARRONDIS
-
     affichage_score_button.innerHTML = "Score total : " + score;
     affichage_score_title.innerHTML = "Score total : " + score;
     affichage_maxscore_title.innerHTML = "Méilleur score : " + score_max;
