@@ -70,7 +70,7 @@ function upgrades_actualiser(){
          //ligne utile???? est ce qu'on affiche le prix qd on a déja acheté
         if (upgrades_débloquées[i]=="unlocked"){
             let prix = document.createElement("h6");
-            let prixvalue = document.createTextNode(upgrades[i][3] + " crédits")
+            let prixvalue = document.createTextNode(upgrades[i][2] + " crédits")
             prix.appendChild(prixvalue);
 
             container.appendChild(prix);
@@ -80,11 +80,12 @@ function upgrades_actualiser(){
 
         container.addEventListener("click", function(){
             upgrades_débloquées[i+1] = "unlocked";
-            upgrades[i][4]++;
+            upgrades[i][3]++;
             // faire une animation plus tard
 
             if(score-upgrades[i][3]>=0){
                 if(upgraded){
+                    score -= upgrades[i][3];
                     $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
                     actualiser();
                 }
