@@ -34,9 +34,10 @@ function upgrades_actualiser(){
     let upgraded = false;
     for (let i=1; i<upgrades_debloquees.length; i++){
         // Tests pour savoir si l'amélioration est débloquée
+        console.error(upgrades_debloquees[i]);
         if(upgrades_debloquees[i] == "unlocked"){
             upgraded = true;
-        }else {
+        }else if(upgrades_debloquees[i] == "locked"){
             upgraded = false;
         }
 
@@ -89,8 +90,6 @@ function upgrades_actualiser(){
 
         container.addEventListener("click", function(){
             if(score >= upgrades[i][2]){
-                console.log(upgraded);
-                console.info(upgrades_debloquees[i-1]);
                 if(upgraded && upgrades_debloquees[i-1] == "unlocked"){
                     upgrades_debloquees[i+1] = "unlocked";
                     upgrades[i][3]++;
