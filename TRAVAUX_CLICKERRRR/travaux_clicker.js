@@ -23,8 +23,7 @@ function score_actualiser(){
     if (score>score_max){
         score_max = score;
     }
-
-    // PENSER A FAIRE DES ARRONDIS
+    // PENSER A FAIRE DES ARRONDIS?
     affichage_score_button.innerHTML = "Score total : " + score;
     affichage_score_title.innerHTML = "Score total : " + score;
     affichage_maxscore_title.innerHTML = "Méilleur score : " + score_max;
