@@ -13,6 +13,9 @@ body{
 	border: 0;
 	display: block;
 	-webkit-tap-highlight-color: transparent;
+    position: relative;
+    right: 5px;
+    bottom: 6px;
 }
 .large-button:focus {
 	background: url('https://www.myinstants.com/media/images/transparent_button_sprite.png') no-repeat;

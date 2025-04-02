@@ -11,7 +11,6 @@ let affichage_maxscore_title = document.getElementById("best_score");
 
 let amelioration_container = document.getElementById("amelioration_list");
 
-
 function actualiser(){
     //Changement des affichage de score
     score_actualiser();
@@ -99,3 +98,5 @@ document.getElementById("click_button").addEventListener("click", function(){
     score++;
     actualiser();
 });
+
+actualiser();
