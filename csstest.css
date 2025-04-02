@@ -316,9 +316,7 @@ div.tutocache{
 	height: 174px;
 	margin-top: 7px;
 	margin-left: 6px;
-	position: absolute;
-    top: 50px;
-    left: 400px;
+	position: relative;
 }
 
 button.boutonstop{
