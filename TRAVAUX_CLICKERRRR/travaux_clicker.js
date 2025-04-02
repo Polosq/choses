@@ -34,6 +34,7 @@ function upgrades_actualiser(){
     let upgraded = false;
     for (let i=1; i<upgrades_debloquees.length; i++){
         // Tests pour savoir si l'amélioration est débloquée
+        
         console.error(upgrades_debloquees[i]);
         if(upgrades_debloquees[i] == "unlocked"){
             upgraded = true;
