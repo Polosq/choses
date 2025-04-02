@@ -32,6 +32,7 @@ function score_actualiser(){
 }
 
 function upgrades_actualiser(){
+    amelioration_container.innerHTML = "";
     let upgraded = false;
     for (let i=0; i<upgrades_débloquées.length; i++){
         // Tests pour savoir si l'amélioration est débloquée
