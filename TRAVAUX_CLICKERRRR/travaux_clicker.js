@@ -88,9 +88,11 @@ function upgrades_actualiser(){
         amelioration_container.appendChild(container);
 
         container.addEventListener("click", function(){
-            console.info(upgrades[i][2]);
             if(score >= upgrades[i][2]){
+                console.log("i = " + i);
+                console.info("Suffisament pour acheter");
                 if(upgraded && upgrades_débloquées[i-1] == "unlocked"){
+                    console.info("Conditions remplies => exécution"); 
                     upgrades_débloquées[i+1] = "unlocked";
                     upgrades[i][3]++;
                     score -= upgrades[i][2];
