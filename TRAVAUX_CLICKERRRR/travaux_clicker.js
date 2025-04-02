@@ -85,8 +85,10 @@ function upgrades_actualiser(){
             // faire une animation plus tard
 
             if(score-upgrades[i][3]>=0){
-                $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
-                actualiser();
+                if(upgraded){
+                    $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
+                    actualiser();
+                }
             }
             
         });
