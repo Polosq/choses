@@ -1,4 +1,4 @@
-let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], [".......", "....", 500, 0], ["???", "???", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
+let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], [".......", "....", 10, 0], ["???", "???", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
 let upgrades_débloquées = ["unlocked", "unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
 
 let score = 0;
@@ -43,8 +43,15 @@ function upgrades_actualiser(){
 
         // Création de la boite d'amélioration
 
+        let flexcontent = document.createElement("div");
+        flexcontent.style.display = "flex";
+        let infos = document.createElement("div");
+        infos.style.flexGrow = "1";
+        flexcontent.appendChild(infos);
+
         let container = document.createElement("div");
         $(container).addClass("upgradecontainer");
+        container.appendChild(flexcontent)
         
         let h4 = document.createElement("h4");
         if(upgraded){
@@ -52,18 +59,25 @@ function upgrades_actualiser(){
         }else{
             var h4value = document.createTextNode("???");
         }
-        container.appendChild(h4);
+        infos.appendChild(h4);
         h4.appendChild(h4value);
+
         let h6 = document.createElement("h6");
         if (upgraded){
             var h6value = document.createTextNode(upgrades[i][1]);
         }else {
             var h6value = document.createTextNode("???");
         }
-        container.appendChild(h6);
+        infos.appendChild(h6);
         h6.appendChild(h6value);
 
-         //ligne utile???? est ce qu'on affiche le prix qd on a déja acheté
+        if(upgrades[i][3] != 0){
+            let value = document.createTextNode("X " + upgrades[i][3]);
+            let howmuch_div = document.createTextNode("div");
+            howmuch_div.appendChild(value);
+            flexcontent.appendChild(howmuch_div);
+        }
+        
         if (upgrades_débloquées[i]=="unlocked"){
             let prix = document.createElement("h6");
             let prixvalue = document.createTextNode(upgrades[i][2] + " crédits")
@@ -76,7 +90,7 @@ function upgrades_actualiser(){
 
         container.addEventListener("click", function(){
             if(score-upgrades[i][2]>=0){
-                if(upgrades_débloquées[i+1] == "unlocked" && upgraded && upgrades_débloquées[i-1] == "unlocked"){
+                if(upgraded && upgrades_débloquées[i-1] == "unlocked"){
                     upgrades_débloquées[i+1] = "unlocked";
                     upgrades[i][3]++;
                     score -= upgrades[i][2];
