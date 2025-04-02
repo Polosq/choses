@@ -43,7 +43,6 @@ function upgrades_actualiser(){
         }
 
         // Création de la boite d'amélioration
-        let br = document.createElement("br");
 
         let container = document.createElement("div");
         if (upgrades_débloquées[i+1] == "unlocked"){
@@ -58,11 +57,8 @@ function upgrades_actualiser(){
         }else{
             var h4value = document.createTextNode("???");
         }
-        $(h4).addClass("upgradetitle");
         container.appendChild(h4);
         h4.appendChild(h4value);
-        container.appendChild(br);
-
         let h6 = document.createElement("h6");
         if (upgraded){
             var h6value = document.createTextNode(upgrades[i][1]);
@@ -76,8 +72,8 @@ function upgrades_actualiser(){
         if (upgrades_débloquées[i]=="unlocked"){
             let prix = document.createElement("h6");
             let prixvalue = document.createTextNode(upgrades[i][3] + " crédits")
+            prix.appendChild(prixvalue);
 
-            container.appendChild(br);
             container.appendChild(prix);
         }
         

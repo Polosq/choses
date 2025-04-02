@@ -36,12 +36,6 @@ div.bigcontainer{
     text-align: left;
 }
 
-h4.upgradetitle{
-    padding: 2px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.35);
-}
-
 .upgradecontainer_upgraded{
     border-radius: 10px;
     padding: 5px;
