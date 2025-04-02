@@ -93,6 +93,7 @@ function upgrades_actualiser(){
         container.addEventListener("click", function(){
             if(score >= upgrades[i][2]){
                 console.info(upgraded);
+                console.log(upgrades_debloquees[i]);
                 if(upgraded && upgrades_debloquees[i-1] == "unlocked"){
                     upgrades_debloquees[i+1] = "unlocked";
                     upgrades[i][3]++;
