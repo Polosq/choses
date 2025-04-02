@@ -83,9 +83,9 @@ function upgrades_actualiser(){
             upgrades[i][3]++;
             // faire une animation plus tard
 
-            if(score-upgrades[i][3]>=0){
+            if(score-upgrades[i][2]>=0){
                 if(upgraded){
-                    score -= upgrades[i][3];
+                    score -= upgrades[i][2];
                     $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
                     actualiser();
                 }
