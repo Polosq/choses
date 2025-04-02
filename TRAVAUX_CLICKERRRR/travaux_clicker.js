@@ -1,5 +1,5 @@
 let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], [".......", "....", 10, 0], ["???", "???", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
-let upgrades_débloquées = ["unlocked", "unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
+let upgrades_debloquees = ["unlocked", "unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
 
 let score = 0;
 let score_max = 0;
@@ -32,9 +32,9 @@ function score_actualiser(){
 function upgrades_actualiser(){
     amelioration_container.innerHTML = "";
     let upgraded = false;
-    for (let i=1; i<upgrades_débloquées.length; i++){
+    for (let i=1; i<upgrades_debloquees.length; i++){
         // Tests pour savoir si l'amélioration est débloquée
-        if(upgrades_débloquées[i] == "unlocked"){
+        if(upgrades_debloquees[i] == "unlocked"){
             upgraded = true;
         }else {
             upgraded = false;
@@ -77,7 +77,7 @@ function upgrades_actualiser(){
             flexcontent.appendChild(howmuch_div);
         }
         
-        if (upgrades_débloquées[i]=="unlocked"){
+        if (upgrades_debloquees[i]=="unlocked"){
             let prix = document.createElement("h6");
             let prixvalue = document.createTextNode(upgrades[i][2] + " crédits")
             prix.appendChild(prixvalue);
@@ -89,11 +89,10 @@ function upgrades_actualiser(){
 
         container.addEventListener("click", function(){
             if(score >= upgrades[i][2]){
-                console.log("i = " + i);
-                console.info("Suffisament pour acheter");
-                if(upgraded && upgrades_débloquées[i-1] == "unlocked"){
-                    console.info("Conditions remplies => exécution"); 
-                    upgrades_débloquées[i+1] = "unlocked";
+                console.log(upgraded);
+                console.info(upgrades_debloquees[i-1]);
+                if(upgraded && upgrades_debloquees[i-1] == "unlocked"){
+                    upgrades_debloquees[i+1] = "unlocked";
                     upgrades[i][3]++;
                     score -= upgrades[i][2];
                     $(container).addClass("upgradecontainer_upgraded").removeClass("upgradecontainer");
