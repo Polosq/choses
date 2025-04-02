@@ -1,5 +1,5 @@
-let upgrades = [[".......", "....", 500, 0], ["???", "???", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
-let upgrades_débloquées = ["unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
+let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], [".......", "....", 500, 0], ["???", "???", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
+let upgrades_débloquées = ["unlocked", "unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
 
 let score = 0;
 let score_max = 0;
@@ -33,7 +33,7 @@ function score_actualiser(){
 function upgrades_actualiser(){
     amelioration_container.innerHTML = "";
     let upgraded = false;
-    for (let i=0; i<upgrades_débloquées.length; i++){
+    for (let i=1; i<upgrades_débloquées.length+1; i++){
         // Tests pour savoir si l'amélioration est débloquée
         if(upgrades_débloquées[i] == "unlocked"){
             upgraded = true;
@@ -44,7 +44,7 @@ function upgrades_actualiser(){
         // Création de la boite d'amélioration
 
         let container = document.createElement("div");
-        if (upgrades_débloquées[i+1] == "unlocked"){
+        if (upgrades_débloquées[i+1] == "unlocked" && upgraded && upgrades_débloquées[i-1] == "unlocked"){
             $(container).addClass("upgradecontainer_upgraded");
         }else{
             $(container).addClass("upgradecontainer");
