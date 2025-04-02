@@ -44,7 +44,6 @@ function upgrades_actualiser(){
         console.info(upgraded);
 
         // Création de la boite d'amélioration
-
         let flexcontent = document.createElement("div");
         flexcontent.style.display = "flex";
         let infos = document.createElement("div");
