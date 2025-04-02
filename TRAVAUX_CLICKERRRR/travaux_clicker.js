@@ -102,7 +102,6 @@ function upgrades_actualiser(){
             }
             else{
                 // faire une animation en rouge pour dire que pas assez de crédits
-                
             }
             
         });
