@@ -72,9 +72,9 @@ function upgrades_actualiser(){
 
         if(upgrades[i][3] != 0){
             let value = document.createTextNode("X " + upgrades[i][3]);
-            let howmuch_div = document.createTextNode("div");
-            howmuch_div.appendChild(value);
+            let howmuch_div = document.createElement("div");
             flexcontent.appendChild(howmuch_div);
+            howmuch_div.appendChild(value);
         }
         
         if (upgrades_debloquees[i]=="unlocked"){
