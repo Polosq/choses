@@ -40,7 +40,7 @@ function newupgrade(index){
     if (index == 1){
         upgrade1 = setInterval(function(){
             count += upgrades[index][3];
-            actualiser
+            actualiser();
         }, 1000);
     }
 
