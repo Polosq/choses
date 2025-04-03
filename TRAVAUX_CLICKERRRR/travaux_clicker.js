@@ -48,7 +48,7 @@ function newupgrade(index){
 
 function letsupgrade(index){
 
-    
+
     // ^^ A compléter au fur et a mesure ^^
 
     changeprice(index);
@@ -77,7 +77,7 @@ function upgrades_actualiser(){
         flexcontent.appendChild(infos);
 
         let container = document.createElement("div");
-        if(upgraded[i+1] == "locked"){
+        if(upgrades_debloquees[i+1] == "locked"){
             $(container).addClass("upgradecontainer");
         }else{
             $(container).addClass("upgradecontainer_upgraded")
