@@ -77,10 +77,12 @@ function upgrades_actualiser(){
         flexcontent.appendChild(infos);
 
         let container = document.createElement("div");
-        if(upgrades_debloquees[i+1] == "locked"){
-            $(container).addClass("upgradecontainer");
+        if(upgrades_debloquees[i+1] == "unlocked"){
+            $(container).addClass("upgradecontainer_upgraded");
+        }else if(i==20 && upgrades_debloquees[i] == "unlocked"){
+            $(container).addClass("upgradecontainer_upgraded");
         }else{
-            $(container).addClass("upgradecontainer_upgraded")
+            $(container).addClass("upgradecontainer")
         }
         container.appendChild(flexcontent)
         
