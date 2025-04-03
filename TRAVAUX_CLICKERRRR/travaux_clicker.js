@@ -39,7 +39,7 @@ function newupgrade(index){
     upgrades_debloquees[index+1] = "unlocked";
     if (index == 1){
         upgrade1 = setInterval(function(){
-            count += upgrades[index][3];
+            score += upgrades[index][3];
             actualiser();
         }, 1000);
     }
