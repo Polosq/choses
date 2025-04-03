@@ -48,10 +48,7 @@ function newupgrade(index){
 }
 
 function letsupgrade(index){
-    
-    if (index == 1){
-        upgrades[index][3] ++;
-    }
+
 
     // ^^ A compléter au fur et a mesure ^^
 
