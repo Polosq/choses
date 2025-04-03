@@ -48,7 +48,6 @@ function newupgrade(index){
 
 function letsupgrade(index){
 
-
     // ^^ A compléter au fur et a mesure ^^
 
     changeprice(index);
