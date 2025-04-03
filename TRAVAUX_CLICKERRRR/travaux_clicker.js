@@ -10,7 +10,6 @@ let affichage_score_button = document.getElementById("score");
 let affichage_score_title = document.getElementById("score_middle");
 let affichage_maxscore_title = document.getElementById("best_score");
 
-
 let amelioration_container = document.getElementById("amelioration_list");
 
 function actualiser(){
