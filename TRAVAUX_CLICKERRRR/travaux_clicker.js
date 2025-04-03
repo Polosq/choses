@@ -78,7 +78,11 @@ function upgrades_actualiser(){
         flexcontent.appendChild(infos);
 
         let container = document.createElement("div");
-        $(container).addClass("upgradecontainer");
+        if(upgraded[i+1] == "locked"){
+            $(container).addClass("upgradecontainer");
+        }else{
+            $(container).addClass("upgradecontainer_upgraded")
+        }
         container.appendChild(flexcontent)
         
         let h4 = document.createElement("h4");
@@ -121,13 +125,12 @@ function upgrades_actualiser(){
                 if(upgrades_debloquees[i] == "unlocked" && upgrades_debloquees[i-1] == "unlocked"){
                     if (upgrades_debloquees[i+1] == "locked"){
                         newupgrade(i);
+                        $(container).removeClass("upgradecontainer");    
                     }
                     
                     upgrades[i][3]++;
                     score -= upgrades[i][2];
-                    $(container).addClass("upgradecontainer_upgraded");
-                    $(container).removeClass("upgradecontainer");
-
+                    
                     letsupgrade(i);
 
                     actualiser();
