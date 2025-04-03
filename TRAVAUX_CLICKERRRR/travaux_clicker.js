@@ -31,7 +31,7 @@ function score_actualiser(){
 }
 
 function changeprice(index){
-    upgrades[index][2] = upgrades[index][2] * pricemultiplication[index];
+    upgrades[index][2] = upgrades[index][2] * pricemultiplication[upgrades[index][3]];
 }
 
 function newupgrade(index){
