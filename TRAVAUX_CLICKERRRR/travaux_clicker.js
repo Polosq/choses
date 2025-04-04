@@ -1,4 +1,4 @@
-let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], ["Investissement", "Rapporte 1 crédit toutes les secondes", 250, 0], ["???", "???", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
+let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], ["Investissement", "Rapporte 1 crédit toutes les secondes", 250, 0], ["Gants en cuir", "+1 crédit a chaque clic", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
 let upgrades_debloquees = ["unlocked", "unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
 
 let pricemultiplication = [1, 2, 3, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 47, 53, 59, 67, 73, 83, 89, 97];
@@ -9,8 +9,18 @@ let score_max = 0;
 let affichage_score_button = document.getElementById("score");
 let affichage_score_title = document.getElementById("score_middle");
 let affichage_maxscore_title = document.getElementById("best_score");
+let affichage_nbpers = document.getElementById("nb_per_s");
 
 let amelioration_container = document.getElementById("amelioration_list");
+
+// Variables des améliorations
+let click_force = 1;
+let click_per_second = 0;
+
+
+
+
+
 
 function actualiser(){
     //Changement des affichage de score
@@ -18,6 +28,10 @@ function actualiser(){
 
     //Changement des affichages d'améliorations
     upgrades_actualiser();
+}
+
+function click_stats_actualiser(){
+
 }
 
 function score_actualiser(){
@@ -31,24 +45,35 @@ function score_actualiser(){
 }
 
 function changeprice(index){
-    upgrades[index][2] = upgrades[index][2] * pricemultiplication[upgrades[index][3]];
+    upgrades[index][2] = upgrades[index][2] * pricemultiplication[upgrades[index][3]+1];
 }
 
 function newupgrade(index){
     upgrades_debloquees[index+1] = "unlocked";
     if (index == 1){
-        upgrade1 = setInterval(function(){
+        click_per_second ++;
+        affichage_nbpers.style.display = "block";
+        affichage_nbpers.innerHTML = "Crédits par seconde : " + click_per_second;
+        let upgrade1 = setInterval(function(){
             score += upgrades[index][3];
             actualiser();
         }, 1000);
+    }else if (index == 2){
+        click_force ++;
     }
+
 
     changeprice(index);
 }
 
 function letsupgrade(index){
 
-
+    if (index == 1){
+        click_per_second ++;
+        affichage_nbpers.innerHTML = "Crédits par seconde : " + click_per_second;
+    }else if (index == 2){
+        click_force ++;
+    }
     // ^^ A compléter au fur et a mesure ^^
 
     changeprice(index);
@@ -124,15 +149,17 @@ function upgrades_actualiser(){
         container.addEventListener("click", function(){
             if(score >= upgrades[i][2]){
                 if(upgrades_debloquees[i] == "unlocked" && upgrades_debloquees[i-1] == "unlocked"){
-                    upgrades[i][3]++;
-                    score -= upgrades[i][2];
-
+                    
                     if (upgrades_debloquees[i+1] == "locked"){
                         newupgrade(i);
                         $(container).removeClass("upgradecontainer");    
+                    } else{                
+                        letsupgrade(i);
                     }
-                    
-                    letsupgrade(i);
+
+                    upgrades[i][3]++;
+                    score -= upgrades[i][2];
+
 
                     actualiser();
                     // faire une animation plus tard
@@ -147,7 +174,7 @@ function upgrades_actualiser(){
 }
 
 document.getElementById("click_button").addEventListener("click", function(){
-    score++;
+    score += click_force;
     actualiser();
 });
 
