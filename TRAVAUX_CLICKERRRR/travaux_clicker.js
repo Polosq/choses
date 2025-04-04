@@ -45,7 +45,7 @@ function score_actualiser(){
 }
 
 function changeprice(index){
-    upgrades[index][2] = upgrades[index][2] * pricemultiplication[upgrades[index][3]+1];
+    upgrades[index][2] = upgrades[index][2] * pricemultiplication[upgrades[index][3]];
 }
 
 function newupgrade(index){
@@ -150,16 +150,15 @@ function upgrades_actualiser(){
             if(score >= upgrades[i][2]){
                 if(upgrades_debloquees[i] == "unlocked" && upgrades_debloquees[i-1] == "unlocked"){
                     
+                    upgrades[i][3]++;
+                    score -= upgrades[i][2];
+
                     if (upgrades_debloquees[i+1] == "locked"){
                         newupgrade(i);
                         $(container).removeClass("upgradecontainer");    
                     } else{                
                         letsupgrade(i);
                     }
-
-                    upgrades[i][3]++;
-                    score -= upgrades[i][2];
-
 
                     actualiser();
                     // faire une animation plus tard
