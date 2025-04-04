@@ -16,6 +16,7 @@ let amelioration_container = document.getElementById("amelioration_list");
 // Variables des améliorations
 let click_force = 1;
 let click_per_second = 0;
+let click_x2_count = 0;
 
 
 
@@ -61,6 +62,7 @@ function newupgrade(index){
         click_force ++;
     }
     else if (index == 3){
+        click_x2_count ++;
         clearInterval(upgrade1);
         var upgrade2 = setInterval(function(){
             score += click_per_second*2^upgrades[index][3];
@@ -78,7 +80,11 @@ function letsupgrade(index){
         click_stats_actualiser();
     }else if (index == 2){
         click_force ++;
+    }else if (index == 3){
+        click_x2_count ++;
     }
+
+
     // ^^ A compléter au fur et a mesure ^^
 
     changeprice(index);
