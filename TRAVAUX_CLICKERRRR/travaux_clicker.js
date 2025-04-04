@@ -1,4 +1,4 @@
-let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], ["Investissement", "Rapporte 1 crédit toutes les secondes", 250, 0], ["Gants en cuir", "+1 crédit a chaque clic", 2500, 0], ["???", "???", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
+let upgrades = [["Titre", "Infos", "prix", "nombre possedés"], ["Don", "Rapporte 1 crédit toutes les secondes", 250, 0], ["Gants en cuir", "+1 crédit a chaque clic", 2500, 0], ["Investissement", "Multiplie par deux le nombre de crédits par seconde", 10000, 0], ["???", "???", 50000, 0], ["???", "???", 200320, 0], ["???", "???", 503462, 0], ["???", "???", 1536356, 0], ["???", "???", 3753458, 0], ["???", "???", 7345320, 0], ["???", "???", 23642086, 0], ["???", "???", 5507539842, 0], ["???", "???", 12662496534, 0], ["???", "???", 52623462465, 0], ["???", "???", 92913247545, 0], ["???", "???", 298763098375, 0], ["???", "???", 420437693875, 0], ["???", "???", 720985284234, 0], ["???", "???", 2987098708745, 0], ["???", "???", 5098765209209, 0], ["???", "???", 8539438250853, 0]];
 let upgrades_debloquees = ["unlocked", "unlocked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked", "locked"];
 
 let pricemultiplication = [1, 2, 3, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 47, 53, 59, 67, 73, 83, 89, 97];
@@ -29,7 +29,7 @@ function actualiser(){
 }
 
 function click_stats_actualiser(){
-
+    affichage_nbpers.innerHTML = "Crédits par seconde : " + click_per_second;
 }
 
 function score_actualiser(){
@@ -51,13 +51,20 @@ function newupgrade(index){
     if (index == 1){
         click_per_second ++;
         affichage_nbpers.style.display = "block";
-        affichage_nbpers.innerHTML = "Crédits par seconde : " + click_per_second;
-        let upgrade1 = setInterval(function(){
+        click_stats_actualiser();
+        var upgrade1 = setInterval(function(){
             score += upgrades[index][3];
             actualiser();
         }, 1000);
-    }else if (index == 2){
+    }
+    else if (index == 2){
         click_force ++;
+    }
+    else if (index == 3){
+        clearInterval(upgrade1);
+        var upgrade2 = setInterval(function(){
+            score += click_per_second*2^upgrades[index][3];
+        }, 1000);
     }
 
 
@@ -68,7 +75,7 @@ function letsupgrade(index){
 
     if (index == 1){
         click_per_second ++;
-        affichage_nbpers.innerHTML = "Crédits par seconde : " + click_per_second;
+        click_stats_actualiser();
     }else if (index == 2){
         click_force ++;
     }
