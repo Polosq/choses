@@ -21,7 +21,6 @@ let click_x2_count = 0;
 
 
 
-
 function actualiser(){
     //Changement des affichage de score
     score_actualiser();
