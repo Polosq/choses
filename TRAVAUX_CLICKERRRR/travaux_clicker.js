@@ -20,8 +20,6 @@ let click_per_second = 0;
 
 
 
-
-
 function actualiser(){
     //Changement des affichage de score
     score_actualiser();
