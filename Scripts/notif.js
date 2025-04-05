@@ -2,9 +2,19 @@ document.getElementById("asknotif").addEventListener("click", function() {
     Notification.requestPermission().then(permission => {
         if (permission == "granted") {
             document.getElementById("FAVEEEEE").play();
-            new Notification("Notification enabled!", {
-                image: "../Images/FAVEEEE.png",
+            self.addEventListener("push", event => {
+                const options = {
+                    body: "Voici une notification avec une grande image !",
+                    icon: "../Images/FAVEEEE.png",  // Petite icône
+                    image: "../Images/FAVEEEE.png", // Grande image
+                    badge: "../Images/FAVEEEE.png"
+                };
+            
+                event.waitUntil(
+                    self.registration.showNotification("Titre de la notification", options)
+                );
             });
+            
             
         }
     });    
