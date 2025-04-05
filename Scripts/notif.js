@@ -1,7 +1,11 @@
 document.getElementById("asknotif").addEventListener("click", function() {
     Notification.requestPermission().then(permission => {
         if (permission == "granted") {
-            new Notification("Notification enabled!");
+            document.getElementById("FAVEEEEE").play();
+            new Notification("Notification enabled!", {
+                image: "../Images/FAVEEEE.png",
+            });
+            
         }
     });    
 });
