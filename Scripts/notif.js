@@ -4,7 +4,7 @@ document.getElementById("asknotif").addEventListener("click", function() {
             document.getElementById("FAVEEEEE").play();
             new Notification("Notification enabled !", {
                 body : "FAVEEEE",
-            })
+            });
         }
     });    
 });
