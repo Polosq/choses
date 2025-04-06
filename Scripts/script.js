@@ -189,3 +189,8 @@ divV.addEventListener("click", codesecret);
 divH.addEventListener("click", codesecret);
 divnwse.addEventListener("click", codesecret);
 divnesw.addEventListener("click", codesecret);
+
+document.getElementById('TOP7_FAVEEEEE').addEventListener('click', function() {
+    document.getElementById('body'). innerHTML = '<audio autoplay loop src="audio/FAVEEEEEEEEEE.mp3"></audio>';
+    document.getElementById('body').style.backgroundImage = 'url(Images/FAVEEEE.png)';
+});
