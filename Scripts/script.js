@@ -176,6 +176,7 @@ function codesecret(e){
     }
 }
 
+
 divdefault.addEventListener("click", codesecret);
 divhelp.addEventListener("click", codesecret);
 divpointer.addEventListener("click", codesecret);
