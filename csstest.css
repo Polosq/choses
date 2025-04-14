@@ -154,6 +154,7 @@ div.presentation{
     height: 85px;
     align-content: center;
     transition: all 0.3s ease;
+    margin: 0.5px;
 }
 
 div.presentation:hover{
