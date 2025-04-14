@@ -362,9 +362,8 @@ function nerd(){
   chaine += caractere + '▜███▛' + caractere.repeat(4) + '██████████' + caractere.repeat(5) + '\n';
   chaine += caractere.repeat(3) + '███' + caractere.repeat(6) + '████████' + caractere.repeat(6) + '\n';
 
-
-
-
+  return chaine;
+  
 /*
 
 ••••••••••••████████•••••• 
