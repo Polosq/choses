@@ -149,9 +149,7 @@ div.presentation{
     background: radial-gradient(circle, rgba(132,147,255,1) 26%, rgba(128,249,247,1) 100%);
     padding: 5px;
     border-radius: 7px;
-    border-width: 1px;
-    border-style: solid;
-    border-color:black;
+    border: none;
     width: 121px;
     height: 85px;
     align-content: center;
@@ -169,8 +167,7 @@ a.clique{
     color: #000;
     text-decoration: none;
     border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
+    border: none;
 }
 a.cliquer{
     background-color: #000;
