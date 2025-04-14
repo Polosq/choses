@@ -363,7 +363,7 @@ function nerd(){
   chaine += caractere.repeat(3) + '███' + caractere.repeat(6) + '████████' + caractere.repeat(6) + '\n';
 
   return chaine;
-  
+
 /*
 
 ••••••••••••████████•••••• 
@@ -749,9 +749,9 @@ document.getElementById("push_netuser").addEventListener("click", function(){
 
 window.addEventListener("scroll", function () {
   var maDiv = document.getElementById("separator_selector");
-  if (window.scrollY > 1000) {
+  if (window.scrollY > 916) {
       maDiv.style.position = "absolute";
-      maDiv.style.top = "1025px";
+      maDiv.style.top = "941px";
   } else {
       maDiv.style.position = "fixed";
       maDiv.style.top = "25px";
