@@ -68,7 +68,7 @@ function BITE(cote, hauteur) {
     let espace = Math.floor(Math.floor((Math.floor((cote + 1) / 2)-1)/9) - correction);
   
     // Test pour le mode valorant
-    if (val_mode.checked == 'true') {
+    if (val_mode.checked) {
       chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
     }
 
@@ -139,7 +139,7 @@ function uninstalling(){
   let chaine = "";
 
   // Test pour le mode valorant
-  if (val_mode.checked == 'true') {
+  if (val_mode.checked) {
     chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
   }
 
@@ -167,7 +167,7 @@ function mario(){
   let chaine = "";
 
   // Test pour le mode valorant
-  if (val_mode.checked == 'true') {
+  if (val_mode.checked) {
     chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
   }
 
@@ -213,7 +213,7 @@ function ggez(){
   let chaine = "";
 
   // Test pour le mode valorant
-  if (val_mode.checked == 'true') {
+  if (val_mode.checked) {
     chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
   }
 
@@ -239,7 +239,7 @@ function valo_truck(){
   let chaine = "";
 
   // Test pour le mode valorant
-  if (val_mode.checked == 'true') {
+  if (val_mode.checked) {
     chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
   }
 

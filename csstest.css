@@ -461,8 +461,9 @@ div.secretCategory{
     border: none;
     color: rgb(0,0,0);
     text-align: center;
+    text-decoration: none;
 }
 
 .download:hover{
-    background-color: #0077ff;
+    background-color: #00ccff;
 }
