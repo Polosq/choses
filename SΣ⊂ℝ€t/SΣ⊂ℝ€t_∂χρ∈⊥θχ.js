@@ -590,9 +590,9 @@ document.getElementById("push_netuser").addEventListener("click", function(){
 
 window.addEventListener("scroll", function () {
   var maDiv = document.getElementById("separator_selector");
-  if (window.scrollY > 674) {
+  if (window.scrollY > 665) {
       maDiv.style.position = "absolute";
-      maDiv.style.top = "723px";
+      maDiv.style.top = "690px";
   } else {
       maDiv.style.position = "fixed";
       maDiv.style.top = "25px";
