@@ -329,7 +329,7 @@ button.boutonstop{
 button.boutonplay{
     padding:5px;
     border-radius: 10px;
-    background-color: #00b400;
+    background-color: #00bb00;
     border: none;
     color: rgb(0,0,0);
     text-align: center;
@@ -446,9 +446,22 @@ div.secretCategory{
     transition: all 0.3s ease;
 }
 
-  .troll-button:hover {
+.troll-button:hover {
     position: absolute;
     top: calc(50% - 20px);
     left: calc(50% - 50px);
     transform: translate(calc(50px - 100%), calc(20px - 50%));
+}
+
+.download{
+    padding:5px;
+    border-radius: 10px;
+    background-color: #27b0ff;
+    border: none;
+    color: rgb(0,0,0);
+    text-align: center;
+}
+
+.download:hover{
+    background-color: #0077ff;
 }

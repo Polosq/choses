@@ -494,6 +494,15 @@ function pushh(element_a_push){
   $(close_btn).addClass("boutonstop");
   divflex.appendChild(close_btn);
   close_btn.appendChild(close_btn_value);
+
+  const blob = new Blob([element_a_push], { type: "text/plain" });
+  var download_btn = document.createElement("a");
+  var download_btn_value = document.createTextNode("Download");
+  $(download_btn).addClass('download');
+  download_btn.href = URL.createObjectURL(blob);
+  download_btn.download = "fichier.txt";
+  download_btn.appendChild(download_btn_value);
+  divflex.appendChild(download_btn); 
   
   container.appendChild(br);
   container.appendChild(br);
