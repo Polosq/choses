@@ -8,7 +8,7 @@ boutonmic.addEventListener('click', async () => {
     if(boutonmic.className == 'boutonplay'){
         boutonmic.style.display="none";
         
-        div.style.backgroundColor = "rgba(0,255,0,0.5)";
+        div.style.backgroundColor = "rgb(12,92,12)";
         boutonmic.style.display="block";
         div.style.alignContent = "center";
         div.style.textAlign = "center";
@@ -36,7 +36,7 @@ boutonmic.addEventListener('click', async () => {
         
     }else{
         mediaRecorder.stop();
-        div.style.backgroundColor = "rgba(255,0,0,0.5)";
+        div.style.backgroundColor = "rgb(92,12,12)";
         boutonmic.className = 'boutonplay';
         boutonmic.innerHTML = "Démarrer l'enregistrement ...";
     }
