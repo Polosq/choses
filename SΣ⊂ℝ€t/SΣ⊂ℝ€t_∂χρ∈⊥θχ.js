@@ -592,7 +592,7 @@ window.addEventListener("scroll", function () {
   var maDiv = document.getElementById("separator_selector");
   if (window.scrollY > 665) {
       maDiv.style.position = "absolute";
-      maDiv.style.top = "690px";
+      maDiv.style.top = "687px";
   } else {
       maDiv.style.position = "fixed";
       maDiv.style.top = "25px";
