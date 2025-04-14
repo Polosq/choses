@@ -226,11 +226,11 @@ function ggez(){
 
 /*
 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░ 
-░░░█▀▀▀░█▀▀▀░░█▀▀░▀▀█░░█░░░ 
-░░░█░▀█░█░▀█░░█▀▀░▄▀░░░▀░░░ 
-░░░▀▀▀▀░▀▀▀▀░░▀▀▀░▀▀▀░░▀░░░ 
-░░░░░░░░░░░░░░░( ͡° ͜u ͡°)_╭∩╮
+░░░░░░░░░░░░░░░░░░░░░░░░░░ 
+░░░█▀▀▀░█▀▀▀░░█▀▀░▀▀█░░█░░ 
+░░░█░▀█░█░▀█░░█▀▀░▄▀░░░▀░░ 
+░░░▀▀▀▀░▀▀▀▀░░▀▀▀░▀▀▀░░▀░░ 
+░░░░░░░░░░░░░░( ͡° ͜u ͡°)_╭∩╮
 
 */
 }
@@ -260,6 +260,132 @@ function valo_truck(){
 
 */
 }
+
+function middle_finger(){
+  let chaine = "";
+  // Test pour le mode valorant
+  if (val_mode.checked) {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+
+  chaine += caractere.repeat(13) + '█████████' + caractere.repeat(4) + '\n';
+  chaine += caractere.repeat(12) + '███████████' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(11) + '██▀▀█████▀▀██' + caractere.repeat(2) + '\n';
+  chaine += caractere.repeat(10) + '█████▄███▄█████' + caractere + '\n';
+  chaine += caractere.repeat(4) + '█' + caractere.repeat(4) + '▐██' + caractere.repeat(3) + '█████' + caractere.repeat(3) + '██▌' + '\n';
+  chaine += caractere.repeat(4) + '█' + caractere.repeat(4) + '▐██■' + caractere.repeat(2) + '█████■' + caractere.repeat(2) + '██▌' + '\n';
+  chaine += caractere.repeat(4) + '█' + caractere.repeat(4) + '▐███████████████▌' + '\n';
+  chaine += caractere.repeat(3) + '███' + caractere.repeat(3) + '▐███████████████▌' + '\n';
+  chaine += caractere.repeat(2) + '▐███' + caractere.repeat(3) + '▐████▀▀▀▀▀▀▀████▌' + '\n';
+  chaine += caractere.repeat(2) + '▐███▌' + caractere.repeat(2) + '▐███▌■■■■■■■▐███▌' + '\n';
+  chaine += caractere.repeat(3) + '███▌' + caractere.repeat(3) + '███▌■■■■■■■▐███' + caractere + '\n';
+  chaine += caractere.repeat(4) + '█████▌' + caractere + '███▄▄▄▄▄▄▄███' + caractere.repeat(2) + '\n';
+  chaine += caractere.repeat(5) +'█████' + caractere.repeat(2) + '███████████' + caractere.repeat(3) + '\n';
+
+  return chaine;  
+/*
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒█████████▒▒▒▒
+▒▒▒▒▒▒▒▒▒▒▒▒███████████▒▒▒
+▒▒▒▒▒▒▒▒▒▒▒██▀▀█████▀▀██▒▒
+▒▒▒▒▒▒▒▒▒▒█████▄███▄█████▒
+▒▒▒▒█▒▒▒▒▐██░░░█████░░░██▌
+▒▒▒▒█▒▒▒▒▐██■░░█████■░░██▌
+▒▒▒▒█▒▒▒▒▐███████████████▌
+▒▒▒███▒▒▒▐███████████████▌
+▒▒▐███▒▒▒▐████▀▀▀▀▀▀▀████▌
+▒▒▐███▌▒▒▐███▌■■■■■■■▐███▌
+▒▒▒███▌▒▒▒███▌■■■■■■■▐███▒
+▒▒▒▒█████▌▒███▄▄▄▄▄▄▄███▒▒
+▒▒▒▒▒█████▒▒███████████▒▒▒
+
+*/
+}
+
+function monkey(){
+  let chaine = "";
+  // Test pour le mode valorant
+  if (val_mode.checked) {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+
+  chaine += caractere.repeat(7) + '▄██████████▄' + caractere.repeat(7) + '\n';
+  chaine += caractere.repeat(5) + '▄██████████████▄' + caractere.repeat(5) + '\n';
+  chaine += caractere.repeat(4) + '██████████████████' + caractere.repeat(4) + '\n';
+  chaine += caractere.repeat(3) + '▐███▀▀▀▀▀██▀▀▀▀▀███▌' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(3) + '███' + caractere.repeat(2) + '▌■▐' + caractere.repeat(4) + '▌■▐' + caractere.repeat(2) + '███' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(3) + '▐██▄' + caractere + '▀▀▀' + caractere.repeat(4) + '▀▀▀' + caractere + '▄██▌' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(4) + '▀████' + caractere + '▄▄' + caractere.repeat(2) + '▄▄' + caractere + '████▀' + caractere.repeat(4) + '\n';
+  chaine += caractere.repeat(4) + '▐███' + caractere.repeat(3) + '▀' + caractere.repeat(2) + '▀' + caractere.repeat(3) + '███▌' + caractere.repeat(4) + '\n';
+  chaine += caractere.repeat(4) + '███' + caractere.repeat(12) + '███' + caractere.repeat(4) + '\n';
+  chaine += caractere.repeat(5) + '██' + caractere.repeat(2) + '▀▀▀▀▀▀▀▀' + caractere.repeat(2) + '██' + caractere.repeat(5) + '\n';
+  chaine += caractere.repeat(5) + '▐██▄' + caractere.repeat(8) + '▄██▌' + caractere.repeat(5) + '\n';
+  chaine += caractere.repeat(6) + '▀████████████▀' + caractere.repeat(6) + '\n';
+
+  return chaine;
+
+/*
+
+▒▒▒▒▒▒▒▄██████████▄▒▒▒▒▒▒▒
+▒▒▒▒▒▄██████████████▄▒▒▒▒▒
+▒▒▒▒██████████████████▒▒▒▒
+▒▒▒▐███▀▀▀▀▀██▀▀▀▀▀███▌▒▒▒
+▒▒▒███▒▒▌■▐▒▒▒▒▌■▐▒▒███▒▒▒
+▒▒▒▐██▄▒▀▀▀▒▒▒▒▀▀▀▒▄██▌▒▒▒
+▒▒▒▒▀████▒▄▄▒▒▄▄▒████▀▒▒▒▒
+▒▒▒▒▐███▒▒▒▀▒▒▀▒▒▒███▌▒▒▒▒
+▒▒▒▒███▒▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒
+▒▒▒▒▒██▒▒▀▀▀▀▀▀▀▀▒▒██▒▒▒▒▒
+▒▒▒▒▒▐██▄▒▒▒▒▒▒▒▒▄██▌▒▒▒▒▒
+▒▒▒▒▒▒▀████████████▀▒▒▒▒▒▒
+
+*/
+}
+
+function nerd(){
+  let chaine = "";
+  // Test pour le mode valorant
+  if (val_mode.checked) {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+  chaine += caractere.repeat(12) + '████████' + caractere.repeat(6) + '\n';
+  chaine += caractere.repeat(11) + '██████████' + caractere.repeat(5) + '\n';
+  chaine += caractere.repeat(10) + '█▄▄▄████▄▄▄█' + caractere.repeat(4) + '\n';
+  chaine += caractere.repeat(5) + '▄' + caractere.repeat(3) + '█░░░░░██░░░░░█' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(5) + '█' + caractere.repeat(2) + '░░░▓■▓░░░░▓■▓░░░' + caractere.repeat(2) + '\n';
+  chaine += caractere.repeat(5) + '█' + caractere.repeat(2) + '▐█░▓▓▓░██░▓▓▓░█▌' + caractere.repeat(2) + '\n';
+  chaine += caractere.repeat(5) + '█' + caractere.repeat(2) + '▐██░░░████░░░██▌' + caractere.repeat(2) + '\n';
+  chaine += caractere.repeat(5) + '█' + caractere.repeat(2) + '▐█▛██████████▛█▌' + caractere.repeat(2) + '\n';
+  chaine += caractere.repeat(2) + '▌▌▌▄▄' + caractere.repeat(2) + '██▚████████▞██' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(2) + '▌▌▌▀█' + caractere.repeat(2) + '████▀████▀████' + caractere.repeat(3) + '\n';
+  chaine += caractere.repeat(2) + '▄▄▄██' + caractere.repeat(3) + '████▄■■▄████' + caractere.repeat(5) + '\n';
+  chaine += caractere + '▜███▛' + caractere.repeat(4) + '██████████' + caractere.repeat(5) + '\n';
+  chaine += caractere.repeat(3) + '███' + caractere.repeat(6) + '████████' + caractere.repeat(6) + '\n';
+
+
+
+
+/*
+
+••••••••••••████████•••••• 
+•••••••••••██████████••••• 
+••••••••••█▄▄▄████▄▄▄█•••• 
+•••••▄•••█░░░░░██░░░░░█••• 
+•••••█••░░░▓■▓░░░░▓■▓░░░•• 
+•••••█••▐█░▓▓▓░██░▓▓▓░█▌•• 
+•••••█••▐██░░░████░░░██▌•• 
+•••••█••▐█▛██████████▛█▌•• 
+••▌▌▌▄▄••██▚████████▞██••• 
+••▌▌▌▀█••████▀████▀████••• 
+••▄▄▄██•••████▄■■▄████•••••
+•▜███▛••••██████████•••••
+•••███••••••████████••••••
+
+
+*/
+}
+
+
 
 function sexy_woman(){
   let chaine = "";
@@ -442,6 +568,15 @@ function draw(name){
   else if(name == "truck"){
     var dessin_a_push = valo_truck();
   }
+  else if(name == "middlefinger"){
+    var dessin_a_push = middle_finger();
+  }
+  else if(name == "monkey"){
+    var dessin_a_push = monkey();
+  }
+  else if(name == "nerd"){
+    var dessin_a_push = nerd();
+  }
   else if(name == "sexy-girl"){
     var dessin_a_push = sexy_woman();
   }
@@ -572,6 +707,31 @@ document.getElementById("-20rr-truck_generator").addEventListener("click", funct
   })
 });
 
+document.getElementById('middle-finger_generator').addEventListener("click", function(){
+  popup("on");
+  draw("middlefinger");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
+});
+
+document.getElementById('monkey_generator').addEventListener("click", function(){
+  popup("on");
+  draw("monkey");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
+});
+
+document.getElementById('nerd_generator').addEventListener("click", function(){
+  popup("on");
+  draw("nerd");
+  close_popup.addEventListener("click", function(){
+    popup("off");
+  })
+});
+
+
 document.getElementById("sexy-girl_generator").addEventListener("click", function(){
   popup("on");
   draw("sexy-girl");
@@ -590,9 +750,9 @@ document.getElementById("push_netuser").addEventListener("click", function(){
 
 window.addEventListener("scroll", function () {
   var maDiv = document.getElementById("separator_selector");
-  if (window.scrollY > 660) {
+  if (window.scrollY > 1000) {
       maDiv.style.position = "absolute";
-      maDiv.style.top = "680px";
+      maDiv.style.top = "1025px";
   } else {
       maDiv.style.position = "fixed";
       maDiv.style.top = "25px";
