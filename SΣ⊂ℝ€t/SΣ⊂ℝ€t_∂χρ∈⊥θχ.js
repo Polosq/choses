@@ -7,6 +7,8 @@ let uninstalling_val = document.getElementById("uninstalling-val_generator");
 let poop_mario = document.getElementById("mario-pooping_generator");
 let transform_generator = document.getElementById("transform_generator");
 
+let val_mode = document.getElementById('valmode_input');
+
 let close_popup = document.getElementById("close_popup");
 
 const form = document.getElementById("form_separator");
@@ -65,6 +67,12 @@ function BITE(cote, hauteur) {
     let chaine = "";
     let espace = Math.floor(Math.floor((Math.floor((cote + 1) / 2)-1)/9) - correction);
   
+    // Test pour le mode valorant
+    if (val_mode.checked == 'true') {
+      chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+    }
+
+
     // Programme qui fait la partie supérieure
     chaine += caractere.repeat(espace) + caractere + "_".repeat(cote) + caractere + caractere.repeat(espace) + "\n";
     chaine += caractere.repeat(espace) + "/" + caractere.repeat(cote) + "\\" + caractere.repeat(espace) + "\n";
@@ -129,6 +137,12 @@ function BITE(cote, hauteur) {
 
 function uninstalling(){
   let chaine = "";
+
+  // Test pour le mode valorant
+  if (val_mode.checked == 'true') {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+
   chaine += caractere.repeat(3) + "UNINSTALLING VALORANT" + caractere.repeat(2) + "\n";
   chaine += "▇▇▇▇▇▇▇▇▇▇▇▇▇▇▢" + "\n";
   chaine += caractere.repeat(8) + "╭━╮╭━╮╭╮ ╱ " + caractere.repeat(7) + "\n";
@@ -151,6 +165,12 @@ function uninstalling(){
 
 function mario(){
   let chaine = "";
+
+  // Test pour le mode valorant
+  if (val_mode.checked == 'true') {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+
   chaine += caractere.repeat(9) + "▓▓▓▓▀█" + caractere.repeat(13) + "\n";
   chaine += caractere.repeat(6) + "▄▀▓▓▄██████▄" + caractere.repeat(10) + "\n";
   chaine += caractere.repeat(5) + "▄█▄█▀" + caractere.repeat(2) +"▄" + caractere + "▄" + caractere + "█▀" + caractere.repeat(10) + "\n";
@@ -191,6 +211,12 @@ function mario(){
 
 function ggez(){
   let chaine = "";
+
+  // Test pour le mode valorant
+  if (val_mode.checked == 'true') {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+
   chaine += caractere.repeat(27) + "\n";
   chaine += caractere.repeat(3) + "█▀▀▀" + caractere + "█▀▀▀" + caractere.repeat(2) + "█▀▀" + caractere + "▀▀█" + caractere.repeat(2) + "█" + caractere.repeat(3) + "\n";
   chaine += caractere.repeat(3) + "█" + caractere + "▀█" + caractere + "█" + caractere + "▀█" + caractere.repeat(2) + "█▀▀" + caractere + "▄▀" + caractere.repeat(3) + "▀" + caractere.repeat(3) + "\n";
@@ -211,6 +237,12 @@ function ggez(){
 
 function valo_truck(){
   let chaine = "";
+
+  // Test pour le mode valorant
+  if (val_mode.checked == 'true') {
+    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+  }
+
   chaine += caractere.repeat(6) + "▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌" + "\n";
   chaine += caractere.repeat(3) + "▄▄██▌█ BEEP BEEP" + "\n";
   chaine += "▄▄▄▌▐██▌█ -20 rr DELIVERY" + "\n";
