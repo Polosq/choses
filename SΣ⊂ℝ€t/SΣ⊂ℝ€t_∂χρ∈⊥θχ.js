@@ -140,7 +140,8 @@ function uninstalling(){
 
   // Test pour le mode valorant
   if (val_mode.checked) {
-    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
+    chaine += caractere.repeat(3)+"UNINSTALLING VALORANT" + caractere.repeat(2) + '\n▇▇▇▇▇▇▇▇▇▇▇▇▇▢\n' + caractere.repeat(8) + "╭━╮╭━╮╭╮ ╱" + caractere.repeat(7) + '\n' + caractere.repeat(8) + "╰━┫╰━┫╰╯╱╭╮" + caractere.repeat(7) + '\n' + caractere.repeat(8) + "╰━╯╰━╯　╱　╰╯" + caractere.repeat(7) + '\n' + caractere.repeat(9) + 'COMPLETE' + caractere.repeat(9);
+    return chaine;
   }
 
   chaine += caractere.repeat(3) + "UNINSTALLING VALORANT" + caractere.repeat(2) + "\n";
@@ -166,25 +167,20 @@ function uninstalling(){
 function mario(){
   let chaine = "";
 
-  // Test pour le mode valorant
-  if (val_mode.checked) {
-    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
-  }
-
-  chaine += caractere.repeat(9) + "▓▓▓▓▀█" + caractere.repeat(13) + "\n";
-  chaine += caractere.repeat(6) + "▄▀▓▓▄██████▄" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(5) + "▄█▄█▀" + caractere.repeat(2) +"▄" + caractere + "▄" + caractere + "█▀" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(4) + "▄▀" + caractere + "██▄" + caractere.repeat(2) +"▀" + caractere + "▀" + caractere + "▀▄" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(4) + "▀▄" + caractere.repeat(2) + "▀" + caractere + "▄█▄▄" + caractere.repeat(2) + "▄█▄" + caractere.repeat(9) + "\n";
-  chaine += caractere.repeat(6) + "▀█▄▄" + caractere.repeat(2) + "▀▀▀█▀" + caractere.repeat(11) + "\n";
-  chaine += caractere.repeat(6) + "█" + caractere.repeat(8) + "▄▀▀" + caractere + "▐" + caractere.repeat(8) + "\n";
-  chaine += caractere.repeat(4) + "▄▀" + caractere.repeat(8) + "▐" + caractere + "▄▄▀" + caractere.repeat(9) + "\n";
-  chaine += caractere.repeat(2) + "▄▀" + caractere.repeat(3) + "▐" + caractere.repeat(5) + "█▄▀" + caractere + "▐" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(2) + "█" + caractere.repeat(3) + "▐" + caractere.repeat(8) + "▄" + caractere + "█" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(3) + "█▄" + caractere.repeat(2) + "▀▄" + caractere.repeat(4) + "▄▀▐" + caractere + "█" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(3) + "█▐▀▀▀" + caractere + "▀▀▀▀" + caractere.repeat(2) + "▐" + caractere + "█" + caractere.repeat(10) + "\n";
-  chaine += caractere.repeat(2) + "▐█▐▄" + caractere.repeat(2) + "▀" + caractere.repeat(6) + "▐" + caractere + "█▄▄" + caractere.repeat(8) + "\n";
-  chaine += caractere.repeat(3) + "▀▀" + caractere.repeat(2) + "YOU" + caractere.repeat(4) + "▐▄▄▄▀" + caractere.repeat(9);
+  chaine += caractere.repeat(8) + "▓▓▓▓▀█" + caractere.repeat(12) + "\n";
+  chaine += caractere.repeat(5) + "▄▀▓▓▄██████▄" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(4) + "▄█▄█▀" + caractere.repeat(2) +"▄" + caractere + "▄" + caractere + "█▀" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(3) + "▄▀" + caractere + "██▄" + caractere.repeat(2) +"▀" + caractere + "▀" + caractere + "▀▄" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(3) + "▀▄" + caractere.repeat(2) + "▀" + caractere + "▄█▄▄" + caractere.repeat(2) + "▄█▄" + caractere.repeat(8) + "\n";
+  chaine += caractere.repeat(5) + "▀█▄▄" + caractere.repeat(2) + "▀▀▀█▀" + caractere.repeat(10) + "\n";
+  chaine += caractere.repeat(5) + "█" + caractere.repeat(8) + "▄▀▀" + caractere + "▐" + caractere.repeat(7) + "\n";
+  chaine += caractere.repeat(3) + "▄▀" + caractere.repeat(8) + "▐" + caractere + "▄▄▀" + caractere.repeat(8) + "\n";
+  chaine += caractere + "▄▀" + caractere.repeat(3) + "▐" + caractere.repeat(5) + "█▄▀" + caractere + "▐" + caractere.repeat(9) + "\n";
+  chaine += caractere + "█" + caractere.repeat(3) + "▐" + caractere.repeat(8) + "▄" + caractere + "█" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(2) + "█▄" + caractere.repeat(2) + "▀▄" + caractere.repeat(4) + "▄▀▐" + caractere + "█" + caractere.repeat(9) + "\n";
+  chaine += caractere.repeat(2) + "█▐▀▀▀" + caractere + "▀▀▀▀" + caractere.repeat(2) + "▐" + caractere + "█" + caractere.repeat(9) + "\n";
+  chaine += caractere + "▐█▐▄" + caractere.repeat(2) + "▀" + caractere.repeat(6) + "▐" + caractere + "█▄▄" + caractere.repeat(7) + "\n";
+  chaine += caractere.repeat(2) + "▀▀" + caractere.repeat(2) + "YOU" + caractere.repeat(4) + "▐▄▄▄▀" + caractere.repeat(8);
 
   return chaine;
   
@@ -263,10 +259,6 @@ function valo_truck(){
 
 function middle_finger(){
   let chaine = "";
-  // Test pour le mode valorant
-  if (val_mode.checked) {
-    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
-  }
 
   chaine += caractere.repeat(13) + '█████████' + caractere.repeat(4) + '\n';
   chaine += caractere.repeat(12) + '███████████' + caractere.repeat(3) + '\n';
@@ -304,10 +296,6 @@ function middle_finger(){
 
 function monkey(){
   let chaine = "";
-  // Test pour le mode valorant
-  if (val_mode.checked) {
-    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
-  }
 
   chaine += caractere.repeat(7) + '▄██████████▄' + caractere.repeat(7) + '\n';
   chaine += caractere.repeat(5) + '▄██████████████▄' + caractere.repeat(5) + '\n';
@@ -344,10 +332,7 @@ function monkey(){
 
 function nerd(){
   let chaine = "";
-  // Test pour le mode valorant
-  if (val_mode.checked) {
-    chaine += caractere.repeat(document.getElementById('n_to_next-line').value) + '\n';
-  }
+  
   chaine += caractere.repeat(12) + '████████' + caractere.repeat(6) + '\n';
   chaine += caractere.repeat(11) + '██████████' + caractere.repeat(5) + '\n';
   chaine += caractere.repeat(10) + '█▄▄▄████▄▄▄█' + caractere.repeat(4) + '\n';
